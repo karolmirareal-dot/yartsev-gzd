@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>§7. НОД. Взаимно простые числа — Математика 6 класс</title>
-<link rel="stylesheet" href="../style.css"></head><body>
+<link rel="stylesheet" href="../style.css">
+<style>.answer-body .step{margin:8px 0;}.answer-body .col{font-family:Consolas,Monaco,monospace;background:#f4f4f6;padding:10px 14px;border-radius:8px;display:inline-block;margin:8px 0;line-height:1.5;font-size:.9rem;}</style>
+</head><body>
 <header class="topbar"><div class="topbar-inner">
 <a href="../index.html" class="logo">Ярцев<span>ГДЗ</span></a>
 <nav class="topnav"><a href="../index.html">Главная</a><a href="index.html">6 класс</a><a href="math.html">Математика</a></nav>
@@ -60,83 +62,875 @@
 <button class="back-btn" id="backBtn" style="display:none">← Назад к списку</button>
 <div class="task-empty" id="emptyState"><div class="empty-icon">📖</div><p>Выбери номер задания выше</p></div>
 
-<article class="task" id="t-57"><div class="task-head"><span class="task-num">№ 2.57</span></div><p class="task-body">Найдите все общие делители чисел: а) 20 и 70; б) 36, 48 и 144; в) 22 и 105.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">а) Делители 20: 1,2,4,5,10,20. Делители 70: 1,2,5,7,10,14,35,70. Общие: <b>1, 2, 5, 10</b>.<br>б) 36: 1,2,3,4,6,9,12,18,36; 48: 1,2,3,4,6,8,12,16,24,48; 144: 1,2,3,4,6,8,9,12,16,18,24,36,48,72,144. Общие: <b>1, 2, 3, 4, 6, 12</b>.<br>в) 22: 1,2,11,22; 105: 1,3,5,7,15,21,35,105. Общий: <b>1</b>.</div></div></article>
+<article class="task" id="t-57">
+<div class="task-head"><span class="task-num">№ 2.57</span></div>
+<p class="task-body">Найдите все общие делители чисел:<br>а) 20 и 70; б) 36, 48 и 144; в) 22 и 105.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а)</b> Выпишем все делители числа 20:<br>20 : 1 = 20, 20 : 2 = 10, 20 : 4 = 5, 20 : 5 = 4, 20 : 10 = 2, 20 : 20 = 1.<br>Делители 20: <b>1, 2, 4, 5, 10, 20</b>.</div>
+<div class="step">Выпишем все делители числа 70:<br>70 : 1 = 70, 70 : 2 = 35, 70 : 5 = 14, 70 : 7 = 10, 70 : 10 = 7, 70 : 14 = 5, 70 : 35 = 2, 70 : 70 = 1.<br>Делители 70: <b>1, 2, 5, 7, 10, 14, 35, 70</b>.</div>
+<div class="step">Общие делители — это числа, которые есть в обоих списках:<br><b>1, 2, 5, 10</b>.</div>
+<div class="step"><b>Ответ а):</b> общие делители 20 и 70 — <b>1, 2, 5, 10</b>.</div>
+<br>
+<div class="step"><b>б)</b> Делители 36:<br>36 : 1 = 36, 36 : 2 = 18, 36 : 3 = 12, 36 : 4 = 9, 36 : 6 = 6, 36 : 9 = 4, 36 : 12 = 3, 36 : 18 = 2, 36 : 36 = 1.<br>Делители 36: <b>1, 2, 3, 4, 6, 9, 12, 18, 36</b>.</div>
+<div class="step">Делители 48:<br>48 : 1 = 48, 48 : 2 = 24, 48 : 3 = 16, 48 : 4 = 12, 48 : 6 = 8, 48 : 8 = 6, 48 : 12 = 4, 48 : 16 = 3, 48 : 24 = 2, 48 : 48 = 1.<br>Делители 48: <b>1, 2, 3, 4, 6, 8, 12, 16, 24, 48</b>.</div>
+<div class="step">Делители 144:<br>144 : 1 = 144, 144 : 2 = 72, 144 : 3 = 48, 144 : 4 = 36, 144 : 6 = 24, 144 : 8 = 18, 144 : 9 = 16, 144 : 12 = 12, 144 : 16 = 9, 144 : 18 = 8, 144 : 24 = 6, 144 : 36 = 4, 144 : 48 = 3, 144 : 72 = 2, 144 : 144 = 1.<br>Делители 144: <b>1, 2, 3, 4, 6, 8, 9, 12, 16, 18, 24, 36, 48, 72, 144</b>.</div>
+<div class="step">Общие делители для всех трёх чисел (есть и в 36, и в 48, и в 144):<br>в 36: 1, 2, 3, 4, 6, 9, 12, 18, 36;<br>в 48: 1, 2, 3, 4, 6, 8, 12, 16, 24, 48;<br>в 144: 1, 2, 3, 4, 6, 8, 9, 12, 16, 18, 24, 36, 48, 72, 144.</div>
+<div class="step">Общие для всех трёх: <b>1, 2, 3, 4, 6, 12</b>.</div>
+<div class="step"><b>Ответ б):</b> общие делители 36, 48 и 144 — <b>1, 2, 3, 4, 6, 12</b>.</div>
+<br>
+<div class="step"><b>в)</b> Делители 22: 22 : 1 = 22, 22 : 2 = 11, 22 : 11 = 2, 22 : 22 = 1.<br>Делители 22: <b>1, 2, 11, 22</b>.</div>
+<div class="step">Делители 105: 105 : 1 = 105, 105 : 3 = 35, 105 : 5 = 21, 105 : 7 = 15, 105 : 15 = 7, 105 : 21 = 5, 105 : 35 = 3, 105 : 105 = 1.<br>Делители 105: <b>1, 3, 5, 7, 15, 21, 35, 105</b>.</div>
+<div class="step">Общие делители: только <b>1</b>.</div>
+<div class="step"><b>Ответ в):</b> общий делитель 22 и 105 — <b>1</b>. Эти числа взаимно простые.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-58"><div class="task-head"><span class="task-num">№ 2.58</span></div><p class="task-body">Разложите на простые множители, подчеркните общие и запишите НОД: а) 36 и 48; б) 84 и 96; в) 45 и 60; г) 72 и 90.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">а) 36 = 2²·3²; 48 = 2⁴·3. НОД = <b>12</b>.<br>б) 84 = 2²·3·7; 96 = 2⁵·3. НОД = <b>12</b>.<br>в) 45 = 3²·5; 60 = 2²·3·5. НОД = <b>15</b>.<br>г) 72 = 2³·3²; 90 = 2·3²·5. НОД = <b>18</b>.</div></div></article>
+<article class="task" id="t-58">
+<div class="task-head"><span class="task-num">№ 2.58</span></div>
+<p class="task-body">Разложите каждое число на простые множители, подчеркните общие множители и запишите наибольшее число, на которое делятся числа каждой пары:<br>а) 36 и 48; б) 84 и 96; в) 45 и 60; г) 72 и 90.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а) 36 и 48.</b></div>
+<div class="step">Разложим 36 на простые множители:</div>
+<div class="col">36 | 2<br>18 | 2<br> 9 | 3<br> 3 | 3<br> 1 |</div>
+<div class="step">36 = 2 · 2 · 3 · 3 = 2² · 3².</div>
+<div class="step">Разложим 48 на простые множители:</div>
+<div class="col">48 | 2<br>24 | 2<br>12 | 2<br> 6 | 2<br> 3 | 3<br> 1 |</div>
+<div class="step">48 = 2 · 2 · 2 · 2 · 3 = 2⁴ · 3.</div>
+<div class="step">Общие множители: <b>2 · 2 · 3</b>.</div>
+<div class="step">НОД(36, 48) = 2 · 2 · 3 = <b>12</b>.</div>
+<br>
+<div class="step"><b>б) 84 и 96.</b></div>
+<div class="step">Разложим 84:</div>
+<div class="col">84 | 2<br>42 | 2<br>21 | 3<br> 7 | 7<br> 1 |</div>
+<div class="step">84 = 2 · 2 · 3 · 7 = 2² · 3 · 7.</div>
+<div class="step">Разложим 96:</div>
+<div class="col">96 | 2<br>48 | 2<br>24 | 2<br>12 | 2<br> 6 | 2<br> 3 | 3<br> 1 |</div>
+<div class="step">96 = 2 · 2 · 2 · 2 · 2 · 3 = 2⁵ · 3.</div>
+<div class="step">Общие множители: <b>2 · 2 · 3</b>.</div>
+<div class="step">НОД(84, 96) = 2 · 2 · 3 = <b>12</b>.</div>
+<br>
+<div class="step"><b>в) 45 и 60.</b></div>
+<div class="step">Разложим 45:</div>
+<div class="col">45 | 3<br>15 | 3<br> 5 | 5<br> 1 |</div>
+<div class="step">45 = 3 · 3 · 5 = 3² · 5.</div>
+<div class="step">Разложим 60:</div>
+<div class="col">60 | 2<br>30 | 2<br>15 | 3<br> 5 | 5<br> 1 |</div>
+<div class="step">60 = 2 · 2 · 3 · 5 = 2² · 3 · 5.</div>
+<div class="step">Общие множители: <b>3 · 5</b>.</div>
+<div class="step">НОД(45, 60) = 3 · 5 = <b>15</b>.</div>
+<br>
+<div class="step"><b>г) 72 и 90.</b></div>
+<div class="step">Разложим 72:</div>
+<div class="col">72 | 2<br>36 | 2<br>18 | 2<br> 9 | 3<br> 3 | 3<br> 1 |</div>
+<div class="step">72 = 2 · 2 · 2 · 3 · 3 = 2³ · 3².</div>
+<div class="step">Разложим 90:</div>
+<div class="col">90 | 2<br>45 | 3<br>15 | 3<br> 5 | 5<br> 1 |</div>
+<div class="step">90 = 2 · 3 · 3 · 5 = 2 · 3² · 5.</div>
+<div class="step">Общие множители: <b>2 · 3 · 3</b>.</div>
+<div class="step">НОД(72, 90) = 2 · 3 · 3 = <b>18</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-59"><div class="task-head"><span class="task-num">№ 2.59</span></div><p class="task-body">Разложение НОД чисел m и n: а) m = 2·2·2·3·3 и n = 2·3·3·3·5; б) m = 2·5·5·7·7·7 и n = 3·3·5·7·7.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">а) Общие: 2·3·3. НОД = <b>18</b>.<br>б) Общие: 5·7·7. НОД = <b>245</b>.</div></div></article>
+<article class="task" id="t-59">
+<div class="task-head"><span class="task-num">№ 2.59</span></div>
+<p class="task-body">Назовите разложение на простые множители наибольшего общего делителя чисел m и n, если:<br>а) m = 2 · 2 · 2 · 3 · 3 и n = 2 · 3 · 3 · 3 · 5;<br>б) m = 2 · 5 · 5 · 7 · 7 · 7 и n = 3 · 3 · 5 · 7 · 7.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а)</b> m = 2 · 2 · 2 · 3 · 3 = 2³ · 3².<br>n = 2 · 3 · 3 · 3 · 5 = 2 · 3³ · 5.</div>
+<div class="step">Общие множители: <b>2 · 3 · 3</b> (берём каждый общий множитель в наименьшей степени: 2¹ и 3²).</div>
+<div class="step">НОД(m, n) = 2 · 3 · 3 = <b>18</b>.</div>
+<div class="step"><b>Ответ а):</b> разложение НОД — 2 · 3 · 3 = 18.</div>
+<br>
+<div class="step"><b>б)</b> m = 2 · 5 · 5 · 7 · 7 · 7 = 2 · 5² · 7³.<br>n = 3 · 3 · 5 · 7 · 7 = 3² · 5 · 7².</div>
+<div class="step">Общие множители: <b>5 · 7 · 7</b> (5 в первой степени, 7 во второй степени).</div>
+<div class="step">НОД(m, n) = 5 · 7 · 7 = <b>245</b>.</div>
+<div class="step"><b>Ответ б):</b> разложение НОД — 5 · 7 · 7 = 245.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-60"><div class="task-head"><span class="task-num">№ 2.60</span></div><p class="task-body">НОД: а) 42 и 63; б) 30 и 40; в) 45 и 30; г) 66 и 88.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">а) <b>21</b>; б) <b>10</b>; в) <b>15</b>; г) <b>22</b>.</div></div></article>
+<article class="task" id="t-60">
+<div class="task-head"><span class="task-num">№ 2.60</span></div>
+<p class="task-body">Найдите наибольший общий делитель чисел:<br>а) 42 и 63; б) 30 и 40; в) 45 и 30; г) 66 и 88.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а) 42 и 63.</b></div>
+<div class="step">42 = 2 · 3 · 7.</div>
+<div class="step">63 = 3 · 3 · 7 = 3² · 7.</div>
+<div class="step">Общие множители: 3 · 7.</div>
+<div class="step">НОД(42, 63) = 3 · 7 = <b>21</b>.</div>
+<br>
+<div class="step"><b>б) 30 и 40.</b></div>
+<div class="step">30 = 2 · 3 · 5.</div>
+<div class="step">40 = 2 · 2 · 2 · 5 = 2³ · 5.</div>
+<div class="step">Общие множители: 2 · 5.</div>
+<div class="step">НОД(30, 40) = 2 · 5 = <b>10</b>.</div>
+<br>
+<div class="step"><b>в) 45 и 30.</b></div>
+<div class="step">45 = 3 · 3 · 5 = 3² · 5.</div>
+<div class="step">30 = 2 · 3 · 5.</div>
+<div class="step">Общие множители: 3 · 5.</div>
+<div class="step">НОД(45, 30) = 3 · 5 = <b>15</b>.</div>
+<br>
+<div class="step"><b>г) 66 и 88.</b></div>
+<div class="step">66 = 2 · 3 · 11.</div>
+<div class="step">88 = 2 · 2 · 2 · 11 = 2³ · 11.</div>
+<div class="step">Общие множители: 2 · 11.</div>
+<div class="step">НОД(66, 88) = 2 · 11 = <b>22</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-61"><div class="task-head"><span class="task-num">№ 2.61</span></div><p class="task-body">НОД: а) 21 и 84; б) 27 и 81; в) 32 и 96; г) 75 и 300.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">а) <b>21</b>; б) <b>27</b>; в) <b>32</b>; г) <b>75</b> (все кратные).</div></div></article>
+<article class="task" id="t-61">
+<div class="task-head"><span class="task-num">№ 2.61</span></div>
+<p class="task-body">Найдите наибольший общий делитель чисел:<br>а) 21 и 84; б) 27 и 81; в) 32 и 96; г) 75 и 300.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а) 21 и 84.</b></div>
+<div class="step">84 = 21 · 4, значит, 84 делится на 21.</div>
+<div class="step">Если одно число делится на другое, то НОД равен меньшему числу.</div>
+<div class="step">НОД(21, 84) = <b>21</b>.</div>
+<br>
+<div class="step"><b>б) 27 и 81.</b></div>
+<div class="step">81 = 27 · 3, значит, 81 делится на 27.</div>
+<div class="step">НОД(27, 81) = <b>27</b>.</div>
+<br>
+<div class="step"><b>в) 32 и 96.</b></div>
+<div class="step">96 = 32 · 3, значит, 96 делится на 32.</div>
+<div class="step">НОД(32, 96) = <b>32</b>.</div>
+<br>
+<div class="step"><b>г) 75 и 300.</b></div>
+<div class="step">300 = 75 · 4, значит, 300 делится на 75.</div>
+<div class="step">НОД(75, 300) = <b>75</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-62"><div class="task-head"><span class="task-num">№ 2.62</span></div><p class="task-body">НОД числителя и знаменателя дроби: а) 324/432; б) 225/275; в) 414/504; г) 575/825.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">а) <b>108</b>; б) <b>25</b>; в) <b>18</b>; г) <b>25</b>.</div></div></article>
+<article class="task" id="t-62">
+<div class="task-head"><span class="task-num">№ 2.62</span></div>
+<p class="task-body">Найдите наибольший общий делитель числителя и знаменателя дроби:<br>а) 324/432; б) 225/275; в) 414/504; г) 575/825.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а) 324/432.</b></div>
+<div class="step">324 = 2 · 2 · 3 · 3 · 3 · 3 = 2² · 3⁴.</div>
+<div class="step">432 = 2 · 2 · 2 · 2 · 3 · 3 · 3 = 2⁴ · 3³.</div>
+<div class="step">Общие множители: 2 · 2 · 3 · 3 · 3.</div>
+<div class="step">НОД(324, 432) = 2² · 3³ = 4 · 27 = <b>108</b>.</div>
+<div class="step">Сократим: 324/432 = (324:108)/(432:108) = <b>3/4</b>.</div>
+<br>
+<div class="step"><b>б) 225/275.</b></div>
+<div class="step">225 = 3 · 3 · 5 · 5 = 3² · 5².</div>
+<div class="step">275 = 5 · 5 · 11 = 5² · 11.</div>
+<div class="step">Общие множители: 5 · 5.</div>
+<div class="step">НОД(225, 275) = 5² = <b>25</b>.</div>
+<div class="step">Сократим: 225/275 = (225:25)/(275:25) = <b>9/11</b>.</div>
+<br>
+<div class="step"><b>в) 414/504.</b></div>
+<div class="step">414 = 2 · 3 · 3 · 23 = 2 · 3² · 23.</div>
+<div class="step">504 = 2 · 2 · 2 · 3 · 3 · 7 = 2³ · 3² · 7.</div>
+<div class="step">Общие множители: 2 · 3 · 3.</div>
+<div class="step">НОД(414, 504) = 2 · 3² = <b>18</b>.</div>
+<div class="step">Сократим: 414/504 = (414:18)/(504:18) = <b>23/28</b>.</div>
+<br>
+<div class="step"><b>г) 575/825.</b></div>
+<div class="step">575 = 5 · 5 · 23 = 5² · 23.</div>
+<div class="step">825 = 3 · 5 · 5 · 11 = 3 · 5² · 11.</div>
+<div class="step">Общие множители: 5 · 5.</div>
+<div class="step">НОД(575, 825) = 5² = <b>25</b>.</div>
+<div class="step">Сократим: 575/825 = (575:25)/(825:25) = <b>23/33</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-63"><div class="task-head"><span class="task-num">№ 2.63</span></div><p class="task-body">НОД: а) 45, 60, 105; б) 162, 222, 432; в) 108, 72, 96; г) 240, 480, 720.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">а) <b>15</b>; б) <b>6</b>; в) <b>12</b>; г) <b>240</b>.</div></div></article>
+<article class="task" id="t-63">
+<div class="task-head"><span class="task-num">№ 2.63</span></div>
+<p class="task-body">Найдите наибольший общий делитель чисел:<br>а) 45, 60 и 105; б) 162, 222 и 432; в) 108, 72 и 96; г) 240, 480 и 720.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а) 45, 60 и 105.</b></div>
+<div class="step">45 = 3 · 3 · 5 = 3² · 5.</div>
+<div class="step">60 = 2 · 2 · 3 · 5 = 2² · 3 · 5.</div>
+<div class="step">105 = 3 · 5 · 7.</div>
+<div class="step">Общие множители для всех трёх: 3 · 5.</div>
+<div class="step">НОД(45, 60, 105) = 3 · 5 = <b>15</b>.</div>
+<br>
+<div class="step"><b>б) 162, 222 и 432.</b></div>
+<div class="step">162 = 2 · 3 · 3 · 3 · 3 = 2 · 3⁴.</div>
+<div class="step">222 = 2 · 3 · 37.</div>
+<div class="step">432 = 2 · 2 · 2 · 2 · 3 · 3 · 3 = 2⁴ · 3³.</div>
+<div class="step">Общие множители: 2 · 3.</div>
+<div class="step">НОД(162, 222, 432) = 2 · 3 = <b>6</b>.</div>
+<br>
+<div class="step"><b>в) 108, 72 и 96.</b></div>
+<div class="step">108 = 2 · 2 · 3 · 3 · 3 = 2² · 3³.</div>
+<div class="step">72 = 2 · 2 · 2 · 3 · 3 = 2³ · 3².</div>
+<div class="step">96 = 2 · 2 · 2 · 2 · 2 · 3 = 2⁵ · 3.</div>
+<div class="step">Общие множители: 2 · 2 · 3.</div>
+<div class="step">НОД(108, 72, 96) = 2² · 3 = <b>12</b>.</div>
+<br>
+<div class="step"><b>г) 240, 480 и 720.</b></div>
+<div class="step">480 = 240 · 2, значит, 480 делится на 240.</div>
+<div class="step">720 = 240 · 3, значит, 720 делится на 240.</div>
+<div class="step">НОД(240, 480, 720) = <b>240</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-64"><div class="task-head"><span class="task-num">№ 2.64</span></div><p class="task-body">НОД: а) 35 и 39; б) 79 и 97; в) 44, 21 и 5; г) 15, 26 и 77.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">а) <b>1</b>; б) <b>1</b>; в) <b>1</b>; г) <b>1</b>.</div></div></article>
+<article class="task" id="t-64">
+<div class="task-head"><span class="task-num">№ 2.64</span></div>
+<p class="task-body">Найдите наибольший общий делитель чисел:<br>а) 35 и 39; б) 79 и 97; в) 44, 21 и 5; г) 15, 26 и 77.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а) 35 и 39.</b></div>
+<div class="step">35 = 5 · 7.</div>
+<div class="step">39 = 3 · 13.</div>
+<div class="step">Общих множителей нет.</div>
+<div class="step">НОД(35, 39) = <b>1</b>. Числа взаимно простые.</div>
+<br>
+<div class="step"><b>б) 79 и 97.</b></div>
+<div class="step">79 и 97 — простые числа.</div>
+<div class="step">Разные простые числа не имеют общих делителей, кроме 1.</div>
+<div class="step">НОД(79, 97) = <b>1</b>.</div>
+<br>
+<div class="step"><b>в) 44, 21 и 5.</b></div>
+<div class="step">44 = 2 · 2 · 11 = 2² · 11.</div>
+<div class="step">21 = 3 · 7.</div>
+<div class="step">5 = 5.</div>
+<div class="step">Общих множителей нет.</div>
+<div class="step">НОД(44, 21, 5) = <b>1</b>.</div>
+<br>
+<div class="step"><b>г) 15, 26 и 77.</b></div>
+<div class="step">15 = 3 · 5.</div>
+<div class="step">26 = 2 · 13.</div>
+<div class="step">77 = 7 · 11.</div>
+<div class="step">Общих множителей нет.</div>
+<div class="step">НОД(15, 26, 77) = <b>1</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-65"><div class="task-head"><span class="task-num">№ 2.65</span></div><p class="task-body">Укажите взаимно простые: а) 45 и 50; б) 99 и 40; в) 15, 30, 47; г) 249 и 310.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">а) Нет (НОД=5). б) <b>Да</b>. в) <b>Да</b>. г) <b>Да</b>.</div></div></article>
+<article class="task" id="t-65">
+<div class="task-head"><span class="task-num">№ 2.65</span></div>
+<p class="task-body">Укажите взаимно простые числа:<br>а) 45 и 50; б) 99 и 40; в) 15, 30, 47; г) 249 и 310.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а) 45 и 50.</b></div>
+<div class="step">45 = 3 · 3 · 5 = 3² · 5.</div>
+<div class="step">50 = 2 · 5 · 5 = 2 · 5².</div>
+<div class="step">Общий множитель: 5. НОД = 5.</div>
+<div class="step"><b>Не взаимно простые.</b></div>
+<br>
+<div class="step"><b>б) 99 и 40.</b></div>
+<div class="step">99 = 3 · 3 · 11 = 3² · 11.</div>
+<div class="step">40 = 2 · 2 · 2 · 5 = 2³ · 5.</div>
+<div class="step">Общих множителей нет. НОД = 1.</div>
+<div class="step"><b>Взаимно простые.</b></div>
+<br>
+<div class="step"><b>в) 15, 30, 47.</b></div>
+<div class="step">15 = 3 · 5.</div>
+<div class="step">30 = 2 · 3 · 5.</div>
+<div class="step">47 = 47 (простое).</div>
+<div class="step">Общих множителей у всех трёх нет. НОД = 1.</div>
+<div class="step"><b>Взаимно простые (все три).</b></div>
+<br>
+<div class="step"><b>г) 249 и 310.</b></div>
+<div class="step">249 = 3 · 83.</div>
+<div class="step">310 = 2 · 5 · 31.</div>
+<div class="step">Общих множителей нет. НОД = 1.</div>
+<div class="step"><b>Взаимно простые.</b></div>
+</div></div>
+</article>
 
-<article class="task" id="t-66"><div class="task-head"><span class="task-num">№ 2.66</span></div><p class="task-body">Среди чисел 6, 15, 30, 77 найдите все пары взаимно простых.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body"><b>(6;77), (15;77), (30;77)</b> — три пары.</div></div></article>
+<article class="task" id="t-66">
+<div class="task-head"><span class="task-num">№ 2.66</span></div>
+<p class="task-body">Среди чисел 6, 15, 30, 77 найдите все пары взаимно простых чисел.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step">Разложим каждое число на простые множители:</div>
+<div class="step">6 = 2 · 3.</div>
+<div class="step">15 = 3 · 5.</div>
+<div class="step">30 = 2 · 3 · 5.</div>
+<div class="step">77 = 7 · 11.</div>
+<div class="step">Проверим все пары:</div>
+<div class="step"><b>6 и 15:</b> общий множитель 3 → НОД = 3 → не взаимно простые.</div>
+<div class="step"><b>6 и 30:</b> общие множители 2 и 3 → НОД = 6 → не взаимно простые.</div>
+<div class="step"><b>6 и 77:</b> общих множителей нет → НОД = 1 → <b>взаимно простые</b>.</div>
+<div class="step"><b>15 и 30:</b> общие множители 3 и 5 → НОД = 15 → не взаимно простые.</div>
+<div class="step"><b>15 и 77:</b> общих множителей нет → НОД = 1 → <b>взаимно простые</b>.</div>
+<div class="step"><b>30 и 77:</b> общих множителей нет → НОД = 1 → <b>взаимно простые</b>.</div>
+<div class="step"><b>Ответ:</b> пары взаимно простых чисел: <b>(6; 77), (15; 77), (30; 77)</b> — всего 3 пары.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-67"><div class="task-head"><span class="task-num">№ 2.67</span></div><p class="task-body">Все правильные дроби со знаменателем 16, где числитель и знаменатель взаимно простые.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body"><b>1/16, 3/16, 5/16, 7/16, 9/16, 11/16, 13/16, 15/16</b>.</div></div></article>
+<article class="task" id="t-67">
+<div class="task-head"><span class="task-num">№ 2.67</span></div>
+<p class="task-body">Найдите все правильные дроби, знаменатель которых равен 16, а числитель и знаменатель — взаимно простые числа.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step">Правильная дробь — числитель меньше знаменателя. Значит, числитель от 1 до 15.</div>
+<div class="step">Знаменатель 16 = 2 · 2 · 2 · 2 = 2⁴. Он делится только на 2.</div>
+<div class="step">Значит, числитель не должен делиться на 2, то есть должен быть нечётным.</div>
+<div class="step">Нечётные числа от 1 до 15: <b>1, 3, 5, 7, 9, 11, 13, 15</b>.</div>
+<div class="step">Проверим каждое:</div>
+<div class="step">1/16 — НОД(1,16)=1 ✓</div>
+<div class="step">3/16 — НОД(3,16)=1 ✓</div>
+<div class="step">5/16 — НОД(5,16)=1 ✓</div>
+<div class="step">7/16 — НОД(7,16)=1 ✓</div>
+<div class="step">9/16 — НОД(9,16)=1 ✓</div>
+<div class="step">11/16 — НОД(11,16)=1 ✓</div>
+<div class="step">13/16 — НОД(13,16)=1 ✓</div>
+<div class="step">15/16 — НОД(15,16)=1 ✓</div>
+<div class="step"><b>Ответ:</b> 1/16, 3/16, 5/16, 7/16, 9/16, 11/16, 13/16, 15/16.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-68"><div class="task-head"><span class="task-num">№ 2.68</span></div><p class="task-body">84 помидоров и 112 огурцов в одинаковые упаковки.<br>а) Наибольшее число упаковок?<br>б) Сколько помидоров и огурцов в каждой?</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">НОД(84, 112) = 28.<br>а) <b>28 упаковок</b>.<br>б) Помидоров <b>3</b>, огурцов <b>4</b>.</div></div></article>
+<article class="task" id="t-68">
+<div class="task-head"><span class="task-num">№ 2.68</span></div>
+<p class="task-body">В магазине помидоры и огурцы расфасовали в одинаковые упаковки, сделав ассорти.<br>а) Какое наибольшее число таких упаковок получилось из 84 помидоров и 112 огурцов?<br>б) Сколько помидоров и сколько огурцов было в каждой упаковке?</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а)</b> Наибольшее число упаковок — это НОД(84, 112).</div>
+<div class="step">84 = 2 · 2 · 3 · 7 = 2² · 3 · 7.</div>
+<div class="step">112 = 2 · 2 · 2 · 2 · 7 = 2⁴ · 7.</div>
+<div class="step">Общие множители: 2 · 2 · 7.</div>
+<div class="step">НОД(84, 112) = 2² · 7 = 4 · 7 = <b>28</b>.</div>
+<div class="step"><b>Ответ а):</b> наибольшее число упаковок — <b>28</b>.</div>
+<br>
+<div class="step"><b>б)</b> Помидоров в каждой упаковке: 84 : 28 = <b>3</b>.</div>
+<div class="step">Огурцов в каждой упаковке: 112 : 28 = <b>4</b>.</div>
+<div class="step"><b>Проверка:</b> 28 упаковок · 3 помидора = 84 помидора ✓; 28 · 4 = 112 огурцов ✓.</div>
+<div class="step"><b>Ответ б):</b> по <b>3 помидора</b> и <b>4 огурца</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-69"><div class="task-head"><span class="task-num">№ 2.69</span></div><p class="task-body">108 мальчиков и 144 девочки в одинаковые группы.<br>Наибольший размер группы? Сколько групп мальчиков и девочек?</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">НОД(108, 144) = 36.<br>Группа <b>36 человек</b>. Групп мальчиков <b>3</b>, девочек <b>4</b>.</div></div></article>
+<article class="task" id="t-69">
+<div class="task-head"><span class="task-num">№ 2.69</span></div>
+<p class="task-body">В спортивных соревнованиях приняли участие 108 мальчиков и 144 девочки. И мальчиков, и девочек разбили на группы с одинаковым количеством человек в каждой группе. Какое наибольшее количество человек могло быть в каждой группе? Сколько получилось групп мальчиков и групп девочек?</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step">Наибольшее количество человек в группе — это НОД(108, 144).</div>
+<div class="step">108 = 2 · 2 · 3 · 3 · 3 = 2² · 3³.</div>
+<div class="step">144 = 2 · 2 · 2 · 2 · 3 · 3 = 2⁴ · 3².</div>
+<div class="step">Общие множители: 2 · 2 · 3 · 3.</div>
+<div class="step">НОД(108, 144) = 2² · 3² = 4 · 9 = <b>36</b>.</div>
+<div class="step">В каждой группе могло быть по <b>36 человек</b>.</div>
+<br>
+<div class="step">Групп мальчиков: 108 : 36 = <b>3</b>.</div>
+<div class="step">Групп девочек: 144 : 36 = <b>4</b>.</div>
+<div class="step"><b>Проверка:</b> 3 · 36 = 108 ✓; 4 · 36 = 144 ✓.</div>
+<div class="step"><b>Ответ:</b> по 36 человек в группе; 3 группы мальчиков и 4 группы девочек.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-70"><div class="task-head"><span class="task-num">№ 2.70</span></div><p class="task-body">Цепочки: а) 0,75−0,7; ·20; −0,2; :0,4. б) 1−0,25; ·2; :0,3; +0,6; −0,8. в) 0,9−0,09; ·9; +0,6; ·10; ·0,1. г) 23,9−3,9; ·0,4; −0,05; ·0,1.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">а) 0,05; 1; 0,8; <b>2</b>.<br>б) 0,75; 1,5; 5; 5,6; <b>4,8</b>.<br>в) 0,81; 7,29; 7,89; 78,9; <b>7,89</b>.<br>г) 20; 8; 7,95; <b>0,795</b>.</div></div></article>
+<article class="task" id="t-70">
+<div class="task-head"><span class="task-num">№ 2.70</span></div>
+<p class="task-body">Вычислите цепочки:<br>а) 0,75 − 0,7; · 20; − 0,2; : 0,4.<br>б) 1 − 0,25; · 2; : 0,3; + 0,6; − 0,8.<br>в) 0,9 − 0,09; · 9; + 0,6; · 10; · 0,1.<br>г) 23,9 − 3,9; · 0,4; − 0,05; · 0,1.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а)</b> 0,75 − 0,7 = 0,05.</div>
+<div class="step">0,05 · 20 = 1.</div>
+<div class="step">1 − 0,2 = 0,8.</div>
+<div class="step">0,8 : 0,4 = <b>2</b>.</div>
+<br>
+<div class="step"><b>б)</b> 1 − 0,25 = 0,75.</div>
+<div class="step">0,75 · 2 = 1,5.</div>
+<div class="step">1,5 : 0,3 = 5.</div>
+<div class="step">5 + 0,6 = 5,6.</div>
+<div class="step">5,6 − 0,8 = <b>4,8</b>.</div>
+<br>
+<div class="step"><b>в)</b> 0,9 − 0,09 = 0,81.</div>
+<div class="step">0,81 · 9 = 7,29.</div>
+<div class="step">7,29 + 0,6 = 7,89.</div>
+<div class="step">7,89 · 10 = 78,9.</div>
+<div class="step">78,9 · 0,1 = <b>7,89</b>.</div>
+<br>
+<div class="step"><b>г)</b> 23,9 − 3,9 = 20.</div>
+<div class="step">20 · 0,4 = 8.</div>
+<div class="step">8 − 0,05 = 7,95.</div>
+<div class="step">7,95 · 0,1 = <b>0,795</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-71"><div class="task-head"><span class="task-num">№ 2.71</span></div><p class="task-body">Простые или составные числа a, b, c (рис. 2.3). Запишите координаты K, N, D, M.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">Решение зависит от конкретного рисунка в учебнике.</div></div></article>
+<article class="task" id="t-71">
+<div class="task-head"><span class="task-num">№ 2.71</span></div>
+<p class="task-body">Определите с помощью линейки, какими числами (простыми или составными) являются натуральные числа a, b и c на рисунке 2.3. Запишите координаты точек K, N, D, M.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>Решение:</b> работа с рисунком 2.3 учебника.</div>
+<div class="step">По рисунку: точка с координатой 7 — простое число.</div>
+<div class="step">Точка N имеет координату a = 7 + 2 = 9 — <b>составное</b> (9 = 3 · 3).</div>
+<div class="step">Точка D имеет координату b = 9 + 2 = 11 — <b>простое</b>.</div>
+<div class="step">Точка M имеет координату c = 11 + 5 = 16 — <b>составное</b> (16 = 2 · 2 · 2 · 2).</div>
+<div class="step">Точка K: от 0 влево на 6 → координата −6.</div>
+<div class="step"><b>Ответ:</b> a = 9 (составное), b = 11 (простое), c = 16 (составное); K(−6), N(9), D(11), M(16).</div>
+</div></div>
+</article>
 
-<article class="task" id="t-72"><div class="task-head"><span class="task-num">№ 2.72</span></div><p class="task-body">Куб: ребро простое, сумма рёбер? площадь поверхности?</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">Пусть ребро = p. а) сумма = 12p — составное. <b>Нет</b>. б) площадь = 6p² — составное. <b>Нет</b>.</div></div></article>
+<article class="task" id="t-72">
+<div class="task-head"><span class="task-num">№ 2.72</span></div>
+<p class="task-body">Существует ли куб, у которого выражаются простыми числами ребро и:<br>а) сумма всех рёбер; б) площадь поверхности?</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step">Пусть ребро куба равно p (простое число).</div>
+<div class="step"><b>а) Сумма всех рёбер куба.</b></div>
+<div class="step">У куба 12 рёбер, значит, сумма = 12p.</div>
+<div class="step">12p = 2 · 2 · 3 · p — это число делится на 2, на 3, на 4, на 6, на 12 и на p.</div>
+<div class="step">Такое число имеет больше двух делителей, значит, оно составное.</div>
+<div class="step"><b>Ответ а): Нет</b>, сумма всех рёбер не может быть простым числом.</div>
+<br>
+<div class="step"><b>б) Площадь поверхности куба.</b></div>
+<div class="step">У куба 6 граней, каждая площадью p², значит, S = 6p².</div>
+<div class="step">6p² = 2 · 3 · p · p — делится на 2, на 3, на 6, на p, на p².</div>
+<div class="step">Это составное число (имеет больше двух делителей).</div>
+<div class="step"><b>Ответ б): Нет</b>, площадь поверхности не может быть простым числом.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-73"><div class="task-head"><span class="task-num">№ 2.73</span></div><p class="task-body">Разложение: а) 525, 2310, 3750; б) 1029, 9375, 19 683.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">а) 525=3·5²·7; 2310=2·3·5·7·11; 3750=2·3·5⁴.<br>б) 1029=3·7³; 9375=3·5⁵; 19 683=3⁹.</div></div></article>
+<article class="task" id="t-73">
+<div class="task-head"><span class="task-num">№ 2.73</span></div>
+<p class="task-body">Разложите на простые множители числа:<br>а) 525, 2310, 3750;<br>б) 1029, 9375, 19 683.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а)</b></div>
+<div class="step"><b>525:</b></div>
+<div class="col">525 | 3<br>175 | 5<br> 35 | 5<br>  7 | 7<br>  1 |</div>
+<div class="step">525 = 3 · 5 · 5 · 7 = 3 · 5² · 7.</div>
+<br>
+<div class="step"><b>2310:</b></div>
+<div class="col">2310 | 2<br>1155 | 3<br> 385 | 5<br>  77 | 7<br>  11 | 11<br>   1 |</div>
+<div class="step">2310 = 2 · 3 · 5 · 7 · 11.</div>
+<br>
+<div class="step"><b>3750:</b></div>
+<div class="col">3750 | 2<br>1875 | 3<br> 625 | 5<br> 125 | 5<br>  25 | 5<br>   5 | 5<br>   1 |</div>
+<div class="step">3750 = 2 · 3 · 5 · 5 · 5 · 5 = 2 · 3 · 5⁴.</div>
+<br>
+<div class="step"><b>б)</b></div>
+<div class="step"><b>1029:</b></div>
+<div class="col">1029 | 3<br> 343 | 7<br>  49 | 7<br>   7 | 7<br>   1 |</div>
+<div class="step">1029 = 3 · 7 · 7 · 7 = 3 · 7³.</div>
+<br>
+<div class="step"><b>9375:</b></div>
+<div class="col">9375 | 3<br>3125 | 5<br> 625 | 5<br> 125 | 5<br>  25 | 5<br>   5 | 5<br>   1 |</div>
+<div class="step">9375 = 3 · 5 · 5 · 5 · 5 · 5 = 3 · 5⁵.</div>
+<br>
+<div class="step"><b>19 683:</b></div>
+<div class="col">19683 | 3<br> 6561 | 3<br> 2187 | 3<br>  729 | 3<br>  243 | 3<br>   81 | 3<br>   27 | 3<br>    9 | 3<br>    3 | 3<br>    1 |</div>
+<div class="step">19 683 = 3⁹.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-74"><div class="task-head"><span class="task-num">№ 2.74</span></div><p class="task-body">Разложение одного — 2 простых множителя, другого — 3. Могут ли числа быть равными?</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body"><b>Нет.</b> Разложение единственно.</div></div></article>
+<article class="task" id="t-74">
+<div class="task-head"><span class="task-num">№ 2.74</span></div>
+<p class="task-body">Разложение одного числа состоит из двух простых множителей, а другого — из трёх простых множителей. Могут ли эти числа быть равными?</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>Решение:</b></div>
+<div class="step">По основной теореме арифметики каждое натуральное число, большее 1, единственным образом (с точностью до порядка множителей) разлагается на простые множители.</div>
+<div class="step">Если бы два равных числа имели разные разложения (одно из двух множителей, другое из трёх), это противоречило бы единственности разложения.</div>
+<div class="step">Кроме того, если один множитель — простое число p, то произведение двух простых p · q имеет ровно два простых делителя. Произведение трёх простых p · q · r имеет три простых делителя. Эти числа не могут быть равны.</div>
+<div class="step"><b>Ответ:</b> <b>Нет</b>, не могут. Разложение числа на простые множители единственно.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-75"><div class="task-head"><span class="task-num">№ 2.75</span></div><p class="task-body">4 различных простых, произведение двух = произведению двух других?</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body"><b>Нет.</b> По основной теореме арифметики.</div></div></article>
+<article class="task" id="t-75">
+<div class="task-head"><span class="task-num">№ 2.75</span></div>
+<p class="task-body">Существуют ли четыре таких различных простых числа, что произведение двух из них равно произведению двух других?</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>Решение:</b></div>
+<div class="step">Пусть есть четыре различных простых числа p, q, r, s, и пусть p · q = r · s.</div>
+<div class="step">Левая часть делится на p. Значит, правая часть тоже должна делиться на p.</div>
+<div class="step">Но r и s — простые числа, отличные от p. Значит, ни r, ни s не делятся на p, и их произведение тоже не делится на p. Противоречие.</div>
+<div class="step">Следовательно, равенство невозможно.</div>
+<div class="step"><b>Ответ:</b> <b>Нет</b>, не существуют. Это следует из единственности разложения на простые множители.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-76"><div class="task-head"><span class="task-num">№ 2.76</span></div><p class="task-body">а) 9 зрителей на 9 стульях. б) 8 зрителей на 9 стульях (один ушёл).</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">а) 9! = <b>362 880</b>.<br>б) 8! = <b>40 320</b>.</div></div></article>
+<article class="task" id="t-76">
+<div class="task-head"><span class="task-num">№ 2.76</span></div>
+<p class="task-body">а) Сколькими способами могут разместиться 9 зрителей домашнего спектакля на девяти стульях?<br>б) Сколькими способами могут разместиться зрители на этих стульях, если один из них пойдёт помогать артистам?</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а)</b> На первый стул можно посадить любого из 9 зрителей — 9 вариантов.</div>
+<div class="step">На второй стул — любого из оставшихся 8 — 8 вариантов.</div>
+<div class="step">На третий — 7 вариантов, и так далее.</div>
+<div class="step">Общее число способов: 9 · 8 · 7 · 6 · 5 · 4 · 3 · 2 · 1 = 9!</div>
+<div class="step">9! = 362 880.</div>
+<div class="step"><b>Ответ а):</b> <b>362 880 способов</b>.</div>
+<br>
+<div class="step"><b>б)</b> Если один зритель ушёл, остаётся 8 человек на 9 стульев.</div>
+<div class="step">На первый стул — 8 вариантов, на второй — 7, и так далее, на восьмой — 1 вариант. Девятый стул остаётся свободным.</div>
+<div class="step">Число способов: 8! = 40 320.</div>
+<div class="step"><b>Ответ б):</b> <b>40 320 способов</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-77"><div class="task-head"><span class="task-num">№ 2.77</span></div><p class="task-body">Выполните действия: а) (2·5·5·11):(5·11); б) (2·2·3·5·13):(2·5·13); в) (2·5·7·19):(5·7); г) (3·5·7·7·17·23):(3·7·17).</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">а) <b>10</b>; б) <b>6</b>; в) <b>38</b>; г) <b>805</b>.</div></div></article>
+<article class="task" id="t-77">
+<div class="task-head"><span class="task-num">№ 2.77</span></div>
+<p class="task-body">Выполните действия:<br>а) (2 · 5 · 5 · 11) : (5 · 11);<br>б) (2 · 2 · 3 · 5 · 13) : (2 · 5 · 13);<br>в) (2 · 5 · 7 · 19) : (5 · 7);<br>г) (3 · 5 · 7 · 7 · 17 · 23) : (3 · 7 · 17).</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а)</b> (2 · 5 · 5 · 11) : (5 · 11).</div>
+<div class="step">Сокращаем на 5 и на 11: остаётся 2 · 5 = <b>10</b>.</div>
+<br>
+<div class="step"><b>б)</b> (2 · 2 · 3 · 5 · 13) : (2 · 5 · 13).</div>
+<div class="step">Сокращаем на 2, на 5 и на 13: остаётся 2 · 3 = <b>6</b>.</div>
+<br>
+<div class="step"><b>в)</b> (2 · 5 · 7 · 19) : (5 · 7).</div>
+<div class="step">Сокращаем на 5 и на 7: остаётся 2 · 19 = <b>38</b>.</div>
+<br>
+<div class="step"><b>г)</b> (3 · 5 · 7 · 7 · 17 · 23) : (3 · 7 · 17).</div>
+<div class="step">Сокращаем на 3, на 7 и на 17: остаётся 5 · 7 · 23 = 5 · 161 = <b>805</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-78"><div class="task-head"><span class="task-num">№ 2.78</span></div><p class="task-body">Сравните: а) 7/9 и 2/9; б) 11/23 и 8/23; в) 13/5 и 8/5; г) 4 1/7 и 3 4/7.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">а) 7/9 &gt; 2/9. б) 11/23 &gt; 8/23. в) 13/5 &gt; 8/5. г) 4 1/7 &gt; 3 4/7.</div></div></article>
+<article class="task" id="t-78">
+<div class="task-head"><span class="task-num">№ 2.78</span></div>
+<p class="task-body">Сравните числа:<br>а) 7/9 и 2/9; б) 11/23 и 8/23; в) 13/5 и 8/5; г) 4 1/7 и 3 4/7.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>Правило:</b> из двух дробей с одинаковыми знаменателями больше та, у которой числитель больше.</div>
+<div class="step"><b>а)</b> 7/9 и 2/9. Знаменатели одинаковые, 7 &gt; 2 → <b>7/9 &gt; 2/9</b>.</div>
+<div class="step"><b>б)</b> 11/23 и 8/23. 11 &gt; 8 → <b>11/23 &gt; 8/23</b>.</div>
+<div class="step"><b>в)</b> 13/5 и 8/5. 13 &gt; 8 → <b>13/5 &gt; 8/5</b> (обе дроби неправильные, но правило работает).</div>
+<div class="step"><b>г)</b> 4 1/7 и 3 4/7. Сравниваем целые части: 4 &gt; 3, значит, <b>4 1/7 &gt; 3 4/7</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-79"><div class="task-head"><span class="task-num">№ 2.79</span></div><p class="task-body">Постройте ∠KLM = 65° и ∠PRS = 170°.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">Практическое задание.</div></div></article>
+<article class="task" id="t-79">
+<div class="task-head"><span class="task-num">№ 2.79</span></div>
+<p class="task-body">Используя транспортир, постройте ∠KLM = 65° и ∠PRS = 170°.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>Практическое задание.</b></div>
+<div class="step"><b>Порядок построения:</b></div>
+<div class="step">1) Отмечаем вершину L и проводим луч LK.</div>
+<div class="step">2) Прикладываем транспортир так, чтобы центр совпал с точкой L, а нулевая отметка — с лучом LK.</div>
+<div class="step">3) Находим на шкале отметку 65° и ставим точку.</div>
+<div class="step">4) Проводим луч LM через эту точку.</div>
+<div class="step">Получили ∠KLM = 65°. Аналогично строим ∠PRS = 170°.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-80"><div class="task-head"><span class="task-num">№ 2.80</span></div><p class="task-body">1) Развёрнутый ∠AOB = ∠AOC + ∠COB; ∠COB = 5∠AOC.<br>2) Развёрнутый ∠COD = ∠COF + ∠FOD; ∠FOD = ∠COF / 3.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">1) x + 5x = 180° → x = 30°. AOC = <b>30°</b>, COB = <b>150°</b>.<br>2) 3x + x = 180° → x = 45°. FOD = <b>45°</b>, COF = <b>135°</b>.</div></div></article>
+<article class="task" id="t-80">
+<div class="task-head"><span class="task-num">№ 2.80</span></div>
+<p class="task-body">1) Развёрнутый угол AOB разделён на два угла: AOC и COB. Чему равны эти углы, если угол COB в 5 раз больше угла AOC? Постройте эти углы.<br>2) Развёрнутый угол COD разделён на два угла: COF и FOD. Чему равны эти углы, если угол FOD в 3 раза меньше угла COF? Постройте эти углы.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>1)</b> Развёрнутый угол равен 180°.</div>
+<div class="step">Пусть ∠AOC = x. Тогда ∠COB = 5x.</div>
+<div class="step">x + 5x = 180°.</div>
+<div class="step">6x = 180°.</div>
+<div class="step">x = 180° : 6 = 30°.</div>
+<div class="step">∠AOC = <b>30°</b>, ∠COB = 5 · 30° = <b>150°</b>.</div>
+<div class="step"><b>Проверка:</b> 30° + 150° = 180° ✓.</div>
+<br>
+<div class="step"><b>2)</b> Развёрнутый угол равен 180°.</div>
+<div class="step">Пусть ∠FOD = x. Тогда ∠COF = 3x (так как FOD в 3 раза меньше COF).</div>
+<div class="step">x + 3x = 180°.</div>
+<div class="step">4x = 180°.</div>
+<div class="step">x = 180° : 4 = 45°.</div>
+<div class="step">∠FOD = <b>45°</b>, ∠COF = 3 · 45° = <b>135°</b>.</div>
+<div class="step"><b>Проверка:</b> 45° + 135° = 180° ✓.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-81"><div class="task-head"><span class="task-num">№ 2.81</span></div><p class="task-body">1) Молоко 960 л; творог 7/16; сливки 5/16 остатка; остальное в бутылки по 1,5 л.<br>2) Вишня 720 ц; варенье 5/12; сок 9/14 остатка; остальное в ящики по 7,5 кг.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">1) Творог 420 л; осталось 540 л. Сливки 168,75 л; осталось 371,25 л. Бутылок: <b>247,5</b> (247 полных).<br>2) Варенье 300 ц; осталось 420 ц. Сок 270 ц; осталось 150 ц = 15 000 кг. Ящиков: <b>2000</b>.</div></div></article>
+<article class="task" id="t-81">
+<div class="task-head"><span class="task-num">№ 2.81</span></div>
+<p class="task-body">1) На молокозаводе было 960 л молока. Из 7/16 всего молока приготовили творог, 9/14 оставшегося молока переработали на сливки, а остальное молоко разлили в бутылки по 1,5 л и отправили в магазин. Сколько бутылок молока отправили в магазин?<br>2) В плодоводческом хозяйстве собрали 720 ц вишни. Из 5/12 всей вишни сварили варенье, 9/14 оставшейся вишни переработали на сок, а остальную вишню расфасовали в ящики по 7,5 кг и отправили на продажу. Сколько ящиков вишни отправили на продажу?</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>1)</b> Всего молока: 960 л.</div>
+<div class="step">Творог: 960 · 7/16 = (960 : 16) · 7 = 60 · 7 = 420 л.</div>
+<div class="step">Осталось после творога: 960 − 420 = 540 л.</div>
+<div class="step">Сливки: 540 · 9/14 = (540 : 14) · 9 = 38,57 · 9 ≈ 347,14 л (округлим до целых: ≈ 347 л).</div>
+<div class="step">Точнее: 540 · 9/14 = 4860/14 = 2430/7 ≈ 347,14 л.</div>
+<div class="step">Осталось на бутылки: 540 − 2430/7 = (3780 − 2430)/7 = 1350/7 ≈ 192,86 л.</div>
+<div class="step">Количество бутылок: (1350/7) : 1,5 = (1350/7) : (3/2) = (1350/7) · (2/3) = 2700/21 = 900/7 ≈ 128,57.</div>
+<div class="step">Округляем до целого числа бутылок (нельзя налить неполную бутылку): <b>128 бутылок</b> (или 129, если считать последнюю неполной).</div>
+<div class="step"><b>Уточнение:</b> в учебнике, скорее всего, подразумевается, что деление происходит без остатка. Проверим: 540 · 9/14 = 2430/7 — не целое. Возможно, в условии опечатка. Если взять 9/14 от 540 л и округлить, получим примерно 347 л, остаток 193 л, бутылок — 128 полных. <b>Ответ: около 128–129 бутылок</b>.</div>
+<br>
+<div class="step"><b>2)</b> Всего вишни: 720 ц.</div>
+<div class="step">Варенье: 720 · 5/12 = (720 : 12) · 5 = 60 · 5 = 300 ц.</div>
+<div class="step">Осталось после варенья: 720 − 300 = 420 ц.</div>
+<div class="step">Сок: 420 · 9/14 = (420 : 14) · 9 = 30 · 9 = 270 ц.</div>
+<div class="step">Осталось на продажу: 420 − 270 = 150 ц.</div>
+<div class="step">Переведём в килограммы: 1 ц = 100 кг, значит, 150 ц = 15 000 кг.</div>
+<div class="step">Количество ящиков: 15 000 : 7,5 = 2000.</div>
+<div class="step"><b>Ответ 2):</b> <b>2000 ящиков</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-82"><div class="task-head"><span class="task-num">№ 2.82</span></div><p class="task-body">0,7; 0,29; 0,2 → в обыкновенную; 7/25, 3 1/8, 2 6/12 → в десятичную.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">0,7=7/10; 0,29=29/100; 0,2=1/5.<br>7/25=0,28; 3 1/8=3,125; 2 6/12=2,5.</div></div></article>
+<article class="task" id="t-82">
+<div class="task-head"><span class="task-num">№ 2.82</span></div>
+<p class="task-body">Числа 0,7; 0,29; 0,2 представьте в виде обыкновенной дроби, а числа 7/25, 3 1/8, 2 6/12 — в виде десятичной дроби.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>Десятичные в обыкновенные:</b></div>
+<div class="step">0,7 = 7/10.</div>
+<div class="step">0,29 = 29/100.</div>
+<div class="step">0,2 = 2/10 = 1/5.</div>
+<br>
+<div class="step"><b>Обыкновенные в десятичные:</b></div>
+<div class="step">7/25 = 7 · 4 / (25 · 4) = 28/100 = <b>0,28</b>.</div>
+<div class="step">3 1/8 = 3 + 1/8 = 3 + 0,125 = <b>3,125</b>.</div>
+<div class="step">2 6/12 = 2 + 6/12 = 2 + 0,5 = <b>2,5</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-83"><div class="task-head"><span class="task-num">№ 2.83</span></div><p class="task-body">Запишите в виде десятичной и найдите сумму: а) 4/5 + 1/4; б) 2 22/25 + 3 3/4.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">а) 0,8 + 0,25 = <b>1,05</b>.<br>б) 2,88 + 3,75 = <b>6,63</b>.</div></div></article>
+<article class="task" id="t-83">
+<div class="task-head"><span class="task-num">№ 2.83</span></div>
+<p class="task-body">Запишите числа в виде десятичной дроби и найдите сумму:<br>а) 4/5 + 1/4; б) 2 22/25 + 3 3/4.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а)</b> 4/5 = 0,8.</div>
+<div class="step">1/4 = 0,25.</div>
+<div class="step">0,8 + 0,25 = <b>1,05</b>.</div>
+<br>
+<div class="step"><b>б)</b> 2 22/25 = 2 + 22/25 = 2 + 0,88 = 2,88.</div>
+<div class="step">3 3/4 = 3 + 0,75 = 3,75.</div>
+<div class="step">2,88 + 3,75 = <b>6,63</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-84"><div class="task-head"><span class="task-num">№ 2.84</span></div><p class="task-body">Сумма с наименьшим числом простых слагаемых: а) нечётные 5–20; б) чётные 2–20.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">а) 7=2+2+3; 9=2+7; 11 простое; 15=2+13; 17 простое; 19 простое.<br>б) 4=2+2; 6=3+3; 8=3+5; 10=5+5; 12=5+7; 14=7+7; 16=5+11; 18=7+11.<br><span class="answer-final">Гипотеза: любое чётное &gt; 2 — сумма двух простых.</span></div></div></article>
+<article class="task" id="t-84">
+<div class="task-head"><span class="task-num">№ 2.84</span></div>
+<p class="task-body">Развивай мышление. Представьте в виде суммы с наименьшим числом простых слагаемых (слагаемые могут повторяться) числа:<br>а) нечётные, большие 5, но меньшие 20;<br>б) чётные, большие 2, но меньшие 20.<br>Сформулируйте предположения о представлении чисел в виде суммы простых слагаемых.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а) Нечётные числа от 5 до 20:</b></div>
+<div class="step">7 = 2 + 2 + 3 (три простых слагаемых).</div>
+<div class="step">9 = 2 + 7 (два простых слагаемых).</div>
+<div class="step">11 = 11 (одно простое слагаемое — само число простое).</div>
+<div class="step">13 = 13 (простое).</div>
+<div class="step">15 = 2 + 13 (два простых слагаемых).</div>
+<div class="step">17 = 17 (простое).</div>
+<div class="step">19 = 19 (простое).</div>
+<br>
+<div class="step"><b>б) Чётные числа от 2 до 20:</b></div>
+<div class="step">4 = 2 + 2 (два слагаемых).</div>
+<div class="step">6 = 3 + 3 (два слагаемых).</div>
+<div class="step">8 = 3 + 5 (два слагаемых).</div>
+<div class="step">10 = 5 + 5 (два слагаемых).</div>
+<div class="step">12 = 5 + 7 (два слагаемых).</div>
+<div class="step">14 = 7 + 7 (два слагаемых).</div>
+<div class="step">16 = 5 + 11 (два слагаемых).</div>
+<div class="step">18 = 7 + 11 (два слагаемых).</div>
+<br>
+<div class="step"><b>Предположение (гипотеза Гольдбаха):</b></div>
+<div class="step">— любое чётное число, большее 2, можно представить в виде суммы двух простых чисел;</div>
+<div class="step">— любое нечётное число, большее 5, можно представить в виде суммы трёх простых чисел.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-85"><div class="task-head"><span class="task-num">№ 2.85</span></div><p class="task-body">НОД(a, b): а) a=2·2·3·3·5·7·19, b=2·3·11·13; б) a=2·3·3·5·5·5·11, b=3·5·5·7.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">а) <b>6</b>; б) <b>75</b>.</div></div></article>
+<article class="task" id="t-85">
+<div class="task-head"><span class="task-num">№ 2.85</span></div>
+<p class="task-body">Найдите НОД(a, b), если:<br>а) a = 2 · 2 · 3 · 3 · 5 · 7 · 19, b = 2 · 3 · 11 · 13;<br>б) a = 2 · 3 · 3 · 5 · 5 · 5 · 11, b = 3 · 5 · 5 · 7.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а)</b> a = 2 · 2 · 3 · 3 · 5 · 7 · 19, b = 2 · 3 · 11 · 13.</div>
+<div class="step">Общие множители: 2 · 3.</div>
+<div class="step">НОД(a, b) = 2 · 3 = <b>6</b>.</div>
+<br>
+<div class="step"><b>б)</b> a = 2 · 3 · 3 · 5 · 5 · 5 · 11, b = 3 · 5 · 5 · 7.</div>
+<div class="step">Общие множители: 3 · 5 · 5.</div>
+<div class="step">НОД(a, b) = 3 · 5 · 5 = <b>75</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-86"><div class="task-head"><span class="task-num">№ 2.86</span></div><p class="task-body">НОД: а) 975 и 750; б) 572 и 440; в) 80, 140, 56; г) 170, 306, 255.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">а) <b>75</b>; б) <b>44</b>; в) <b>4</b>; г) <b>17</b>.</div></div></article>
+<article class="task" id="t-86">
+<div class="task-head"><span class="task-num">№ 2.86</span></div>
+<p class="task-body">Найдите наибольший общий делитель чисел:<br>а) 975 и 750; б) 572 и 440; в) 80, 140 и 56; г) 170, 306 и 255.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а) 975 и 750.</b></div>
+<div class="step">975 = 3 · 5 · 5 · 13 = 3 · 5² · 13.</div>
+<div class="step">750 = 2 · 3 · 5 · 5 · 5 = 2 · 3 · 5³.</div>
+<div class="step">Общие множители: 3 · 5 · 5.</div>
+<div class="step">НОД(975, 750) = 3 · 5² = 3 · 25 = <b>75</b>.</div>
+<br>
+<div class="step"><b>б) 572 и 440.</b></div>
+<div class="step">572 = 2 · 2 · 11 · 13 = 2² · 11 · 13.</div>
+<div class="step">440 = 2 · 2 · 2 · 5 · 11 = 2³ · 5 · 11.</div>
+<div class="step">Общие множители: 2 · 2 · 11.</div>
+<div class="step">НОД(572, 440) = 2² · 11 = 4 · 11 = <b>44</b>.</div>
+<br>
+<div class="step"><b>в) 80, 140 и 56.</b></div>
+<div class="step">80 = 2 · 2 · 2 · 2 · 5 = 2⁴ · 5.</div>
+<div class="step">140 = 2 · 2 · 5 · 7 = 2² · 5 · 7.</div>
+<div class="step">56 = 2 · 2 · 2 · 7 = 2³ · 7.</div>
+<div class="step">Общие множители для всех трёх: 2 · 2.</div>
+<div class="step">НОД(80, 140, 56) = 2² = <b>4</b>.</div>
+<br>
+<div class="step"><b>г) 170, 306 и 255.</b></div>
+<div class="step">170 = 2 · 5 · 17.</div>
+<div class="step">306 = 2 · 3 · 3 · 17 = 2 · 3² · 17.</div>
+<div class="step">255 = 3 · 5 · 17.</div>
+<div class="step">Общие множители для всех трёх: 17.</div>
+<div class="step">НОД(170, 306, 255) = <b>17</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-87"><div class="task-head"><span class="task-num">№ 2.87</span></div><p class="task-body">Являются ли 675 и 896 взаимно простыми?</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">675 = 3³·5²; 896 = 2⁷·7. Общих нет → НОД = 1.<br><b>Да, взаимно простые.</b></div></div></article>
+<article class="task" id="t-87">
+<div class="task-head"><span class="task-num">№ 2.87</span></div>
+<p class="task-body">Являются ли числа 675 и 896 взаимно простыми?</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step">Разложим 675 на простые множители:</div>
+<div class="col">675 | 3<br>225 | 3<br> 75 | 3<br> 25 | 5<br>  5 | 5<br>  1 |</div>
+<div class="step">675 = 3 · 3 · 3 · 5 · 5 = 3³ · 5².</div>
+<div class="step">Разложим 896 на простые множители:</div>
+<div class="col">896 | 2<br>448 | 2<br>224 | 2<br>112 | 2<br> 56 | 2<br> 28 | 2<br> 14 | 2<br>  7 | 7<br>  1 |</div>
+<div class="step">896 = 2⁷ · 7.</div>
+<div class="step">Общих множителей нет (675 делится только на 3 и 5, 896 — только на 2 и 7).</div>
+<div class="step">НОД(675, 896) = 1.</div>
+<div class="step"><b>Ответ:</b> <b>Да</b>, числа 675 и 896 взаимно простые.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-88"><div class="task-head"><span class="task-num">№ 2.88</span></div><p class="task-body">Сократите: а) 12/36; б) 24/36; в) 72/90; г) 28/128.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">а) <b>1/3</b>; б) <b>2/3</b>; в) <b>4/5</b>; г) <b>7/32</b>.</div></div></article>
+<article class="task" id="t-88">
+<div class="task-head"><span class="task-num">№ 2.88</span></div>
+<p class="task-body">Сократите дробь:<br>а) 12/36; б) 24/36; в) 72/90; г) 28/128.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а) 12/36.</b></div>
+<div class="step">НОД(12, 36) = 12.</div>
+<div class="step">12/36 = (12:12)/(36:12) = <b>1/3</b>.</div>
+<br>
+<div class="step"><b>б) 24/36.</b></div>
+<div class="step">НОД(24, 36) = 12.</div>
+<div class="step">24/36 = (24:12)/(36:12) = <b>2/3</b>.</div>
+<br>
+<div class="step"><b>в) 72/90.</b></div>
+<div class="step">НОД(72, 90) = 18.</div>
+<div class="step">72/90 = (72:18)/(90:18) = <b>4/5</b>.</div>
+<br>
+<div class="step"><b>г) 28/128.</b></div>
+<div class="step">НОД(28, 128) = 4.</div>
+<div class="step">28/128 = (28:4)/(128:4) = <b>7/32</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-89"><div class="task-head"><span class="task-num">№ 2.89</span></div><p class="task-body">∠АВС = 80°, ∠ДВС = 60°. Найдите ∠АВД. Сколько решений?</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">2 случая:<br>1) лучи по разные стороны: <b>140°</b>;<br>2) по одну: <b>20°</b>. <b>2 решения</b>.</div></div></article>
+<article class="task" id="t-89">
+<div class="task-head"><span class="task-num">№ 2.89</span></div>
+<p class="task-body">Проведите луч ВС и постройте ∠АВС = 80° и ∠ДВС = 60°. Найдите угол АВД. Проверьте ответ с помощью транспортира. Сколько решений имеет задача?</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step">Задача имеет <b>два решения</b> в зависимости от расположения луча ВД относительно луча ВА.</div>
+<br>
+<div class="step"><b>Случай 1:</b> лучи ВА и ВД расположены по разные стороны от луча ВС.</div>
+<div class="step">Тогда ∠АВД = ∠АВС + ∠ДВС = 80° + 60° = <b>140°</b>.</div>
+<br>
+<div class="step"><b>Случай 2:</b> лучи ВА и ВД расположены по одну сторону от луча ВС (например, ВД внутри угла АВС).</div>
+<div class="step">Тогда ∠АВД = ∠АВС − ∠ДВС = 80° − 60° = <b>20°</b>.</div>
+<br>
+<div class="step"><b>Ответ:</b> задача имеет <b>2 решения</b>: ∠АВД = 140° или ∠АВД = 20°.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-90"><div class="task-head"><span class="task-num">№ 2.90</span></div><p class="task-body">540 человек на 3 факультетах. Менеджмент в 5 раз, юр. в 3 раза больше, чем финэк.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">x + 5x + 3x = 540 → x = 60.<br>Финэк: <b>60</b>. Менеджмент: <b>300</b>. Юр.: <b>180</b>.</div></div></article>
+<article class="task" id="t-90">
+<div class="task-head"><span class="task-num">№ 2.90</span></div>
+<p class="task-body">На трёх факультетах колледжа обучаются 540 человек. При этом на факультете менеджмента обучается впятеро, а на юридическом — втрое больше студентов, чем на финансово-экономическом факультете. Сколько человек обучаются на каждом факультете?</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step">Пусть на финансово-экономическом факультете учится x человек.</div>
+<div class="step">Тогда на факультете менеджмента — 5x человек.</div>
+<div class="step">На юридическом — 3x человек.</div>
+<div class="step">Всего: x + 5x + 3x = 9x = 540.</div>
+<div class="step">x = 540 : 9 = 60.</div>
+<div class="step">Финансово-экономический: <b>60 человек</b>.</div>
+<div class="step">Менеджмент: 5 · 60 = <b>300 человек</b>.</div>
+<div class="step">Юридический: 3 · 60 = <b>180 человек</b>.</div>
+<div class="step"><b>Проверка:</b> 60 + 300 + 180 = 540 ✓.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-91"><div class="task-head"><span class="task-num">№ 2.91</span></div><p class="task-body">P = 81 см; одна сторона = 2/9 P. Площадь?</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">81 · 2/9 = 18 см; другая = (81−36):2 = 22,5 см.<br>S = 18·22,5 = <b>405 см²</b>.</div></div></article>
+<article class="task" id="t-91">
+<div class="task-head"><span class="task-num">№ 2.91</span></div>
+<p class="task-body">Найдите площадь прямоугольника, если его периметр равен 81 см, а одна из его сторон составляет 2/9 периметра.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step">Периметр P = 81 см.</div>
+<div class="step">Одна сторона: a = 2/9 · 81 = 2 · 9 = 18 см.</div>
+<div class="step">Вторая сторона: b = (P − 2a) : 2 = (81 − 2 · 18) : 2 = (81 − 36) : 2 = 45 : 2 = 22,5 см.</div>
+<div class="step">Площадь: S = a · b = 18 · 22,5 = <b>405 см²</b>.</div>
+<div class="step"><b>Проверка:</b> P = 2 · (18 + 22,5) = 2 · 40,5 = 81 см ✓.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-92"><div class="task-head"><span class="task-num">№ 2.92</span></div><p class="task-body">В обыкновенную: 0,5; 0,24; 0,75.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">1/2; 6/25; 3/4.</div></div></article>
+<article class="task" id="t-92">
+<div class="task-head"><span class="task-num">№ 2.92</span></div>
+<p class="task-body">Запишите в виде обыкновенной дроби числа 0,5; 0,24; 0,75.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step">0,5 = 5/10 = <b>1/2</b>.</div>
+<div class="step">0,24 = 24/100 = <b>6/25</b>.</div>
+<div class="step">0,75 = 75/100 = <b>3/4</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-93"><div class="task-head"><span class="task-num">№ 2.93</span></div><p class="task-body">В десятичную: 1/5; 11/125; 8/20; 5 1/2.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">0,2; 0,088; 0,4; 5,5.</div></div></article>
+<article class="task" id="t-93">
+<div class="task-head"><span class="task-num">№ 2.93</span></div>
+<p class="task-body">Запишите в виде десятичной дроби числа 1/5; 11/125; 8/20; 5 1/2.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step">1/5 = 1·2 / 5·2 = 2/10 = <b>0,2</b>.</div>
+<div class="step">11/125 = 11·8 / 125·8 = 88/1000 = <b>0,088</b>.</div>
+<div class="step">8/20 = 8:2 / 20:2 = 4/10 = <b>0,4</b>.</div>
+<div class="step">5 1/2 = 5 + 0,5 = <b>5,5</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-94"><div class="task-head"><span class="task-num">№ 2.94</span></div><p class="task-body">а) 78,9 + (65,65 − 5,5·(54,54:5,4))·1,3; б) 36,9 + (76,76 − 6,6·(95,95:9,5))·27,4.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">а) 54,54:5,4=10,1; 5,5·10,1=55,55; 65,65−55,55=10,1; 10,1·1,3=13,13; 78,9+13,13 = <b>92,03</b>.<br>б) 95,95:9,5=10,1; 6,6·10,1=66,66; 76,76−66,66=10,1; 10,1·27,4=276,74; 36,9+276,74 = <b>313,64</b>.</div></div></article>
+<article class="task" id="t-94">
+<div class="task-head"><span class="task-num">№ 2.94</span></div>
+<p class="task-body">Вычислите:<br>а) 78,9 + (65,65 − 5,5 · (54,54 : 5,4)) · 1,3;<br>б) 36,9 + (76,76 − 6,6 · (95,95 : 9,5)) · 27,4.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а)</b> Порядок действий:</div>
+<div class="step">1) 54,54 : 5,4 = 10,1.</div>
+<div class="step">2) 5,5 · 10,1 = 55,55.</div>
+<div class="step">3) 65,65 − 55,55 = 10,1.</div>
+<div class="step">4) 10,1 · 1,3 = 13,13.</div>
+<div class="step">5) 78,9 + 13,13 = <b>92,03</b>.</div>
+<br>
+<div class="step"><b>б)</b> Порядок действий:</div>
+<div class="step">1) 95,95 : 9,5 = 10,1.</div>
+<div class="step">2) 6,6 · 10,1 = 66,66.</div>
+<div class="step">3) 76,76 − 66,66 = 10,1.</div>
+<div class="step">4) 10,1 · 27,4 = 276,74.</div>
+<div class="step">5) 36,9 + 276,74 = <b>313,64</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="tp7"><div class="task-head"><span class="task-num">Пров. работа · §7</span></div><p class="task-body">1. Взаимно простые: 12 и 15; 29 и 34; 25 и 30; 72 и 73?<br>2. Разложение 2·2·5·7 и 2·7·11. НОД?<br>3. НОД: 34 и 56; 45 и 65; 102 и 204; 1005 и 960.<br>4. Разложение 1440 и 240. Во сколько раз 1440 больше?<br>5. m/15 — найти m, чтобы числитель и знаменатель были взаимно простыми.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">1) Нет; <b>да</b>; нет; <b>да</b>.<br>2) Общие: 2·7 = <b>14</b>.<br>3) <b>2</b>; <b>5</b>; <b>102</b>; <b>15</b>.<br>4) 1440 = 2⁵·3²·5; 240 = 2⁴·3·5. <b>6 раз</b>.<br>5) m = <b>1, 2, 4, 7, 8, 11, 13, 14</b>.</div></div></article>
+<article class="task" id="tp7">
+<div class="task-head"><span class="task-num">Пров. работа · §7</span></div>
+<p class="task-body">
+<b>1.</b> Какие из данных чисел являются взаимно простыми:<br>
+а) 12 и 15; б) 29 и 34; в) 25 и 30; г) 72 и 73?<br><br>
+<b>2.</b> Даны разложения на простые множители двух чисел: 2 · 2 · 5 · 7 и 2 · 7 · 11. Найдите их наибольший общий делитель.<br><br>
+<b>3.</b> Найдите наибольший общий делитель чисел:<br>
+а) 34 и 56; б) 45 и 65; в) 102 и 204; г) 1005 и 960.<br><br>
+<b>4.</b> Разложите на простые множители числа 1440 и 240. Во сколько раз 1440 больше 240?<br><br>
+<b>5.</b> Дана правильная дробь m/15. Найдите все значения m такие, чтобы числитель и знаменатель дроби были взаимно простыми.
+</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>1.</b></div>
+<div class="step"><b>а) 12 и 15.</b> 12 = 2² · 3, 15 = 3 · 5. Общий множитель 3 → НОД = 3 → не взаимно простые.</div>
+<div class="step"><b>б) 29 и 34.</b> 29 — простое, 34 = 2 · 17. Общих множителей нет → НОД = 1 → <b>взаимно простые</b>.</div>
+<div class="step"><b>в) 25 и 30.</b> 25 = 5², 30 = 2 · 3 · 5. Общий множитель 5 → НОД = 5 → не взаимно простые.</div>
+<div class="step"><b>г) 72 и 73.</b> 73 — простое, 72 = 2³ · 3². Общих множителей нет → НОД = 1 → <b>взаимно простые</b>.</div>
+<br>
+<div class="step"><b>2.</b> Первое число: 2 · 2 · 5 · 7 = 2² · 5 · 7.</div>
+<div class="step">Второе число: 2 · 7 · 11.</div>
+<div class="step">Общие множители: 2 · 7.</div>
+<div class="step">НОД = 2 · 7 = <b>14</b>.</div>
+<br>
+<div class="step"><b>3. а) 34 и 56.</b></div>
+<div class="step">34 = 2 · 17.</div>
+<div class="step">56 = 2 · 2 · 2 · 7 = 2³ · 7.</div>
+<div class="step">Общий множитель: 2.</div>
+<div class="step">НОД(34, 56) = <b>2</b>.</div>
+<br>
+<div class="step"><b>б) 45 и 65.</b></div>
+<div class="step">45 = 3² · 5.</div>
+<div class="step">65 = 5 · 13.</div>
+<div class="step">Общий множитель: 5.</div>
+<div class="step">НОД(45, 65) = <b>5</b>.</div>
+<br>
+<div class="step"><b>в) 102 и 204.</b></div>
+<div class="step">204 = 102 · 2, значит, 204 делится на 102.</div>
+<div class="step">НОД(102, 204) = <b>102</b>.</div>
+<br>
+<div class="step"><b>г) 1005 и 960.</b></div>
+<div class="step">1005 = 3 · 5 · 67.</div>
+<div class="step">960 = 2 · 2 · 2 · 2 · 2 · 2 · 3 · 5 = 2⁶ · 3 · 5.</div>
+<div class="step">Общие множители: 3 · 5.</div>
+<div class="step">НОД(1005, 960) = 3 · 5 = <b>15</b>.</div>
+<br>
+<div class="step"><b>4.</b> 1440 = 2 · 2 · 2 · 2 · 2 · 3 · 3 · 5 = 2⁵ · 3² · 5.</div>
+<div class="step">240 = 2 · 2 · 2 · 2 · 3 · 5 = 2⁴ · 3 · 5.</div>
+<div class="step">1440 : 240 = (2⁵ · 3² · 5) : (2⁴ · 3 · 5) = 2 · 3 = <b>6</b>.</div>
+<div class="step">1440 больше 240 в <b>6 раз</b>.</div>
+<br>
+<div class="step"><b>5.</b> Дробь m/15 — правильная, значит, m &lt; 15 и m — натуральное число (1 ≤ m ≤ 14).</div>
+<div class="step">15 = 3 · 5. Чтобы числитель и знаменатель были взаимно простыми, m не должно делиться на 3 и на 5.</div>
+<div class="step">Выпишем числа от 1 до 14, не делящиеся на 3 и на 5:</div>
+<div class="step">1 — не делится ✓</div>
+<div class="step">2 — не делится ✓</div>
+<div class="step">3 — делится на 3 ✗</div>
+<div class="step">4 — не делится ✓</div>
+<div class="step">5 — делится на 5 ✗</div>
+<div class="step">6 — делится на 3 ✗</div>
+<div class="step">7 — не делится ✓</div>
+<div class="step">8 — не делится ✓</div>
+<div class="step">9 — делится на 3 ✗</div>
+<div class="step">10 — делится на 5 ✗</div>
+<div class="step">11 — не делится ✓</div>
+<div class="step">12 — делится на 3 ✗</div>
+<div class="step">13 — не делится ✓</div>
+<div class="step">14 — не делится ✓</div>
+<div class="step"><b>Ответ:</b> m = <b>1, 2, 4, 7, 8, 11, 13, 14</b>.</div>
+</div></div>
+</article>
+
 </div>
 </main>
 <footer class="footer"><p>© ЯрцевГДЗ · 2026</p></footer>

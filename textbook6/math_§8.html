@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>§8. Наименьшее общее кратное — Математика 6 класс</title>
-<link rel="stylesheet" href="../style.css"></head><body>
+<link rel="stylesheet" href="../style.css">
+<style>.answer-body .step{margin:8px 0;}.answer-body .col{font-family:Consolas,Monaco,monospace;background:#f4f4f6;padding:10px 14px;border-radius:8px;display:inline-block;margin:8px 0;line-height:1.5;font-size:.9rem;}</style>
+</head><body>
 <header class="topbar"><div class="topbar-inner">
 <a href="../index.html" class="logo">Ярцев<span>ГДЗ</span></a>
 <nav class="topnav"><a href="../index.html">Главная</a><a href="index.html">6 класс</a><a href="math.html">Математика</a></nav>
@@ -55,78 +57,758 @@
 <button class="back-btn" id="backBtn" style="display:none">← Назад к списку</button>
 <div class="task-empty" id="emptyState"><div class="empty-icon">📖</div><p>Выбери номер задания выше</p></div>
 
-<article class="task" id="t-95"><div class="task-head"><span class="task-num">№ 2.95</span></div><p class="task-body">Разложение НОК: а) a=2·7, b=7·9; б) a=2·3·3·3·7, b=2·3·3·11.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">а) НОК = 2·7·9 = <b>126</b>.<br>б) НОК = 2·3·3·3·7·11 = <b>4158</b>.</div></div></article>
+<article class="task" id="t-95">
+<div class="task-head"><span class="task-num">№ 2.95</span></div>
+<p class="task-body">Назовите разложение на простые множители наименьшего общего кратного чисел a и b, если:<br>а) a = 2 · 7, b = 7 · 9;<br>б) a = 2 · 3 · 3 · 3 · 7, b = 2 · 3 · 3 · 11.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а)</b> a = 2 · 7, b = 7 · 9 = 7 · 3 · 3.</div>
+<div class="step">Правило: чтобы найти НОК, надо выписать множители из разложения большего числа и добавить к ним недостающие множители из разложения меньшего числа.</div>
+<div class="step">Возьмём разложение b = 7 · 3 · 3 (оно длиннее).</div>
+<div class="step">Проверяем, все ли множители числа a = 2 · 7 есть в b: множитель 7 есть, множителя 2 нет — добавляем 2.</div>
+<div class="step">НОК(a, b) = 7 · 3 · 3 · 2 = 126.</div>
+<div class="step"><b>Проверка:</b> 126 : a = 126 : 14 = 9 ✓; 126 : b = 126 : 63 = 2 ✓.</div>
+<div class="step"><b>Ответ а):</b> НОК = 2 · 3 · 3 · 7 = <b>126</b>.</div>
+<br>
+<div class="step"><b>б)</b> a = 2 · 3 · 3 · 3 · 7 = 2 · 3³ · 7.</div>
+<div class="step">b = 2 · 3 · 3 · 11 = 2 · 3² · 11.</div>
+<div class="step">Возьмём разложение a (оно длиннее): 2 · 3 · 3 · 3 · 7.</div>
+<div class="step">Проверяем множители b = 2 · 3 · 3 · 11: множители 2, 3, 3 есть; множителя 11 нет — добавляем его.</div>
+<div class="step">НОК(a, b) = 2 · 3 · 3 · 3 · 7 · 11 = 4158.</div>
+<div class="step"><b>Проверка:</b> 4158 : a = 4158 : 378 = 11 ✓; 4158 : b = 4158 : 198 = 21 ✓.</div>
+<div class="step"><b>Ответ б):</b> НОК = 2 · 3 · 3 · 3 · 7 · 11 = <b>4158</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-96"><div class="task-head"><span class="task-num">№ 2.96</span></div><p class="task-body">НОК(m, n): а) m=2·3·3·5·11, n=2·2·3·3·3·11; б) m=2·3·5·5, n=2·3·3·5·5·7; в) m=2·2·5·5·13, n=2·2·2·3·5·13; г) m=2·2·5·5·17, n=2·2·3·5·5·17.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">а) <b>5940</b>; б) <b>3150</b>; в) <b>7800</b>; г) <b>5100</b>.</div></div></article>
+<article class="task" id="t-96">
+<div class="task-head"><span class="task-num">№ 2.96</span></div>
+<p class="task-body">Найдите НОК(m, n), если:<br>а) m = 2 · 3 · 3 · 5 · 11 и n = 2 · 2 · 3 · 3 · 3 · 11;<br>б) m = 2 · 3 · 5 · 5 и n = 2 · 3 · 3 · 5 · 5 · 7;<br>в) m = 2 · 2 · 5 · 5 · 13 и n = 2 · 2 · 2 · 3 · 5 · 13;<br>г) m = 2 · 2 · 5 · 5 · 17 и n = 2 · 2 · 3 · 5 · 5 · 17.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а)</b> m = 2 · 3 · 3 · 5 · 11 = 2 · 3² · 5 · 11.</div>
+<div class="step">n = 2 · 2 · 3 · 3 · 3 · 11 = 2² · 3³ · 11.</div>
+<div class="step">Берём каждый простой множитель в наибольшей степени:</div>
+<div class="step">2 — в степени 2 (из n), 3 — в степени 3 (из n), 5 — в степени 1 (из m), 11 — в степени 1.</div>
+<div class="step">НОК = 2² · 3³ · 5 · 11 = 4 · 27 · 5 · 11 = 108 · 55 = <b>5940</b>.</div>
+<br>
+<div class="step"><b>б)</b> m = 2 · 3 · 5 · 5 = 2 · 3 · 5².</div>
+<div class="step">n = 2 · 3 · 3 · 5 · 5 · 7 = 2 · 3² · 5² · 7.</div>
+<div class="step">Наибольшие степени: 2 — 1, 3 — 2, 5 — 2, 7 — 1.</div>
+<div class="step">НОК = 2 · 3² · 5² · 7 = 2 · 9 · 25 · 7 = 18 · 175 = <b>3150</b>.</div>
+<br>
+<div class="step"><b>в)</b> m = 2 · 2 · 5 · 5 · 13 = 2² · 5² · 13.</div>
+<div class="step">n = 2 · 2 · 2 · 3 · 5 · 13 = 2³ · 3 · 5 · 13.</div>
+<div class="step">Наибольшие степени: 2 — 3, 3 — 1, 5 — 2, 13 — 1.</div>
+<div class="step">НОК = 2³ · 3 · 5² · 13 = 8 · 3 · 25 · 13 = 24 · 325 = <b>7800</b>.</div>
+<br>
+<div class="step"><b>г)</b> m = 2 · 2 · 5 · 5 · 17 = 2² · 5² · 17.</div>
+<div class="step">n = 2 · 2 · 3 · 5 · 5 · 17 = 2² · 3 · 5² · 17.</div>
+<div class="step">Наибольшие степени: 2 — 2, 3 — 1, 5 — 2, 17 — 1.</div>
+<div class="step">НОК = 2² · 3 · 5² · 17 = 4 · 3 · 25 · 17 = 12 · 425 = <b>5100</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-97"><div class="task-head"><span class="task-num">№ 2.97</span></div><p class="task-body">НОК: а) 12 и 8; б) 14 и 42; в) 108 и 132; г) 90 и 315; д) 10, 15, 30; е) 6, 8, 12; ж) 6, 9, 18; з) 77, 91, 143.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">а) <b>24</b>; б) <b>42</b>; в) <b>1188</b>; г) <b>630</b>; д) <b>30</b>; е) <b>24</b>; ж) <b>18</b>; з) <b>1001</b>.</div></div></article>
+<article class="task" id="t-97">
+<div class="task-head"><span class="task-num">№ 2.97</span></div>
+<p class="task-body">Найдите наименьшее общее кратное чисел:<br>а) 12 и 8; б) 14 и 42; в) 108 и 132; г) 90 и 315; д) 10, 15 и 30; е) 6, 8 и 12; ж) 6, 9 и 18; з) 77, 91 и 143.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а) 12 и 8.</b></div>
+<div class="step">12 = 2 · 2 · 3 = 2² · 3.</div>
+<div class="step">8 = 2 · 2 · 2 = 2³.</div>
+<div class="step">НОК = 2³ · 3 = 8 · 3 = <b>24</b>.</div>
+<br>
+<div class="step"><b>б) 14 и 42.</b></div>
+<div class="step">42 : 14 = 3, значит 42 делится на 14.</div>
+<div class="step">Если одно число делится на другое, то НОК равен большему из них.</div>
+<div class="step">НОК(14, 42) = <b>42</b>.</div>
+<br>
+<div class="step"><b>в) 108 и 132.</b></div>
+<div class="step">108 = 2 · 2 · 3 · 3 · 3 = 2² · 3³.</div>
+<div class="step">132 = 2 · 2 · 3 · 11 = 2² · 3 · 11.</div>
+<div class="step">НОК = 2² · 3³ · 11 = 4 · 27 · 11 = 108 · 11 = <b>1188</b>.</div>
+<br>
+<div class="step"><b>г) 90 и 315.</b></div>
+<div class="step">90 = 2 · 3 · 3 · 5 = 2 · 3² · 5.</div>
+<div class="step">315 = 3 · 3 · 5 · 7 = 3² · 5 · 7.</div>
+<div class="step">НОК = 2 · 3² · 5 · 7 = 2 · 9 · 5 · 7 = 90 · 7 = <b>630</b>.</div>
+<br>
+<div class="step"><b>д) 10, 15 и 30.</b></div>
+<div class="step">30 делится на 10 (30 : 10 = 3) и на 15 (30 : 15 = 2).</div>
+<div class="step">Значит, 30 — общее кратное всех трёх чисел, и оно наименьшее.</div>
+<div class="step">НОК(10, 15, 30) = <b>30</b>.</div>
+<br>
+<div class="step"><b>е) 6, 8 и 12.</b></div>
+<div class="step">6 = 2 · 3.</div>
+<div class="step">8 = 2³.</div>
+<div class="step">12 = 2² · 3.</div>
+<div class="step">НОК = 2³ · 3 = 8 · 3 = <b>24</b>.</div>
+<div class="step"><b>Проверка:</b> 24 : 6 = 4 ✓; 24 : 8 = 3 ✓; 24 : 12 = 2 ✓.</div>
+<br>
+<div class="step"><b>ж) 6, 9 и 18.</b></div>
+<div class="step">18 делится на 6 (18 : 6 = 3) и на 9 (18 : 9 = 2).</div>
+<div class="step">Значит, 18 — общее кратное всех трёх и наименьшее из возможных.</div>
+<div class="step">НОК(6, 9, 18) = <b>18</b>.</div>
+<br>
+<div class="step"><b>з) 77, 91 и 143.</b></div>
+<div class="step">77 = 7 · 11.</div>
+<div class="step">91 = 7 · 13.</div>
+<div class="step">143 = 11 · 13.</div>
+<div class="step">НОК = 7 · 11 · 13 = 77 · 13 = <b>1001</b>.</div>
+<div class="step"><b>Проверка:</b> 1001 : 77 = 13 ✓; 1001 : 91 = 11 ✓; 1001 : 143 = 7 ✓.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-98"><div class="task-head"><span class="task-num">№ 2.98</span></div><p class="task-body">НОК знаменателей: а) 7/15 и 5/12; б) 13/20 и 17/25.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">а) НОК(15, 12) = <b>60</b>.<br>б) НОК(20, 25) = <b>100</b>.</div></div></article>
+<article class="task" id="t-98">
+<div class="task-head"><span class="task-num">№ 2.98</span></div>
+<p class="task-body">Найдите наименьшее общее кратное знаменателей дробей:<br>а) 7/15 и 5/12; б) 13/20 и 17/25.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а)</b> Знаменатели: 15 и 12.</div>
+<div class="step">15 = 3 · 5.</div>
+<div class="step">12 = 2 · 2 · 3 = 2² · 3.</div>
+<div class="step">НОК(15, 12) = 2² · 3 · 5 = 4 · 15 = <b>60</b>.</div>
+<div class="step">Значит, наименьший общий знаменатель дробей 7/15 и 5/12 равен 60.</div>
+<br>
+<div class="step"><b>б)</b> Знаменатели: 20 и 25.</div>
+<div class="step">20 = 2 · 2 · 5 = 2² · 5.</div>
+<div class="step">25 = 5 · 5 = 5².</div>
+<div class="step">НОК(20, 25) = 2² · 5² = 4 · 25 = <b>100</b>.</div>
+<div class="step">Значит, наименьший общий знаменатель дробей 13/20 и 17/25 равен 100.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-99"><div class="task-head"><span class="task-num">№ 2.99</span></div><p class="task-body">Пары: 9 и 13; 15 и 19; 24 и 35; 27 и 32.<br>а) Взаимно простые?<br>б) НОК каждой пары. Предположение?</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">а) Все пары взаимно простые (НОД = 1).<br>б) 117; 285; 840; 864.<br><span class="answer-final">Гипотеза: НОК взаимно простых чисел = их произведению.</span></div></div></article>
+<article class="task" id="t-99">
+<div class="task-head"><span class="task-num">№ 2.99</span></div>
+<p class="task-body">Рассмотрите пары чисел: 9 и 13; 15 и 19; 24 и 35; 27 и 32.<br>а) Являются ли числа, представленные в каждой паре, взаимно простыми?<br>б) Найдите наименьшее общее кратное чисел в каждой паре. Сделайте предположение.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а) Проверим взаимную простоту:</b></div>
+<div class="step">9 = 3², 13 — простое → НОД = 1 → <b>взаимно простые</b>.</div>
+<div class="step">15 = 3 · 5, 19 — простое → НОД = 1 → <b>взаимно простые</b>.</div>
+<div class="step">24 = 2³ · 3, 35 = 5 · 7 → общих множителей нет → <b>взаимно простые</b>.</div>
+<div class="step">27 = 3³, 32 = 2⁵ → общих множителей нет → <b>взаимно простые</b>.</div>
+<div class="step"><b>Ответ а):</b> все пары являются взаимно простыми числами.</div>
+<br>
+<div class="step"><b>б) Найдём НОК каждой пары:</b></div>
+<div class="step">НОК(9, 13) = 9 · 13 = <b>117</b>.</div>
+<div class="step">НОК(15, 19) = 15 · 19 = <b>285</b>.</div>
+<div class="step">НОК(24, 35) = 24 · 35 = <b>840</b>.</div>
+<div class="step">НОК(27, 32) = 27 · 32 = <b>864</b>.</div>
+<div class="step"><b>Предположение:</b> наименьшее общее кратное двух взаимно простых чисел равно их произведению.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-100"><div class="task-head"><span class="task-num">№ 2.100</span></div><p class="task-body">Пары: 26 и 78; 32 и 96; 24 и 72; 25 и 100. а) Что общего? б) НОК?</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">а) Второе число кратно первому.<br>б) НОК = <b>78; 96; 72; 100</b> — большее число пары.</div></div></article>
+<article class="task" id="t-100">
+<div class="task-head"><span class="task-num">№ 2.100</span></div>
+<p class="task-body">Рассмотрите пары чисел: 26 и 78; 32 и 96; 24 и 72; 25 и 100.<br>а) Какая особенность объединяет эти пары чисел?<br>б) Чему равно наименьшее общее кратное чисел каждой пары?</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а)</b> В каждой паре большее число делится на меньшее:</div>
+<div class="step">78 : 26 = 3.</div>
+<div class="step">96 : 32 = 3.</div>
+<div class="step">72 : 24 = 3.</div>
+<div class="step">100 : 25 = 4.</div>
+<div class="step"><b>Ответ а):</b> в каждой паре одно число кратно другому.</div>
+<br>
+<div class="step"><b>б)</b> Если одно число делится на другое, то НОК равен большему числу.</div>
+<div class="step">НОК(26, 78) = <b>78</b>.</div>
+<div class="step">НОК(32, 96) = <b>96</b>.</div>
+<div class="step">НОК(24, 72) = <b>72</b>.</div>
+<div class="step">НОК(25, 100) = <b>100</b>.</div>
+<div class="step"><b>Ответ б):</b> НОК в каждой паре равно большему из двух чисел.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-101"><div class="task-head"><span class="task-num">№ 2.101</span></div><p class="task-body">а) Масло каждые 15 тыс. км, ремень каждые 60 тыс. км. Когда совпадут?<br>б) Спутники: 42, 85, 172, 400 ч. Наименьшее общее время?</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">а) НОК(15, 60) = <b>60 тыс. км</b>.<br>б) НОК(42, 85, 172, 400) = 2⁴·3·5²·7·17·43 = <b>12 260 400 ч</b>.</div></div></article>
+<article class="task" id="t-101">
+<div class="task-head"><span class="task-num">№ 2.101</span></div>
+<p class="task-body">а) Владелец машины меняет каждые 15 тыс. км моторное масло, а каждые 60 тыс. км — приводной ремень. Через сколько тысяч километров совпадут замены масла и приводного ремня?<br>б) Спутники Ио, Европа, Ганимед и Каллисто планеты Юпитер обращаются вокруг неё за 42, 85, 172 и 400 ч соответственно. За какое наименьшее время они все вместе повторяют своё положение на орбите?</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а)</b> Нужно найти НОК(15, 60).</div>
+<div class="step">60 : 15 = 4, значит 60 делится на 15.</div>
+<div class="step">НОК(15, 60) = <b>60</b>.</div>
+<div class="step"><b>Ответ а):</b> замены совпадут через <b>60 тыс. км</b>.</div>
+<br>
+<div class="step"><b>б)</b> Нужно найти НОК(42, 85, 172, 400).</div>
+<div class="step">Разложим каждое число на простые множители:</div>
+<div class="step">42 = 2 · 3 · 7.</div>
+<div class="step">85 = 5 · 17.</div>
+<div class="step">172 = 2 · 2 · 43 = 2² · 43.</div>
+<div class="step">400 = 2 · 2 · 2 · 2 · 5 · 5 = 2⁴ · 5².</div>
+<div class="step">Возьмём каждый простой множитель в наибольшей степени:</div>
+<div class="step">2 — степень 4, 3 — степень 1, 5 — степень 2, 7 — степень 1, 17 — степень 1, 43 — степень 1.</div>
+<div class="step">НОК = 2⁴ · 3 · 5² · 7 · 17 · 43.</div>
+<div class="step">Считаем по шагам:</div>
+<div class="step">2⁴ = 16; 16 · 3 = 48; 48 · 25 = 1200; 1200 · 7 = 8400; 8400 · 17 = 142 800; 142 800 · 43 = 6 140 400.</div>
+<div class="step"><b>Ответ б):</b> спутники повторят своё положение через <b>6 140 400 часов</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-102"><div class="task-head"><span class="task-num">№ 2.102</span></div><p class="task-body">Хлеб раз в 2 дня, кисломолочное раз в 3 дня, кондитерское каждые 10 дней. 1 декабря — все вместе. Когда в следующий раз?</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">НОК(2, 3, 10) = <b>30</b> → <b>31 декабря</b>.</div></div></article>
+<article class="task" id="t-102">
+<div class="task-head"><span class="task-num">№ 2.102</span></div>
+<p class="task-body">В магазин раз в два дня привозят хлебобулочные изделия, раз в три дня — кисломолочную продукцию и каждые десять дней — кондитерские изделия. Первого декабря в магазин привезли эти три вида товаров. Когда в следующий раз эти товары привезут в один день?</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step">Нужно найти НОК(2, 3, 10).</div>
+<div class="step">2 = 2.</div>
+<div class="step">3 = 3.</div>
+<div class="step">10 = 2 · 5.</div>
+<div class="step">НОК = 2 · 3 · 5 = <b>30</b>.</div>
+<div class="step">Значит, все три вида товаров снова привезут в один день через 30 дней.</div>
+<div class="step">1 декабря + 30 дней = <b>31 декабря</b>.</div>
+<div class="step"><b>Ответ:</b> следующие одновременные поставки — <b>31 декабря</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-103"><div class="task-head"><span class="task-num">№ 2.103</span></div><p class="task-body">Цепочки:
-а) 0,7·10; :2; :0,5; :10; :15; :0,4.
-б) 5:10; ·0,2; :0,8; −0,3; +2; :0,7.
-в) 4−0,8; :0,3; ·5; −0,3; +2; :0,5.
-г) 0,9+0,06; :0,8; :0,3; ·5; ·0,1; ·100.
-д) 1−0,7; :0,2; :15; :0,4; ·0,5; ·0,1.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">а) 7; 3,5; 7; 0,7; 0,047; 0,117.<br>б) 0,5; 0,1; 0,125; −0,175; 1,825; 2,6.<br>в) 3,2; ≈10,67; ≈53,33; 53; 55; 110.<br>г) 0,96; 1,2; 4; 20; 2; 200.<br>д) 0,3; 1,5; 0,1; 0,25; 0,125; 0,0125.</div></div></article>
+<article class="task" id="t-103">
+<div class="task-head"><span class="task-num">№ 2.103</span></div>
+<p class="task-body">Вычислите цепочки:<br>а) 0,7 · 10; : 2; : 0,5; : 10; : 15; : 0,4.<br>б) 5 : 10; · 0,2; : 0,8; − 0,3; + 2; : 0,7.<br>в) 4 − 0,8; : 0,3; · 5; − 0,3; + 2; : 0,5.<br>г) 0,9 + 0,06; : 0,8; : 0,3; · 5; · 0,1; · 100.<br>д) 1 − 0,7; : 0,2; : 15; : 0,4; · 0,5; · 0,1.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а)</b> 0,7 · 10 = 7.</div>
+<div class="step">7 : 2 = 3,5.</div>
+<div class="step">3,5 : 0,5 = 7.</div>
+<div class="step">7 : 10 = 0,7.</div>
+<div class="step">0,7 : 15 = 7/150 ≈ 0,0467.</div>
+<div class="step">0,0467 : 0,4 ≈ <b>0,1167</b>.</div>
+<br>
+<div class="step"><b>б)</b> 5 : 10 = 0,5.</div>
+<div class="step">0,5 · 0,2 = 0,1.</div>
+<div class="step">0,1 : 0,8 = 0,125.</div>
+<div class="step">0,125 − 0,3 = −0,175.</div>
+<div class="step">−0,175 + 2 = 1,825.</div>
+<div class="step">1,825 : 0,7 ≈ <b>2,607</b>.</div>
+<br>
+<div class="step"><b>в)</b> 4 − 0,8 = 3,2.</div>
+<div class="step">3,2 : 0,3 ≈ 10,667.</div>
+<div class="step">10,667 · 5 ≈ 53,333.</div>
+<div class="step">53,333 − 0,3 = 53,033.</div>
+<div class="step">53,033 + 2 = 55,033.</div>
+<div class="step">55,033 : 0,5 ≈ <b>110,07</b>.</div>
+<br>
+<div class="step"><b>г)</b> 0,9 + 0,06 = 0,96.</div>
+<div class="step">0,96 : 0,8 = 1,2.</div>
+<div class="step">1,2 : 0,3 = 4.</div>
+<div class="step">4 · 5 = 20.</div>
+<div class="step">20 · 0,1 = 2.</div>
+<div class="step">2 · 100 = <b>200</b>.</div>
+<br>
+<div class="step"><b>д)</b> 1 − 0,7 = 0,3.</div>
+<div class="step">0,3 : 0,2 = 1,5.</div>
+<div class="step">1,5 : 15 = 0,1.</div>
+<div class="step">0,1 : 0,4 = 0,25.</div>
+<div class="step">0,25 · 0,5 = 0,125.</div>
+<div class="step">0,125 · 0,1 = <b>0,0125</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-104"><div class="task-head"><span class="task-num">№ 2.104</span></div><p class="task-body">n/20 и c/30 → десятичные. Могут ли числитель и знаменатель быть взаимно простыми?</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">Для n/20 — <b>да</b> (n взаимно просто с 20, например 3/20).<br>Для c/30 — <b>нет</b> (для десятичной знаменатель должен быть 2ᵃ·5ᵇ).</div></div></article>
+<article class="task" id="t-104">
+<div class="task-head"><span class="task-num">№ 2.104</span></div>
+<p class="task-body">Дроби n/20 и c/30, где n и c — натуральные числа, можно представить в виде десятичных. Могут ли числитель и знаменатель каждой из этих дробей быть взаимно простыми?</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>Условие:</b> обыкновенную дробь можно представить в виде конечной десятичной дроби, если её знаменатель в разложении содержит только множители 2 и 5.</div>
+<div class="step"><b>Для дроби n/20:</b> 20 = 2 · 2 · 5 = 2² · 5 — состоит только из 2 и 5.</div>
+<div class="step">Значит, n может быть любым натуральным числом, взаимно простым с 20.</div>
+<div class="step">Например, n = 3: 3/20 = 0,15 — десятичная дробь, и НОД(3, 20) = 1.</div>
+<div class="step"><b>Для дроби c/30:</b> 30 = 2 · 3 · 5 — содержит множитель 3, который не является ни 2, ни 5.</div>
+<div class="step">Однако если числитель c делится на 3, то при сокращении знаменатель станет равным 10 = 2 · 5, и дробь можно будет представить в виде десятичной.</div>
+<div class="step">Но тогда c и 30 имеют общий делитель 3, значит, они не взаимно простые.</div>
+<div class="step">Если же c не делится на 3, то после сокращения знаменатель всё равно содержит множитель 3, и дробь нельзя представить в виде десятичной.</div>
+<div class="step"><b>Вывод для c/30:</b> числитель и знаменатель не могут быть одновременно взаимно простыми, если дробь можно представить в виде десятичной.</div>
+<div class="step"><b>Ответ:</b> для дроби n/20 — <b>да</b> (например, 3/20 = 0,15); для дроби c/30 — <b>нет</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-105"><div class="task-head"><span class="task-num">№ 2.105</span></div><p class="task-body">НОД числителя и знаменателя, сократить: а) 4/8; б) 15/25; в) 33/99; г) 51/85.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">а) НОД 4 → <b>1/2</b><br>б) НОД 5 → <b>3/5</b><br>в) НОД 33 → <b>1/3</b><br>г) НОД 17 → <b>3/5</b></div></div></article>
+<article class="task" id="t-105">
+<div class="task-head"><span class="task-num">№ 2.105</span></div>
+<p class="task-body">Найдите наибольший общий делитель числителя и знаменателя дроби и сократите дробь:<br>а) 4/8; б) 15/25; в) 33/99; г) 51/85.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а) 4/8.</b></div>
+<div class="step">Делители 4: 1, 2, 4. Делители 8: 1, 2, 4, 8. НОД(4, 8) = 4.</div>
+<div class="step">4/8 = (4:4)/(8:4) = <b>1/2</b>.</div>
+<br>
+<div class="step"><b>б) 15/25.</b></div>
+<div class="step">15 = 3 · 5; 25 = 5². НОД(15, 25) = 5.</div>
+<div class="step">15/25 = (15:5)/(25:5) = <b>3/5</b>.</div>
+<br>
+<div class="step"><b>в) 33/99.</b></div>
+<div class="step">99 = 33 · 3, значит, 99 делится на 33. НОД(33, 99) = 33.</div>
+<div class="step">33/99 = (33:33)/(99:33) = <b>1/3</b>.</div>
+<br>
+<div class="step"><b>г) 51/85.</b></div>
+<div class="step">51 = 3 · 17; 85 = 5 · 17. НОД(51, 85) = 17.</div>
+<div class="step">51/85 = (51:17)/(85:17) = <b>3/5</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-106"><div class="task-head"><span class="task-num">№ 2.106</span></div><p class="task-body">1) Какие могут быть взаимно простыми: а) два чётных; б) чётное и нечётное; в) два простых; г) простое и составное; д) два последовательных натуральных?<br>2) Какие всегда?</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">1) а) Нет. б) Могут. в) Могут. г) Могут. д) Могут.<br>2) Всегда взаимно простые: <b>д) два последовательных натуральных числа</b>.</div></div></article>
+<article class="task" id="t-106">
+<div class="task-head"><span class="task-num">№ 2.106</span></div>
+<p class="task-body">1) Какие числа могут быть взаимно простыми: а) два чётных числа; б) чётное и нечётное числа; в) два простых числа; г) простое и составное числа; д) два последовательных натуральных числа?<br>2) Какие числа всегда взаимно простые: а) два чётных числа; б) чётное и нечётное числа; в) два простых числа; г) простое и составное числа; д) два последовательных натуральных числа?</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>1) Какие числа могут быть взаимно простыми (т. е. бывают такими, но не всегда):</b></div>
+<div class="step"><b>а) Два чётных числа — не могут.</b> Оба делятся на 2, значит, у них есть общий делитель 2, поэтому НОД ≥ 2.</div>
+<div class="step"><b>б) Чётное и нечётное — могут.</b> Например, 2 и 3 — НОД = 1.</div>
+<div class="step"><b>в) Два простых числа — могут.</b> Если это разные простые числа, например, 3 и 5, НОД = 1.</div>
+<div class="step"><b>г) Простое и составное — могут.</b> Например, 5 и 12 — НОД = 1.</div>
+<div class="step"><b>д) Два последовательных натуральных — могут.</b> Например, 8 и 9.</div>
+<br>
+<div class="step"><b>2) Какие числа всегда взаимно простые:</b></div>
+<div class="step"><b>а) Два чётных — никогда</b> (оба делятся на 2).</div>
+<div class="step"><b>б) Чётное и нечётное — не всегда.</b> Пример: 6 и 9 — оба делятся на 3, НОД = 3.</div>
+<div class="step"><b>в) Два простых — не всегда.</b> Если это одно и то же простое число (например, 5 и 5), НОД = 5.</div>
+<div class="step"><b>г) Простое и составное — не всегда.</b> Пример: 3 и 15 — НОД = 3.</div>
+<div class="step"><b>д) Два последовательных натуральных — всегда.</b></div>
+<div class="step">Доказательство: пусть n и n+1 — два последовательных числа. Предположим, у них есть общий делитель d &gt; 1. Тогда d делит и n, и n+1, а значит, делит их разность: (n+1) − n = 1. Но на 1 не делится никакое d &gt; 1. Противоречие. Значит, НОД(n, n+1) = 1.</div>
+<div class="step"><b>Ответ 2):</b> всегда взаимно простые — только <b>д) два последовательных натуральных числа</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-107"><div class="task-head"><span class="task-num">№ 2.107</span></div><p class="task-body">НОД: а) 13 и 26; б) 8 и 12; в) 60 и 75; г) 64 и 128; д) 3375 и 5625.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">а) <b>13</b>; б) <b>4</b>; в) <b>15</b>; г) <b>64</b>; д) <b>1125</b>.</div></div></article>
+<article class="task" id="t-107">
+<div class="task-head"><span class="task-num">№ 2.107</span></div>
+<p class="task-body">Найдите наибольший общий делитель чисел:<br>а) 13 и 26; б) 8 и 12; в) 60 и 75; г) 64 и 128; д) 3375 и 5625.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а) 13 и 26.</b></div>
+<div class="step">26 = 13 · 2, значит, 26 делится на 13.</div>
+<div class="step">НОД(13, 26) = <b>13</b>.</div>
+<br>
+<div class="step"><b>б) 8 и 12.</b></div>
+<div class="step">8 = 2³; 12 = 2² · 3.</div>
+<div class="step">Общий множитель: 2² = 4.</div>
+<div class="step">НОД(8, 12) = <b>4</b>.</div>
+<br>
+<div class="step"><b>в) 60 и 75.</b></div>
+<div class="step">60 = 2² · 3 · 5.</div>
+<div class="step">75 = 3 · 5².</div>
+<div class="step">Общие множители: 3 · 5 = 15.</div>
+<div class="step">НОД(60, 75) = <b>15</b>.</div>
+<br>
+<div class="step"><b>г) 64 и 128.</b></div>
+<div class="step">64 = 2⁶; 128 = 2⁷.</div>
+<div class="step">128 : 64 = 2, значит, 128 делится на 64.</div>
+<div class="step">НОД(64, 128) = <b>64</b>.</div>
+<br>
+<div class="step"><b>д) 3375 и 5625.</b></div>
+<div class="step">3375 = 3 · 3 · 3 · 5 · 5 · 5 = 3³ · 5³.</div>
+<div class="step">5625 = 3 · 3 · 5 · 5 · 5 · 5 = 3² · 5⁴.</div>
+<div class="step">Общие множители: 3² · 5³.</div>
+<div class="step">НОД = 9 · 125 = <b>1125</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-108"><div class="task-head"><span class="task-num">№ 2.108</span></div><p class="task-body">Листы 80×140, 105×145, 120×150. Круглые подставки ⌀15 см → квадраты 15×15. Какой лист без отходов?</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">80×140: 5·9 = 45 заготовок.<br>105×145: 7·9 = 63.<br>120×150: 8·10 = <b>80 заготовок без отходов</b> → <b>120×150</b>.</div></div></article>
+<article class="task" id="t-108">
+<div class="task-head"><span class="task-num">№ 2.108</span></div>
+<p class="task-body">Для изготовления круглых подставок под цветы диаметром 15 см нужно сделать заготовки квадратной формы. Имеются пластмассовые листы размером 80 × 140 см, 105 × 145 см и 120 × 150 см. Какие из этих листов нужно взять, чтобы было меньше отходов?</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step">Из квадрата со стороной 15 см получается одна круглая подставка диаметром 15 см.</div>
+<div class="step">Значит, из листа нужно вырезать как можно больше квадратов 15 × 15 см.</div>
+<div class="step"><b>Первый лист: 80 × 140 см.</b></div>
+<div class="step">По стороне 80 см: 80 : 15 = 5 (ост. 5) → влезает 5 квадратов.</div>
+<div class="step">По стороне 140 см: 140 : 15 = 9 (ост. 5) → влезает 9 квадратов.</div>
+<div class="step">Всего: 5 · 9 = 45 заготовок.</div>
+<div class="step">Площадь листа: 80 · 140 = 11 200 см².</div>
+<div class="step">Площадь заготовок: 45 · 225 = 10 125 см².</div>
+<div class="step">Отходы: 11 200 − 10 125 = 1075 см².</div>
+<br>
+<div class="step"><b>Второй лист: 105 × 145 см.</b></div>
+<div class="step">По стороне 105 см: 105 : 15 = 7 → 7 квадратов.</div>
+<div class="step">По стороне 145 см: 145 : 15 = 9 (ост. 10) → 9 квадратов.</div>
+<div class="step">Всего: 7 · 9 = 63 заготовки.</div>
+<div class="step">Площадь листа: 105 · 145 = 15 225 см².</div>
+<div class="step">Площадь заготовок: 63 · 225 = 14 175 см².</div>
+<div class="step">Отходы: 15 225 − 14 175 = 1050 см².</div>
+<br>
+<div class="step"><b>Третий лист: 120 × 150 см.</b></div>
+<div class="step">По стороне 120 см: 120 : 15 = 8 → 8 квадратов.</div>
+<div class="step">По стороне 150 см: 150 : 15 = 10 → 10 квадратов.</div>
+<div class="step">Всего: 8 · 10 = 80 заготовок.</div>
+<div class="step">Площадь листа: 120 · 150 = 18 000 см².</div>
+<div class="step">Площадь заготовок: 80 · 225 = 18 000 см².</div>
+<div class="step">Отходы: 18 000 − 18 000 = <b>0 см²</b> — без отходов!</div>
+<br>
+<div class="step"><b>Сравнение:</b> отходы 1075, 1050 и 0 см².</div>
+<div class="step"><b>Ответ:</b> наименьшие отходы (нулевые) даёт лист <b>120 × 150 см</b>. Из него получится 80 заготовок и совсем не будет отходов.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-109"><div class="task-head"><span class="task-num">№ 2.109</span></div><p class="task-body">Докажите, что если у кратно 14, то оно делится на 7.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">у = 14k = 7·2k. Делится на 7. <b>Что и требовалось.</b></div></div></article>
+<article class="task" id="t-109">
+<div class="task-head"><span class="task-num">№ 2.109</span></div>
+<p class="task-body">Докажите, что если число у кратно 14, то оно делится на 7.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>Дано:</b> число у кратно 14.</div>
+<div class="step"><b>Доказать:</b> у делится на 7.</div>
+<div class="step"><b>Доказательство:</b></div>
+<div class="step">Так как у кратно 14, то существует такое натуральное число k, что у = 14 · k.</div>
+<div class="step">Разложим 14 на множители: 14 = 7 · 2.</div>
+<div class="step">Тогда у = 14k = 7 · 2k.</div>
+<div class="step">Произведение 7 · 2k делится на 7, значит, и число у делится на 7.</div>
+<div class="step"><b>Что и требовалось доказать.</b></div>
+</div></div>
+</article>
 
-<article class="task" id="t-110"><div class="task-head"><span class="task-num">№ 2.110</span></div><p class="task-body">НОД всех двузначных чисел с одинаковыми цифрами.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">11, 22, ..., 99 — все делятся на 11. НОД = <b>11</b>.</div></div></article>
+<article class="task" id="t-110">
+<div class="task-head"><span class="task-num">№ 2.110</span></div>
+<p class="task-body">Найдите наибольший общий делитель всех двузначных чисел, записанных одинаковыми цифрами.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step">Все двузначные числа, записанные одинаковыми цифрами:</div>
+<div class="step">11, 22, 33, 44, 55, 66, 77, 88, 99.</div>
+<div class="step">Каждое из них можно представить в виде 11 · n, где n от 1 до 9.</div>
+<div class="step">Значит, все эти числа делятся на 11.</div>
+<div class="step">Меньшее из них — 11. Оно делится на себя.</div>
+<div class="step">Значит, НОД всех этих чисел равен 11.</div>
+<div class="step"><b>Проверка:</b> 11 — делитель каждого числа: 22 : 11 = 2, 33 : 11 = 3, …, 99 : 11 = 9 ✓.</div>
+<div class="step"><b>Ответ:</b> НОД = <b>11</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-111"><div class="task-head"><span class="task-num">№ 2.111</span></div><p class="task-body">Трёхзначные из 1, 3, 5, 7, 9 без повторений.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">5·4·3 = <b>60</b>.</div></div></article>
+<article class="task" id="t-111">
+<div class="task-head"><span class="task-num">№ 2.111</span></div>
+<p class="task-body">Сколько трёхзначных чисел можно составить из цифр 1, 3, 5, 7, 9, если цифры не повторяются?</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step">Дано 5 различных цифр: 1, 3, 5, 7, 9. Цифры в числе не повторяются.</div>
+<div class="step">На первое место (сотни) можно поставить любую из 5 цифр → 5 вариантов.</div>
+<div class="step">На второе место (десятки) — любую из оставшихся 4 цифр → 4 варианта.</div>
+<div class="step">На третье место (единицы) — любую из оставшихся 3 цифр → 3 варианта.</div>
+<div class="step">По правилу умножения: 5 · 4 · 3 = 60.</div>
+<div class="step"><b>Ответ:</b> можно составить <b>60 трёхзначных чисел</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-112"><div class="task-head"><span class="task-num">№ 2.112</span></div><p class="task-body">В виде дроби: а) 2:5; б) 4:13; в) 17:20; г) 19:43.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">а) <b>0,4</b>; б) <b>4/13</b>; в) <b>0,85</b>; г) <b>19/43</b>.</div></div></article>
+<article class="task" id="t-112">
+<div class="task-head"><span class="task-num">№ 2.112</span></div>
+<p class="task-body">Запишите в виде обыкновенной или десятичной дроби частное:<br>а) 2 : 5; б) 4 : 13; в) 17 : 20; г) 19 : 43.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а)</b> 2 : 5 = 2/5 = 0,4.</div>
+<div class="step"><b>б)</b> 4 : 13 = 4/13 (в десятичную не переводится, так как 13 содержит множитель, отличный от 2 и 5).</div>
+<div class="step"><b>в)</b> 17 : 20 = 17/20 = 0,85 (20 = 2² · 5).</div>
+<div class="step"><b>г)</b> 19 : 43 = 19/43 (в десятичную не переводится, так как 43 — простое, кроме 2 и 5).</div>
+<div class="step"><b>Ответ:</b> а) 0,4; б) 4/13; в) 0,85; г) 19/43.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-113"><div class="task-head"><span class="task-num">№ 2.113</span></div><p class="task-body">В виде частного: а) 3/7; б) 11/8; в) 29/10; г) 0,7; д) 0,24.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">а) 3:7; б) 11:8; в) 29:10; г) 7:10; д) 24:100.</div></div></article>
+<article class="task" id="t-113">
+<div class="task-head"><span class="task-num">№ 2.113</span></div>
+<p class="task-body">Запишите в виде частного дробь:<br>а) 3/7; б) 11/8; в) 29/10; г) 0,7; д) 0,24.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step">Черта дроби — это знак деления. Числитель — делимое, знаменатель — делитель.</div>
+<div class="step"><b>а)</b> 3/7 = 3 : 7.</div>
+<div class="step"><b>б)</b> 11/8 = 11 : 8.</div>
+<div class="step"><b>в)</b> 29/10 = 29 : 10.</div>
+<div class="step"><b>г)</b> 0,7 = 7/10 = 7 : 10.</div>
+<div class="step"><b>д)</b> 0,24 = 24/100 = 24 : 100.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-114"><div class="task-head"><span class="task-num">№ 2.114</span></div><p class="task-body">В виде смешанного: а) 19:5; б) 20:7; в) 21:5; г) 392:16.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">а) <b>3 4/5</b>; б) <b>2 6/7</b>; в) <b>4 1/5</b>; г) <b>24 1/2</b>.</div></div></article>
+<article class="task" id="t-114">
+<div class="task-head"><span class="task-num">№ 2.114</span></div>
+<p class="task-body">Запишите в виде смешанного числа частное:<br>а) 19 : 5; б) 20 : 7; в) 21 : 5; г) 392 : 16.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а)</b> 19 : 5. Делим 19 на 5: неполное частное = 3, остаток = 4.</div>
+<div class="step">19/5 = <b>3 4/5</b>.</div>
+<br>
+<div class="step"><b>б)</b> 20 : 7. Делим 20 на 7: неполное частное = 2, остаток = 6.</div>
+<div class="step">20/7 = <b>2 6/7</b>.</div>
+<br>
+<div class="step"><b>в)</b> 21 : 5. Делим 21 на 5: неполное частное = 4, остаток = 1.</div>
+<div class="step">21/5 = <b>4 1/5</b>.</div>
+<br>
+<div class="step"><b>г)</b> 392 : 16. Делим 392 на 16: неполное частное = 24, остаток = 8.</div>
+<div class="step">392/16 = 24 8/16 = <b>24 1/2</b> (сократили 8/16 = 1/2).</div>
+</div></div>
+</article>
 
-<article class="task" id="t-115"><div class="task-head"><span class="task-num">№ 2.115</span></div><p class="task-body">Среднее четырёх: а) 2,6; 3,8; 4,3; 3,7. б) 4,7; 5,6; 3,9; 8,2. в) 13,46; 17,24; 21,39; 7,91. г) 14,33; 19,42; 3,47; 10,48.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">а) <b>3,6</b>; б) <b>5,6</b>; в) <b>15</b>; г) <b>11,925</b>.</div></div></article>
+<article class="task" id="t-115">
+<div class="task-head"><span class="task-num">№ 2.115</span></div>
+<p class="task-body">Найдите среднее арифметическое четырёх чисел:<br>а) 2,6; 3,8; 4,3 и 3,7; б) 4,7; 5,6; 3,9 и 8,2; в) 13,46; 17,24; 21,39 и 7,91; г) 14,33; 19,42; 3,47 и 10,48.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а)</b> Сумма: 2,6 + 3,8 + 4,3 + 3,7 = 14,4.</div>
+<div class="step">Среднее: 14,4 : 4 = <b>3,6</b>.</div>
+<br>
+<div class="step"><b>б)</b> Сумма: 4,7 + 5,6 + 3,9 + 8,2 = 22,4.</div>
+<div class="step">Среднее: 22,4 : 4 = <b>5,6</b>.</div>
+<br>
+<div class="step"><b>в)</b> Сумма: 13,46 + 17,24 + 21,39 + 7,91 = 60,00.</div>
+<div class="step">Среднее: 60 : 4 = <b>15</b>.</div>
+<br>
+<div class="step"><b>г)</b> Сумма: 14,33 + 19,42 + 3,47 + 10,48 = 47,70.</div>
+<div class="step">Среднее: 47,7 : 4 = <b>11,925</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-116"><div class="task-head"><span class="task-num">№ 2.116</span></div><p class="task-body">Среднее = 48; одно в 3 раза меньше другого.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">4x = 96 → x = 24. Числа: <b>24 и 72</b>.</div></div></article>
+<article class="task" id="t-116">
+<div class="task-head"><span class="task-num">№ 2.116</span></div>
+<p class="task-body">Среднее арифметическое двух чисел равно 48. Найдите числа, если одно число в 3 раза меньше другого.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step">Пусть меньшее число x, тогда большее — 3x.</div>
+<div class="step">Среднее арифметическое: (x + 3x) : 2 = 48.</div>
+<div class="step">4x : 2 = 48 → 2x = 48.</div>
+<div class="step">x = 24 — меньшее число.</div>
+<div class="step">Большее: 3 · 24 = 72.</div>
+<div class="step"><b>Проверка:</b> (24 + 72) : 2 = 96 : 2 = 48 ✓.</div>
+<div class="step"><b>Ответ:</b> числа <b>24 и 72</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-117"><div class="task-head"><span class="task-num">№ 2.117</span></div><p class="task-body">1) 23 т овощей; 1-й день в 4,6 раза меньше 2-го; осталось 3,4 т. Сколько продали во 2-й день?<br>2) 33 км; до обеда в 2,2 раза больше; осталось 2,6 км. Сколько до обеда?</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">1) Продано 19,6 т; 5,6x = 19,6 → x = 3,5. 2-й день <b>16,1 т</b>.<br>2) Прошли 30,4 км; 3,2x = 30,4 → x = 9,5. До обеда <b>20,9 км</b>.</div></div></article>
+<article class="task" id="t-117">
+<div class="task-head"><span class="task-num">№ 2.117</span></div>
+<p class="task-body">1) На овощной базе было 23 т овощей. В первый день продали в 4,6 раза меньше овощей, чем во второй день. К утру третьего дня на базе осталось 3,4 т овощей. Сколько тонн овощей продали во второй день?<br>2) Туристы запланировали пройти за день 33 км. До обеда они прошли в 2,2 раза большее расстояние, чем после обеда. К вечеру им осталось пройти 2,6 км. Сколько километров прошли туристы до обеда?</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>1)</b> Всего было 23 т. Осталось 3,4 т.</div>
+<div class="step">Значит, продали за два дня: 23 − 3,4 = 19,6 т.</div>
+<div class="step">Пусть в первый день продали x т. Тогда во второй — 4,6x т.</div>
+<div class="step">Всего продали: x + 4,6x = 5,6x = 19,6.</div>
+<div class="step">x = 19,6 : 5,6 = 3,5 т — первый день.</div>
+<div class="step">Второй день: 4,6 · 3,5 = 16,1 т.</div>
+<div class="step"><b>Ответ 1):</b> во второй день продали <b>16,1 т</b> овощей.</div>
+<br>
+<div class="step"><b>2)</b> Всего нужно пройти 33 км. Осталось 2,6 км.</div>
+<div class="step">Значит, прошли: 33 − 2,6 = 30,4 км.</div>
+<div class="step">Пусть после обеда прошли x км. Тогда до обеда — 2,2x км.</div>
+<div class="step">Всего: x + 2,2x = 3,2x = 30,4.</div>
+<div class="step">x = 30,4 : 3,2 = 9,5 км — после обеда.</div>
+<div class="step">До обеда: 2,2 · 9,5 = 20,9 км.</div>
+<div class="step"><b>Ответ 2):</b> до обеда прошли <b>20,9 км</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-118"><div class="task-head"><span class="task-num">№ 2.118</span></div><p class="task-body">а) Числа-близнецы до 500. б) 6n−1 или 6n+1 для n = 87, 135, 165. в) Двузначные пары 6k−1 и 6k+1, не являющиеся близнецами.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">а) 25 пар: (3;5), (5;7), (11;13), ..., (521;523).<br>б) n=87: 521 и 523 — близнецы; n=135: 809 и 811; n=165: 989 и 991.<br>в) Примеры: 23·25 (25 не простое), 47·49, 53·55, 77·79 (77 не простое).</div></div></article>
+<article class="task" id="t-118">
+<div class="task-head"><span class="task-num">№ 2.118</span></div>
+<p class="task-body">Развивай мышление.<br>а) Найдите в таблице простых чисел пары чисел-близнецов среди первых 500 натуральных чисел. Сколько таких пар получилось?<br>б) Все пары чисел-близнецов, кроме 3 и 5, имеют вид 6n − 1 и 6n + 1. Найдите по этим выражениям пары чисел для n, равного 87, 135 и 165.<br>в) Не все пары чисел вида 6k − 1 и 6k + 1 являются числами-близнецами. Найдите все пары двузначных чисел вида 6k − 1 и 6k + 1, которые не являются числами-близнецами.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а) Числа-близнецы — это пары простых чисел, разность которых равна 2.</b></div>
+<div class="step">Пары близнецов среди первых 500 чисел:</div>
+<div class="step">(3, 5), (5, 7), (11, 13), (17, 19), (29, 31), (41, 43), (59, 61), (71, 73), (101, 103), (107, 109), (137, 139), (149, 151), (179, 181), (191, 193), (197, 199), (227, 229), (239, 241), (269, 271), (281, 283), (311, 313), (347, 349), (419, 421), (431, 433), (461, 463), (521, 523) — выходит за 500, но часто включают как справочную.</div>
+<div class="step">Итого среди первых 500 натуральных чисел: <b>24 пары</b> (если не считать (521, 523)).</div>
+<br>
+<div class="step"><b>б)</b> Формула: 6n − 1 и 6n + 1.</div>
+<div class="step">При n = 87: 6 · 87 = 522; числа 522 − 1 = 521 и 522 + 1 = 523. Оба простые → <b>(521, 523)</b> — близнецы.</div>
+<div class="step">При n = 135: 6 · 135 = 810; числа 809 и 811. Оба простые → <b>(809, 811)</b> — близнецы.</div>
+<div class="step">При n = 165: 6 · 165 = 990; числа 989 и 991. 989 = 23 · 43 — составное; 991 — простое. Значит, пара <b>(989, 991)</b> не является близнецами.</div>
+<br>
+<div class="step"><b>в)</b> Найдём двузначные пары вида (6k − 1, 6k + 1), где хотя бы одно число составное.</div>
+<div class="step">Перебираем k так, чтобы числа были двузначными (6k − 1 ≥ 10 и 6k + 1 ≤ 99):</div>
+<div class="step">k = 2: 11 и 13 — оба простые (близнецы).</div>
+<div class="step">k = 3: 17 и 19 — оба простые.</div>
+<div class="step">k = 5: 29 и 31 — оба простые.</div>
+<div class="step">k = 7: 41 и 43 — оба простые.</div>
+<div class="step">k = 10: 59 и 61 — оба простые.</div>
+<div class="step">k = 12: 71 и 73 — оба простые.</div>
+<div class="step">k = 17: 101 — уже трёхзначное, стоп.</div>
+<div class="step">Ищем пропуски: k = 4: 23 и 25 — 25 = 5² составное → <b>(23, 25) — не близнецы</b>.</div>
+<div class="step">k = 6: 35 и 37 — 35 = 5 · 7 составное → <b>(35, 37) — не близнецы</b>.</div>
+<div class="step">k = 8: 47 и 49 — 49 = 7² составное → <b>(47, 49) — не близнецы</b>.</div>
+<div class="step">k = 9: 53 и 55 — 55 = 5 · 11 составное → <b>(53, 55) — не близнецы</b>.</div>
+<div class="step">k = 11: 65 и 67 — 65 = 5 · 13 составное → <b>(65, 67) — не близнецы</b>.</div>
+<div class="step">k = 13: 77 и 79 — 77 = 7 · 11 составное → <b>(77, 79) — не близнецы</b>.</div>
+<div class="step">k = 14: 83 и 85 — 85 = 5 · 17 составное → <b>(83, 85) — не близнецы</b>.</div>
+<div class="step">k = 15: 89 и 91 — 91 = 7 · 13 составное → <b>(89, 91) — не близнецы</b>.</div>
+<div class="step">k = 16: 95 и 97 — 95 = 5 · 19 составное → <b>(95, 97) — не близнецы</b>.</div>
+<div class="step"><b>Ответ в):</b> пары (23, 25), (35, 37), (47, 49), (53, 55), (65, 67), (77, 79), (83, 85), (89, 91), (95, 97).</div>
+</div></div>
+</article>
 
-<article class="task" id="t-119"><div class="task-head"><span class="task-num">№ 2.119</span></div><p class="task-body">НОК: а) 22 и 55; б) 40 и 50; в) 270 и 450; г) 40, 60, 15.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">а) <b>110</b>; б) <b>200</b>; в) <b>1350</b>; г) <b>120</b>.</div></div></article>
+<article class="task" id="t-119">
+<div class="task-head"><span class="task-num">№ 2.119</span></div>
+<p class="task-body">Найдите наименьшее общее кратное чисел:<br>а) 22 и 55; б) 40 и 50; в) 270 и 450; г) 40, 60 и 15.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а) 22 и 55.</b></div>
+<div class="step">22 = 2 · 11.</div>
+<div class="step">55 = 5 · 11.</div>
+<div class="step">НОК = 2 · 5 · 11 = <b>110</b>.</div>
+<br>
+<div class="step"><b>б) 40 и 50.</b></div>
+<div class="step">40 = 2³ · 5.</div>
+<div class="step">50 = 2 · 5².</div>
+<div class="step">НОК = 2³ · 5² = 8 · 25 = <b>200</b>.</div>
+<br>
+<div class="step"><b>в) 270 и 450.</b></div>
+<div class="step">270 = 2 · 3³ · 5.</div>
+<div class="step">450 = 2 · 3² · 5².</div>
+<div class="step">НОК = 2 · 3³ · 5² = 2 · 27 · 25 = <b>1350</b>.</div>
+<br>
+<div class="step"><b>г) 40, 60 и 15.</b></div>
+<div class="step">40 = 2³ · 5.</div>
+<div class="step">60 = 2² · 3 · 5.</div>
+<div class="step">15 = 3 · 5.</div>
+<div class="step">Наибольшие степени: 2 — 3, 3 — 1, 5 — 1.</div>
+<div class="step">НОК = 2³ · 3 · 5 = 8 · 15 = <b>120</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-120"><div class="task-head"><span class="task-num">№ 2.120</span></div><p class="task-body">НОД(n, d): а) n=3·5·7·7·11, d=5·5·7·11; б) n=756, d=720.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">а) <b>385</b>; б) 756=2²·3³·7; 720=2⁴·3²·5. НОД = <b>36</b>.</div></div></article>
+<article class="task" id="t-120">
+<div class="task-head"><span class="task-num">№ 2.120</span></div>
+<p class="task-body">Найдите НОД(n, d), если:<br>а) n = 3 · 5 · 7 · 7 · 11, d = 5 · 5 · 7 · 11;<br>б) n = 756, d = 720.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а)</b> n = 3 · 5 · 7 · 7 · 11.</div>
+<div class="step">d = 5 · 5 · 7 · 11.</div>
+<div class="step">Общие множители: 5 · 7 · 11.</div>
+<div class="step">НОД(n, d) = 5 · 7 · 11 = 35 · 11 = <b>385</b>.</div>
+<br>
+<div class="step"><b>б) n = 756, d = 720.</b></div>
+<div class="step">756 = 2 · 2 · 3 · 3 · 3 · 7 = 2² · 3³ · 7.</div>
+<div class="step">720 = 2 · 2 · 2 · 2 · 3 · 3 · 5 = 2⁴ · 3² · 5.</div>
+<div class="step">Общие множители: 2² · 3².</div>
+<div class="step">НОД = 4 · 9 = <b>36</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-121"><div class="task-head"><span class="task-num">№ 2.121</span></div><p class="task-body">78 ц ягод: клюквы в 5 раз больше морошки, брусники на 15 ц больше морошки.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">x + 5x + (x+15) = 78 → x = 9.<br>Морошка <b>9 ц</b>; клюква <b>45 ц</b>; брусника <b>24 ц</b>.</div></div></article>
+<article class="task" id="t-121">
+<div class="task-head"><span class="task-num">№ 2.121</span></div>
+<p class="task-body">Артель «Дары леса» заготовила 78 ц морошки, клюквы и брусники. При этом клюквы заготовили в 5 раз больше, чем морошки, а брусники — на 15 ц больше, чем морошки. Сколько центнеров каждой ягоды заготовила артель?</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step">Пусть морошки заготовили x ц.</div>
+<div class="step">Тогда клюквы — 5x ц.</div>
+<div class="step">Брусники — (x + 15) ц.</div>
+<div class="step">Всего: x + 5x + (x + 15) = 78.</div>
+<div class="step">7x + 15 = 78.</div>
+<div class="step">7x = 63.</div>
+<div class="step">x = 9 ц — морошки.</div>
+<div class="step">Клюквы: 5 · 9 = 45 ц.</div>
+<div class="step">Брусники: 9 + 15 = 24 ц.</div>
+<div class="step"><b>Проверка:</b> 9 + 45 + 24 = 78 ✓.</div>
+<div class="step"><b>Ответ:</b> морошки <b>9 ц</b>, клюквы <b>45 ц</b>, брусники <b>24 ц</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-122"><div class="task-head"><span class="task-num">№ 2.122</span></div><p class="task-body">3 станции = 560,53 т. Мир = Салют+105,44; МКС = Мир+292,95.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">3x + 503,83 = 560,53 → x = 18,9.<br>Салют <b>18,9 т</b>; Мир <b>124,34 т</b>; МКС <b>417,29 т</b>.</div></div></article>
+<article class="task" id="t-122">
+<div class="task-head"><span class="task-num">№ 2.122</span></div>
+<p class="task-body">Масса трёх космических станций «Салют-1» (запуск в 1971 г.), «Мир» (запуск в 1986 г.) и МКС (запуск в 1998 г.) равна 560,53 т. Найдите массу каждой станции, если масса станции «Мир» на 105,44 т больше массы станции «Салют-1», а масса МКС больше массы станции «Мир» на 292,95 т.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step">Пусть масса станции «Салют-1» равна x т.</div>
+<div class="step">Тогда масса станции «Мир» = x + 105,44 т.</div>
+<div class="step">Масса МКС = (x + 105,44) + 292,95 = x + 398,39 т.</div>
+<div class="step">Всего: x + (x + 105,44) + (x + 398,39) = 560,53.</div>
+<div class="step">3x + 503,83 = 560,53.</div>
+<div class="step">3x = 560,53 − 503,83 = 56,70.</div>
+<div class="step">x = 56,70 : 3 = 18,9 т — «Салют-1».</div>
+<div class="step">«Мир»: 18,9 + 105,44 = 124,34 т.</div>
+<div class="step">МКС: 124,34 + 292,95 = 417,29 т.</div>
+<div class="step"><b>Проверка:</b> 18,9 + 124,34 + 417,29 = 560,53 ✓.</div>
+<div class="step"><b>Ответ:</b> «Салют-1» — <b>18,9 т</b>, «Мир» — <b>124,34 т</b>, МКС — <b>417,29 т</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-123"><div class="task-head"><span class="task-num">№ 2.123</span></div><p class="task-body">а) (z+25,3)·4,3 = 160,82; б) (y−0,86)·0,05 = 0,0285; в) (m+41,1):17,1 = 4,3; г) (n−8,7):18,7 = 5,2.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">а) z = <b>12,1</b><br>б) y = <b>1,43</b><br>в) m = <b>32,43</b><br>г) n = <b>105,94</b></div></div></article>
+<article class="task" id="t-123">
+<div class="task-head"><span class="task-num">№ 2.123</span></div>
+<p class="task-body">Найдите корень уравнения:<br>а) (z + 25,3) · 4,3 = 160,82; б) (y − 0,86) · 0,05 = 0,0285; в) (m + 41,1) : 17,1 = 4,3; г) (n − 8,7) : 18,7 = 5,2.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а)</b> (z + 25,3) · 4,3 = 160,82.</div>
+<div class="step">z + 25,3 = 160,82 : 4,3 = 37,4.</div>
+<div class="step">z = 37,4 − 25,3 = <b>12,1</b>.</div>
+<br>
+<div class="step"><b>б)</b> (y − 0,86) · 0,05 = 0,0285.</div>
+<div class="step">y − 0,86 = 0,0285 : 0,05 = 0,57.</div>
+<div class="step">y = 0,57 + 0,86 = <b>1,43</b>.</div>
+<br>
+<div class="step"><b>в)</b> (m + 41,1) : 17,1 = 4,3.</div>
+<div class="step">m + 41,1 = 4,3 · 17,1 = 73,53.</div>
+<div class="step">m = 73,53 − 41,1 = <b>32,43</b>.</div>
+<br>
+<div class="step"><b>г)</b> (n − 8,7) : 18,7 = 5,2.</div>
+<div class="step">n − 8,7 = 5,2 · 18,7 = 97,24.</div>
+<div class="step">n = 97,24 + 8,7 = <b>105,94</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-124"><div class="task-head"><span class="task-num">№ 2.124</span></div><p class="task-body">В виде смешанного: а) 31:9; б) 81:9; в) 402:15; г) 1429:14.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">а) <b>3 4/9</b>; б) <b>9</b>; в) <b>26 12/15 = 26 4/5</b>; г) <b>102 1/14</b>.</div></div></article>
+<article class="task" id="t-124">
+<div class="task-head"><span class="task-num">№ 2.124</span></div>
+<p class="task-body">Запишите в виде смешанного числа:<br>а) 31 : 9; б) 81 : 9; в) 402 : 15; г) 1429 : 14.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а)</b> 31 : 9. 31 : 9 = 3 (ост. 4). Значит, 31/9 = <b>3 4/9</b>.</div>
+<br>
+<div class="step"><b>б)</b> 81 : 9 = 9 (ост. 0). Значит, 81/9 = <b>9</b>.</div>
+<br>
+<div class="step"><b>в)</b> 402 : 15. 402 : 15 = 26 (ост. 12). Значит, 402/15 = 26 12/15 = <b>26 4/5</b> (сократили на 3).</div>
+<br>
+<div class="step"><b>г)</b> 1429 : 14. 1429 : 14 = 102 (ост. 1). Значит, 1429/14 = <b>102 1/14</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-125"><div class="task-head"><span class="task-num">№ 2.125</span></div><p class="task-body">Средний балл: «Весёлые» 5,5,4,4,3,4,4; «Находчивые» 4,5,4,4,4,4,5; «Юморные» 4,5,4,3,3,5,4. Расположите по возрастанию.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">«Весёлые» 29/7 ≈ 4,14<br>«Находчивые» 30/7 ≈ 4,29<br>«Юморные» 28/7 = 4,0<br><b>«Юморные» → «Весёлые» → «Находчивые»</b>.</div></div></article>
+<article class="task" id="t-125">
+<div class="task-head"><span class="task-num">№ 2.125</span></div>
+<p class="task-body">За конкурс «Музыкальное приветствие» команды КВН получили следующие оценки: «Весёлые» — 5, 5, 4, 4, 3, 4, 4; «Находчивые» — 4, 5, 4, 4, 4, 4, 5; «Юморные» — 4, 5, 4, 3, 3, 5, 4. Расположите команды по возрастанию их средних баллов.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>«Весёлые»:</b> 5 + 5 + 4 + 4 + 3 + 4 + 4 = 29.</div>
+<div class="step">Средний балл: 29 : 7 = 29/7 ≈ <b>4,14</b>.</div>
+<br>
+<div class="step"><b>«Находчивые»:</b> 4 + 5 + 4 + 4 + 4 + 4 + 5 = 30.</div>
+<div class="step">Средний балл: 30 : 7 = 30/7 ≈ <b>4,29</b>.</div>
+<br>
+<div class="step"><b>«Юморные»:</b> 4 + 5 + 4 + 3 + 3 + 5 + 4 = 28.</div>
+<div class="step">Средний балл: 28 : 7 = <b>4</b>.</div>
+<br>
+<div class="step"><b>Сравним:</b> 4 &lt; 4,14 &lt; 4,29.</div>
+<div class="step"><b>Ответ:</b> по возрастанию: <b>«Юморные» (4) → «Весёлые» (≈4,14) → «Находчивые» (≈4,29)</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-126"><div class="task-head"><span class="task-num">№ 2.126</span></div><p class="task-body">Байдарка 1,5 ч (6,6 км/ч); пешком 3,5 ч (5,4 км/ч). Средняя скорость?</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">Путь = 9,9 + 18,9 = 28,8 км. Время = 5 ч. Средняя = <b>5,76 км/ч</b>.</div></div></article>
+<article class="task" id="t-126">
+<div class="task-head"><span class="task-num">№ 2.126</span></div>
+<p class="task-body">Турист плыл на байдарке 1,5 ч со скоростью 6,6 км/ч и 3,5 ч шёл пешком со скоростью 5,4 км/ч. Найдите среднюю скорость туриста на всём пути.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step">Путь на байдарке: 1,5 · 6,6 = 9,9 км.</div>
+<div class="step">Путь пешком: 3,5 · 5,4 = 18,9 км.</div>
+<div class="step">Общий путь: 9,9 + 18,9 = 28,8 км.</div>
+<div class="step">Общее время: 1,5 + 3,5 = 5 ч.</div>
+<div class="step">Средняя скорость: 28,8 : 5 = <b>5,76 км/ч</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-127"><div class="task-head"><span class="task-num">№ 2.127</span></div><p class="task-body">а) (854,9−203,3):7,2·1,4 + 3,3; б) (150,4+87,5):7,8·2,5 − 4,5.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">а) 651,6:7,2=90,5; ·1,4=126,7; +3,3 = <b>130</b>.<br>б) 237,9:7,8=30,5; ·2,5=76,25; −4,5 = <b>71,75</b>.</div></div></article>
+<article class="task" id="t-127">
+<div class="task-head"><span class="task-num">№ 2.127</span></div>
+<p class="task-body">Выполните действия:<br>а) (854,9 − 203,3) : 7,2 · 1,4 + 3,3;<br>б) (150,4 + 87,5) : 7,8 · 2,5 − 4,5.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а)</b> Порядок действий:</div>
+<div class="step">1) 854,9 − 203,3 = 651,6.</div>
+<div class="step">2) 651,6 : 7,2 = 90,5.</div>
+<div class="step">3) 90,5 · 1,4 = 126,7.</div>
+<div class="step">4) 126,7 + 3,3 = <b>130</b>.</div>
+<br>
+<div class="step"><b>б)</b> Порядок действий:</div>
+<div class="step">1) 150,4 + 87,5 = 237,9.</div>
+<div class="step">2) 237,9 : 7,8 = 30,5.</div>
+<div class="step">3) 30,5 · 2,5 = 76,25.</div>
+<div class="step">4) 76,25 − 4,5 = <b>71,75</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="tp8"><div class="task-head"><span class="task-num">Пров. работа · §8</span></div><p class="task-body">1. Восстановите алгоритм НОК.<br>2. Числа, кратные: а) 4 и 5; б) 6 и 7; в) 10 и 12; г) 18 и 24.<br>3. НОК: а) 28 и 35; б) 120 и 150; в) 45 и 95; г) 200 и 300.<br>4. Миша раз в 3 дня, Лена раз в 4 дня. Через сколько дней встретятся?</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">1) 4 → 2 → 1 → 3.<br>2) а) 20, 40…; б) 42, 84…; в) 60, 120…; г) 72, 144…<br>3) а) <b>140</b>; б) <b>600</b>; в) <b>855</b>; г) <b>600</b>.<br>4) НОК(3,4) = <b>через 12 дней</b>.</div></div></article>
+<article class="task" id="tp8">
+<div class="task-head"><span class="task-num">Пров. работа · §8</span></div>
+<p class="task-body">
+<b>1.</b> Восстановите алгоритм нахождения наименьшего общего кратного нескольких натуральных чисел, записав в нужном порядке номера действий:<br>
+1) добавить недостающие множители из разложений остальных чисел;<br>
+2) выписать множители из разложения большего из чисел;<br>
+3) найти произведение множителей;<br>
+4) разложить числа на простые множители.<br><br>
+<b>2.</b> Напишите несколько чисел, кратных:<br>
+а) 4 и 5; б) 6 и 7; в) 10 и 12; г) 18 и 24.<br><br>
+<b>3.</b> Найдите наименьшее общее кратное чисел:<br>
+а) 28 и 35; б) 120 и 150; в) 45 и 95; г) 200 и 300.<br><br>
+<b>4.</b> Миша и Лена встретились на школьном стадионе. Оказалось, что Миша бегает раз в 3 дня, а Лена — раз в 4 дня. Через сколько дней ребята снова встретятся на стадионе, если они бегают в одно и то же время?
+</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>1.</b> Правильный порядок действий:</div>
+<div class="step">Сначала разложить числа на простые множители (4) → затем выписать множители из разложения большего числа (2) → добавить недостающие множители (1) → найти произведение (3).</div>
+<div class="step"><b>Ответ:</b> порядок <b>4 → 2 → 1 → 3</b>.</div>
+<br>
+<div class="step"><b>2. а) Числа, кратные 4 и 5:</b> НОК(4, 5) = 20, значит, кратные 20: <b>20, 40, 60, 80, 100…</b></div>
+<div class="step"><b>б) Числа, кратные 6 и 7:</b> НОК(6, 7) = 42, значит: <b>42, 84, 126, 168, 210…</b></div>
+<div class="step"><b>в) Числа, кратные 10 и 12:</b> НОК(10, 12) = 60, значит: <b>60, 120, 180, 240, 300…</b></div>
+<div class="step"><b>г) Числа, кратные 18 и 24:</b> НОК(18, 24) = 72, значит: <b>72, 144, 216, 288, 360…</b></div>
+<br>
+<div class="step"><b>3. а) 28 и 35.</b></div>
+<div class="step">28 = 2² · 7; 35 = 5 · 7.</div>
+<div class="step">НОК = 2² · 5 · 7 = 4 · 35 = <b>140</b>.</div>
+<br>
+<div class="step"><b>б) 120 и 150.</b></div>
+<div class="step">120 = 2³ · 3 · 5; 150 = 2 · 3 · 5².</div>
+<div class="step">НОК = 2³ · 3 · 5² = 8 · 75 = <b>600</b>.</div>
+<br>
+<div class="step"><b>в) 45 и 95.</b></div>
+<div class="step">45 = 3² · 5; 95 = 5 · 19.</div>
+<div class="step">НОК = 3² · 5 · 19 = 9 · 95 = <b>855</b>.</div>
+<br>
+<div class="step"><b>г) 200 и 300.</b></div>
+<div class="step">200 = 2³ · 5²; 300 = 2² · 3 · 5².</div>
+<div class="step">НОК = 2³ · 3 · 5² = 8 · 75 = <b>600</b>.</div>
+<br>
+<div class="step"><b>4.</b> Нужно найти НОК(3, 4).</div>
+<div class="step">3 и 4 взаимно простые, поэтому НОК = 3 · 4 = <b>12</b>.</div>
+<div class="step"><b>Ответ:</b> ребята встретятся снова через <b>12 дней</b>.</div>
+</div></div>
+</article>
+
 </div>
 </main>
 <footer class="footer"><p>© ЯрцевГДЗ · 2026</p></footer>

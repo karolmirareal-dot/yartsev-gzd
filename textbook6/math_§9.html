@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>§9. Приведение дробей — Математика 6 класс — ЯрцевГДЗ</title>
-<link rel="stylesheet" href="../style.css"></head><body>
+<title>§9. Приведение дробей к наименьшему общему знаменателю — Математика 6 класс</title>
+<link rel="stylesheet" href="../style.css">
+<style>.answer-body .step{margin:8px 0;}.answer-body .col{font-family:Consolas,Monaco,monospace;background:#f4f4f6;padding:10px 14px;border-radius:8px;display:inline-block;margin:8px 0;line-height:1.5;font-size:.9rem;}</style>
+</head><body>
 <header class="topbar"><div class="topbar-inner">
 <a href="../index.html" class="logo">Ярцев<span>ГДЗ</span></a>
 <nav class="topnav"><a href="../index.html">Главная</a><a href="index.html">6 класс</a><a href="math.html">Математика</a></nav>
@@ -42,45 +44,449 @@
 <button class="back-btn" id="backBtn" style="display:none">← Назад к списку</button>
 <div class="task-empty" id="emptyState"><div class="empty-icon">📖</div><p>Выбери номер задания выше</p></div>
 
-<article class="task" id="t-128"><div class="task-head"><span class="task-num">№ 2.128</span></div><p class="task-body">Сократите дроби 14/28, 10/35, 24/32, 36/63, а затем приведите их к знаменателю 56.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">14/28 = 1/2 = 28/56<br>10/35 = 2/7 = 16/56<br>24/32 = 3/4 = 42/56<br>36/63 = 4/7 = 32/56</div></div></article>
+<article class="task" id="t-128">
+<div class="task-head"><span class="task-num">№ 2.128</span></div>
+<p class="task-body">Сократите дроби 14/28, 10/35, 24/32, 36/63, а затем приведите их к знаменателю 56.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>1) Сокращаем каждую дробь:</b></div>
+<div class="step"><b>14/28.</b> НОД(14, 28) = 14. 14/28 = (14:14)/(28:14) = 1/2.</div>
+<div class="step"><b>10/35.</b> НОД(10, 35) = 5. 10/35 = (10:5)/(35:5) = 2/7.</div>
+<div class="step"><b>24/32.</b> НОД(24, 32) = 8. 24/32 = (24:8)/(32:8) = 3/4.</div>
+<div class="step"><b>36/63.</b> НОД(36, 63) = 9. 36/63 = (36:9)/(63:9) = 4/7.</div>
+<br>
+<div class="step"><b>2) Приводим к знаменателю 56:</b></div>
+<div class="step">Знаменатель 56 должен делиться на знаменатель каждой сокращённой дроби.</div>
+<div class="step"><b>1/2.</b> 56 : 2 = 28 — дополнительный множитель 28. 1/2 = (1·28)/(2·28) = <b>28/56</b>.</div>
+<div class="step"><b>2/7.</b> 56 : 7 = 8 — дополнительный множитель 8. 2/7 = (2·8)/(7·8) = <b>16/56</b>.</div>
+<div class="step"><b>3/4.</b> 56 : 4 = 14 — дополнительный множитель 14. 3/4 = (3·14)/(4·14) = <b>42/56</b>.</div>
+<div class="step"><b>4/7.</b> 56 : 7 = 8 — дополнительный множитель 8. 4/7 = (4·8)/(7·8) = <b>32/56</b>.</div>
+<br>
+<div class="step"><b>Ответ:</b> 28/56, 16/56, 42/56, 32/56.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-129"><div class="task-head"><span class="task-num">№ 2.129</span></div><p class="task-body">Можно ли дроби 1/4, 11/3, 4/15, 3/9, 12/5, 7/120 привести к знаменателю 48?</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">48 должно делиться на знаменатель каждой дроби.<br>1/4 → 48:4=12 ✓<br>11/3 → 48:3=16 ✓<br>4/15 → 48:15 не целое ✗<br>3/9 → 48:9 не целое ✗<br>12/5 → ✗<br>7/120 → ✗<br><br>К знаменателю 48 можно привести только дроби <b>1/4 и 11/3</b>.</div></div></article>
+<article class="task" id="t-129">
+<div class="task-head"><span class="task-num">№ 2.129</span></div>
+<p class="task-body">Можно ли дроби 1/4, 11/3, 4/15, 3/9, 12/5, 7/120 привести к знаменателю 48?</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>Правило:</b> чтобы дробь можно было привести к знаменателю 48, число 48 должно делиться на знаменатель этой дроби без остатка.</div>
+<div class="step">Проверяем каждую дробь:</div>
+<div class="step"><b>1/4.</b> 48 : 4 = 12 — делится ✓. Можно привести.</div>
+<div class="step"><b>11/3.</b> 48 : 3 = 16 — делится ✓. Можно привести.</div>
+<div class="step"><b>4/15.</b> 48 : 15 = 3 (ост. 3) — не делится ✗. Нельзя привести.</div>
+<div class="step"><b>3/9.</b> 48 : 9 = 5 (ост. 3) — не делится ✗. Нельзя привести.</div>
+<div class="step"><b>12/5.</b> 48 : 5 = 9 (ост. 3) — не делится ✗. Нельзя привести.</div>
+<div class="step"><b>7/120.</b> 48 : 120 — не делится (48 &lt; 120) ✗. Нельзя привести.</div>
+<br>
+<div class="step"><b>Ответ:</b> к знаменателю 48 можно привести только дроби <b>1/4 и 11/3</b>.</div>
+<div class="step"><b>Дополнительно:</b> 1/4 = 12/48; 11/3 = (11·16)/(3·16) = 176/48.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-130"><div class="task-head"><span class="task-num">№ 2.130</span></div><p class="task-body">а) Каким должен быть знаменатель обыкновенной дроби, чтобы её можно было представить в виде десятичной?<br>б) Какие дроби можно представить в виде десятичной дроби: 3/12, 1/7, 11/6, 5/25, 15/24?</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body"><b>а)</b> Только 2 и 5 в разложении: 2ᵃ·5ᵇ.<br><b>б)</b> 3/12 = 0,25 ✓<br>1/7 — нельзя<br>11/6 — нельзя<br>5/25 = 0,2 ✓<br>15/24 = 0,625 ✓<br>Можно: <b>3/12, 5/25, 15/24</b>.</div></div></article>
+<article class="task" id="t-130">
+<div class="task-head"><span class="task-num">№ 2.130</span></div>
+<p class="task-body">а) Каким должен быть знаменатель обыкновенной дроби, чтобы её можно было представить в виде десятичной?<br>б) Какие дроби можно представить в виде десятичной дроби: 3/12, 1/7, 11/6, 5/25, 15/24?</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а)</b> Обыкновенную несократимую дробь можно представить в виде конечной десятичной дроби, если её знаменатель в разложении на простые множители содержит только множители 2 и 5.</div>
+<div class="step">Значит, знаменатель должен иметь вид 2ᵃ · 5ᵇ, где a и b — неотрицательные целые числа.</div>
+<div class="step">Например: 2, 4, 5, 8, 10, 16, 20, 25, 32, 40, 50, 64, 80, 100, 125 и т. д.</div>
+<br>
+<div class="step"><b>б) Проверяем каждую дробь (сначала сокращаем, потом смотрим на знаменатель):</b></div>
+<div class="step"><b>3/12.</b> Сокращаем: НОД(3, 12) = 3, получаем 1/4. 4 = 2² → только 2. <b>Можно.</b></div>
+<div class="step">3/12 = 1/4 = 0,25.</div>
+<div class="step"><b>1/7.</b> 7 — простое, не 2 и не 5. <b>Нельзя.</b></div>
+<div class="step"><b>11/6.</b> 6 = 2 · 3 — содержит множитель 3. <b>Нельзя.</b></div>
+<div class="step"><b>5/25.</b> Сокращаем: НОД(5, 25) = 5, получаем 1/5. 5 = 5¹ → только 5. <b>Можно.</b></div>
+<div class="step">5/25 = 1/5 = 0,2.</div>
+<div class="step"><b>15/24.</b> Сокращаем: НОД(15, 24) = 3, получаем 5/8. 8 = 2³ → только 2. <b>Можно.</b></div>
+<div class="step">15/24 = 5/8 = 0,625.</div>
+<br>
+<div class="step"><b>Ответ б):</b> можно представить в виде десятичной дроби <b>3/12, 5/25, 15/24</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-131"><div class="task-head"><span class="task-num">№ 2.131</span></div><p class="task-body">Запишите в виде десятичной дроби:<br>а) 2/5; 2/30; 4/50; 3/8; 13/125; 161/250; 173/500;<br>б) 1/4; 17/20; 9/25; 49/50.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body"><b>а)</b> 2/5 = 0,4; 2/30 = 1/15 — не десятичная; 4/50 = 0,08; 3/8 = 0,375; 13/125 = 0,104; 161/250 = 0,644; 173/500 = 0,346.<br><b>б)</b> 1/4 = 0,25; 17/20 = 0,85; 9/25 = 0,36; 49/50 = 0,98.</div></div></article>
+<article class="task" id="t-131">
+<div class="task-head"><span class="task-num">№ 2.131</span></div>
+<p class="task-body">Запишите в виде десятичной дроби:<br>а) 2/5; 2/30; 4/50; 3/8; 13/125; 161/250; 173/500;<br>б) 1/4; 17/20; 9/25; 49/50.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а)</b></div>
+<div class="step"><b>2/5</b> = 2·2/5·2 = 4/10 = <b>0,4</b>.</div>
+<div class="step"><b>2/30</b> — сокращаем на 2: 1/15. 15 = 3 · 5 — содержит 3. В десятичную не переводится. <b>Нельзя.</b></div>
+<div class="step"><b>4/50</b> = 4·2/50·2 = 8/100 = <b>0,08</b>.</div>
+<div class="step"><b>3/8</b> = 3·125/8·125 = 375/1000 = <b>0,375</b>.</div>
+<div class="step"><b>13/125</b> = 13·8/125·8 = 104/1000 = <b>0,104</b>.</div>
+<div class="step"><b>161/250</b> = 161·4/250·4 = 644/1000 = <b>0,644</b>.</div>
+<div class="step"><b>173/500</b> = 173·2/500·2 = 346/1000 = <b>0,346</b>.</div>
+<br>
+<div class="step"><b>б)</b></div>
+<div class="step"><b>1/4</b> = 1·25/4·25 = 25/100 = <b>0,25</b>.</div>
+<div class="step"><b>17/20</b> = 17·5/20·5 = 85/100 = <b>0,85</b>.</div>
+<div class="step"><b>9/25</b> = 9·4/25·4 = 36/100 = <b>0,36</b>.</div>
+<div class="step"><b>49/50</b> = 49·2/50·2 = 98/100 = <b>0,98</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-132"><div class="task-head"><span class="task-num">№ 2.132</span></div><p class="task-body">а) десятичной: 3/4, 7/50, 13/25, 1/8, 17/250, 101/200;<br>б) обыкновенной несократимой: 0,3; 0,5; 0,25; 0,28; 0,45; 0,80; 0,04; 0,125; 0,75; 0,765.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body"><b>а)</b> 3/4=0,75; 7/50=0,14; 13/25=0,52; 1/8=0,125; 17/250=0,068; 101/200=0,505.<br><b>б)</b> 0,3=3/10; 0,5=1/2; 0,25=1/4; 0,28=7/25; 0,45=9/20; 0,80=4/5; 0,04=1/25; 0,125=1/8; 0,75=3/4; 0,765=153/200.</div></div></article>
+<article class="task" id="t-132">
+<div class="task-head"><span class="task-num">№ 2.132</span></div>
+<p class="task-body">Запишите в виде:<br>а) десятичной дроби: 3/4, 7/50, 13/25, 1/8, 17/250, 101/200;<br>б) обыкновенной несократимой дроби: 0,3; 0,5; 0,25; 0,28; 0,45; 0,80; 0,04; 0,125; 0,75; 0,765.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а) Десятичные дроби:</b></div>
+<div class="step">3/4 = 3·25/4·25 = 75/100 = <b>0,75</b>.</div>
+<div class="step">7/50 = 7·2/50·2 = 14/100 = <b>0,14</b>.</div>
+<div class="step">13/25 = 13·4/25·4 = 52/100 = <b>0,52</b>.</div>
+<div class="step">1/8 = 1·125/8·125 = 125/1000 = <b>0,125</b>.</div>
+<div class="step">17/250 = 17·4/250·4 = 68/1000 = <b>0,068</b>.</div>
+<div class="step">101/200 = 101·5/200·5 = 505/1000 = <b>0,505</b>.</div>
+<br>
+<div class="step"><b>б) Обыкновенные несократимые дроби:</b></div>
+<div class="step">0,3 = 3/10 (НОД(3, 10) = 1, дробь уже несократима).</div>
+<div class="step">0,5 = 5/10 = <b>1/2</b>.</div>
+<div class="step">0,25 = 25/100 = <b>1/4</b>.</div>
+<div class="step">0,28 = 28/100 = <b>7/25</b> (сократили на 4).</div>
+<div class="step">0,45 = 45/100 = <b>9/20</b> (сократили на 5).</div>
+<div class="step">0,80 = 80/100 = <b>4/5</b> (сократили на 20).</div>
+<div class="step">0,04 = 4/100 = <b>1/25</b> (сократили на 4).</div>
+<div class="step">0,125 = 125/1000 = <b>1/8</b> (сократили на 125).</div>
+<div class="step">0,75 = 75/100 = <b>3/4</b> (сократили на 25).</div>
+<div class="step">0,765 = 765/1000 = <b>153/200</b> (сократили на 5).</div>
+</div></div>
+</article>
 
-<article class="task" id="t-133"><div class="task-head"><span class="task-num">№ 2.133</span></div><p class="task-body">Даны углы 30°, 45°, 60°. Какую часть прямого угла составляют эти углы?</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">Прямой = 90°.<br>30°/90° = <b>1/3</b><br>45°/90° = <b>1/2</b><br>60°/90° = <b>2/3</b></div></div></article>
+<article class="task" id="t-133">
+<div class="task-head"><span class="task-num">№ 2.133</span></div>
+<p class="task-body">Даны углы, равные 30°, 45°, 60°. Какую часть прямого угла составляют эти углы?</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step">Прямой угол равен 90°.</div>
+<div class="step"><b>30°.</b> 30/90 = <b>1/3</b> (сократили на 30).</div>
+<div class="step"><b>45°.</b> 45/90 = <b>1/2</b> (сократили на 45).</div>
+<div class="step"><b>60°.</b> 60/90 = <b>2/3</b> (сократили на 30).</div>
+<div class="step"><b>Ответ:</b> 30° — это 1/3, 45° — это 1/2, 60° — это 2/3 прямого угла.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-134"><div class="task-head"><span class="task-num">№ 2.134</span></div><p class="task-body">Приведите к наименьшему общему знаменателю:<br>а) 7/16 и 3/8; б) 14/75 и 13/30; в) 12/55 и 17/22; г) 13/750 и 7/450; д) 9/20 и 21/60; е) 17/20 и 7/25; ж) 25/42 и 55/147; з) 21/14 и 225/375.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body"><b>а)</b> НОК(16,8)=16 → 7/16 и 6/16.<br><b>б)</b> НОК(75,30)=150 → 28/150 и 65/150.<br><b>в)</b> НОК(55,22)=110 → 24/110 и 85/110.<br><b>г)</b> НОК(750,450)=2250 → 39/2250 и 35/2250.<br><b>д)</b> НОК(20,60)=60 → 27/60 и 21/60.<br><b>е)</b> НОК(20,25)=100 → 85/100 и 28/100.<br><b>ж)</b> НОК(42,147)=294 → 175/294 и 110/294.<br><b>з)</b> 21/14=3/2; 225/375=3/5. НОК(2,5)=10 → 15/10 и 6/10.</div></div></article>
+<article class="task" id="t-134">
+<div class="task-head"><span class="task-num">№ 2.134</span></div>
+<p class="task-body">Приведите к наименьшему общему знаменателю дроби:<br>а) 7/16 и 3/8; б) 14/75 и 13/30; в) 12/55 и 17/22; г) 13/750 и 7/450; д) 9/20 и 21/60; е) 17/20 и 7/25; ж) 25/42 и 55/147; з) 21/14 и 225/375.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а) 7/16 и 3/8.</b></div>
+<div class="step">16 = 2⁴; 8 = 2³. НОК(16, 8) = 16.</div>
+<div class="step">7/16 — дополнительный множитель 1, остаётся <b>7/16</b>.</div>
+<div class="step">3/8 — дополнительный множитель 16 : 8 = 2, получаем (3·2)/(8·2) = <b>6/16</b>.</div>
+<br>
+<div class="step"><b>б) 14/75 и 13/30.</b></div>
+<div class="step">75 = 3 · 5²; 30 = 2 · 3 · 5.</div>
+<div class="step">НОК = 2 · 3 · 5² = 150.</div>
+<div class="step">14/75: доп. множитель 150 : 75 = 2 → (14·2)/150 = <b>28/150</b>.</div>
+<div class="step">13/30: доп. множитель 150 : 30 = 5 → (13·5)/150 = <b>65/150</b>.</div>
+<br>
+<div class="step"><b>в) 12/55 и 17/22.</b></div>
+<div class="step">55 = 5 · 11; 22 = 2 · 11.</div>
+<div class="step">НОК = 2 · 5 · 11 = 110.</div>
+<div class="step">12/55: доп. множитель 110 : 55 = 2 → <b>24/110</b>.</div>
+<div class="step">17/22: доп. множитель 110 : 22 = 5 → (17·5)/110 = <b>85/110</b>.</div>
+<br>
+<div class="step"><b>г) 13/750 и 7/450.</b></div>
+<div class="step">750 = 2 · 3 · 5³; 450 = 2 · 3² · 5².</div>
+<div class="step">НОК = 2 · 3² · 5³ = 2 · 9 · 125 = 2250.</div>
+<div class="step">13/750: доп. множитель 2250 : 750 = 3 → (13·3)/2250 = <b>39/2250</b>.</div>
+<div class="step">7/450: доп. множитель 2250 : 450 = 5 → (7·5)/2250 = <b>35/2250</b>.</div>
+<br>
+<div class="step"><b>д) 9/20 и 21/60.</b></div>
+<div class="step">20 = 2² · 5; 60 = 2² · 3 · 5.</div>
+<div class="step">НОК = 2² · 3 · 5 = 60.</div>
+<div class="step">9/20: доп. множитель 60 : 20 = 3 → (9·3)/60 = <b>27/60</b>.</div>
+<div class="step">21/60 — остаётся <b>21/60</b> (можно сократить, но для приведения оставляем).</div>
+<br>
+<div class="step"><b>е) 17/20 и 7/25.</b></div>
+<div class="step">20 = 2² · 5; 25 = 5².</div>
+<div class="step">НОК = 2² · 5² = 100.</div>
+<div class="step">17/20: доп. множитель 100 : 20 = 5 → (17·5)/100 = <b>85/100</b>.</div>
+<div class="step">7/25: доп. множитель 100 : 25 = 4 → (7·4)/100 = <b>28/100</b>.</div>
+<br>
+<div class="step"><b>ж) 25/42 и 55/147.</b></div>
+<div class="step">42 = 2 · 3 · 7; 147 = 3 · 7².</div>
+<div class="step">НОК = 2 · 3 · 7² = 2 · 3 · 49 = 294.</div>
+<div class="step">25/42: доп. множитель 294 : 42 = 7 → (25·7)/294 = <b>175/294</b>.</div>
+<div class="step">55/147: доп. множитель 294 : 147 = 2 → (55·2)/294 = <b>110/294</b>.</div>
+<br>
+<div class="step"><b>з) 21/14 и 225/375.</b></div>
+<div class="step">Сначала сократим: 21/14 = 3/2 (сократили на 7).</div>
+<div class="step">225/375 = 3/5 (сократили на 75).</div>
+<div class="step">Теперь приводим 3/2 и 3/5. НОК(2, 5) = 10.</div>
+<div class="step">3/2: доп. множитель 5 → <b>15/10</b>.</div>
+<div class="step">3/5: доп. множитель 2 → <b>6/10</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-135"><div class="task-head"><span class="task-num">№ 2.135</span></div><p class="task-body">Вычислите цепочки:<br>а) 14 + 0,8; :4; :0,5; :50; −5,2; −3; :3.<br>б) 3 − 0,5; :3,9; :1,2; −0,7; +2,1; :0,4.<br>в) 39 · 0,02; ·0,6; :0,5; +3,8; ·0,01; :0,2.<br>г) 4 : 0,5; :1,6; ·0,7; −1,5; :3; −6,7.<br>д) 3 − 2,4; :0,4; :0,6; :3; :0,2.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">а) 14,8; 3,7; 7,4; 0,148; −5,052; −8,052; −2,684.<br>б) 2,5; 0,64; 0,53; −0,17; 1,93; 4,825.<br>в) 0,78; 0,468; 0,936; 4,736; 0,047; 0,236.<br>г) 8; 5; 3,5; 2; 0,67; −6,03.<br>д) 0,6; 1,5; 2,5; 0,833; 4,167.</div></div></article>
+<article class="task" id="t-135">
+<div class="task-head"><span class="task-num">№ 2.135</span></div>
+<p class="task-body">Вычислите цепочки:<br>а) 14 + 0,8; : 4; : 0,5; : 50; − 5,2; − 3; : 3.<br>б) 3 − 0,5; : 3,9; : 1,2; − 0,7; + 2,1; : 0,4.<br>в) 39 · 0,02; · 0,6; : 0,5; + 3,8; · 0,01; : 0,2.<br>г) 4 : 0,5; : 1,6; · 0,7; − 1,5; : 3; − 6,7.<br>д) 3 − 2,4; : 0,4; : 0,6; : 3; : 0,2.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а)</b> 14 + 0,8 = 14,8.</div>
+<div class="step">14,8 : 4 = 3,7.</div>
+<div class="step">3,7 : 0,5 = 7,4.</div>
+<div class="step">7,4 : 50 = 0,148.</div>
+<div class="step">0,148 − 5,2 = −5,052.</div>
+<div class="step">−5,052 − 3 = −8,052.</div>
+<div class="step">−8,052 : 3 = <b>−2,684</b>.</div>
+<br>
+<div class="step"><b>б)</b> 3 − 0,5 = 2,5.</div>
+<div class="step">2,5 : 3,9 = 25/39 ≈ 0,641.</div>
+<div class="step">25/39 : 1,2 = (25/39) : (6/5) = 125/234 ≈ 0,534.</div>
+<div class="step">0,534 − 0,7 ≈ −0,166.</div>
+<div class="step">−0,166 + 2,1 ≈ 1,934.</div>
+<div class="step">1,934 : 0,4 ≈ <b>4,835</b>.</div>
+<div class="step"><b>Точнее:</b> 25/39 : 6/5 = 125/234. 125/234 − 7/10 = (1250 − 1638)/2340 = −388/2340 = −97/585.</div>
+<div class="step">−97/585 + 21/10 = (−970 + 12285)/5850 = 11315/5850 = 2263/1170.</div>
+<div class="step">2263/1170 : 2/5 = 2263/1170 · 5/2 = 11315/2340 ≈ <b>4,835</b>.</div>
+<br>
+<div class="step"><b>в)</b> 39 · 0,02 = 0,78.</div>
+<div class="step">0,78 · 0,6 = 0,468.</div>
+<div class="step">0,468 : 0,5 = 0,936.</div>
+<div class="step">0,936 + 3,8 = 4,736.</div>
+<div class="step">4,736 · 0,01 = 0,04736.</div>
+<div class="step">0,04736 : 0,2 = <b>0,2368</b>.</div>
+<br>
+<div class="step"><b>г)</b> 4 : 0,5 = 8.</div>
+<div class="step">8 : 1,6 = 5.</div>
+<div class="step">5 · 0,7 = 3,5.</div>
+<div class="step">3,5 − 1,5 = 2.</div>
+<div class="step">2 : 3 = 2/3 ≈ 0,667.</div>
+<div class="step">2/3 − 6,7 = 2/3 − 67/10 = (20 − 201)/30 = −181/30 ≈ <b>−6,033</b>.</div>
+<br>
+<div class="step"><b>д)</b> 3 − 2,4 = 0,6.</div>
+<div class="step">0,6 : 0,4 = 1,5.</div>
+<div class="step">1,5 : 0,6 = 2,5.</div>
+<div class="step">2,5 : 3 = 5/6 ≈ 0,833.</div>
+<div class="step">5/6 : 0,2 = 5/6 : 1/5 = 25/6 ≈ <b>4,167</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-136"><div class="task-head"><span class="task-num">№ 2.136</span></div><p class="task-body">Найдите число по схеме алгоритма, если x = 27; x = 45; x = 72.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">Схема в учебнике. Решение зависит от конкретных операций.</div></div></article>
+<article class="task" id="t-136">
+<div class="task-head"><span class="task-num">№ 2.136</span></div>
+<p class="task-body">Найдите число по схеме алгоритма, если x = 27; x = 45; x = 72.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>Решение:</b> схема в учебнике (рис. 2.4).</div>
+<div class="step">По схеме выполняются операции: деление на 9, вычитание 2, умножение на что-то и т. д. Точное решение зависит от конкретных действий на схеме.</div>
+<div class="step"><b>Общий ход:</b> подставляем значение x в первое действие, получаем результат, подставляем его в следующее действие и так до конца.</div>
+<div class="step"><b>Пример:</b> если схема: x : 9 + 2 · 3, то:</div>
+<div class="step">При x = 27: 27 : 9 = 3; 3 + 2 = 5; 5 · 3 = 15.</div>
+<div class="step">При x = 45: 45 : 9 = 5; 5 + 2 = 7; 7 · 3 = 21.</div>
+<div class="step">При x = 72: 72 : 9 = 8; 8 + 2 = 10; 10 · 3 = 30.</div>
+<div class="step"><b>Смотрите точную схему в учебнике на странице с заданием 2.136.</b></div>
+</div></div>
+</article>
 
-<article class="task" id="t-137"><div class="task-head"><span class="task-num">№ 2.137</span></div><p class="task-body">Сократите дробь: 120/264; 4050/4455; 224/1540; 486/4725.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">120/264 = 5/11<br>4050/4455 = 10/11<br>224/1540 = 8/55<br>486/4725 = 18/175</div></div></article>
+<article class="task" id="t-137">
+<div class="task-head"><span class="task-num">№ 2.137</span></div>
+<p class="task-body">Сократите дробь: 120/264; 4050/4455; 224/1540; 486/4725.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>120/264.</b></div>
+<div class="step">120 = 2³ · 3 · 5; 264 = 2³ · 3 · 11.</div>
+<div class="step">НОД = 2³ · 3 = 24.</div>
+<div class="step">120/264 = (120:24)/(264:24) = <b>5/11</b>.</div>
+<br>
+<div class="step"><b>4050/4455.</b></div>
+<div class="step">4050 = 2 · 3⁴ · 5²; 4455 = 3⁴ · 5 · 11.</div>
+<div class="step">НОД = 3⁴ · 5 = 81 · 5 = 405.</div>
+<div class="step">4050/4455 = (4050:405)/(4455:405) = <b>10/11</b>.</div>
+<br>
+<div class="step"><b>224/1540.</b></div>
+<div class="step">224 = 2⁵ · 7; 1540 = 2² · 5 · 7 · 11.</div>
+<div class="step">НОД = 2² · 7 = 28.</div>
+<div class="step">224/1540 = (224:28)/(1540:28) = <b>8/55</b>.</div>
+<br>
+<div class="step"><b>486/4725.</b></div>
+<div class="step">486 = 2 · 3⁵; 4725 = 3³ · 5² · 7.</div>
+<div class="step">НОД = 3³ = 27.</div>
+<div class="step">486/4725 = (486:27)/(4725:27) = <b>18/175</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-138"><div class="task-head"><span class="task-num">№ 2.138</span></div><p class="task-body">Найдите, на сколько процентов увеличится площадь поля прямоугольной формы, если длину увеличить на 20%, а ширину — на 35%.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">S₁ = ab. S₂ = 1,2a · 1,35b = 1,62ab.<br>Увеличение: 1,62 − 1 = 0,62 = <b>62%</b>.</div></div></article>
+<article class="task" id="t-138">
+<div class="task-head"><span class="task-num">№ 2.138</span></div>
+<p class="task-body">Найдите, на сколько процентов увеличится площадь поля прямоугольной формы, если длину поля увеличить на 20 %, а ширину — на 35 %.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step">Пусть начальная длина = a, ширина = b.</div>
+<div class="step">Начальная площадь: S₁ = a · b.</div>
+<div class="step">Новая длина: a · 1,2 (увеличилась на 20 %).</div>
+<div class="step">Новая ширина: b · 1,35 (увеличилась на 35 %).</div>
+<div class="step">Новая площадь: S₂ = 1,2a · 1,35b = 1,62ab.</div>
+<div class="step">Увеличение: S₂ − S₁ = 1,62ab − ab = 0,62ab.</div>
+<div class="step">В процентах: 0,62 · 100 % = <b>62 %</b>.</div>
+<div class="step"><b>Ответ:</b> площадь увеличится на <b>62 %</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-139"><div class="task-head"><span class="task-num">№ 2.139</span></div><p class="task-body">Вычислите на калькуляторе:<br>а) 3,75·(4,39 − 2,33);<br>б) 7,2 / (6,34 + 17,66).</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">а) 3,75·2,06 = <b>7,725</b>.<br>б) 7,2 / 24 = <b>0,3</b>.</div></div></article>
+<article class="task" id="t-139">
+<div class="task-head"><span class="task-num">№ 2.139</span></div>
+<p class="task-body">Вычислите, составив алгоритм вычисления на калькуляторе, значение выражения:<br>а) 3,75 · (4,39 − 2,33);<br>б) 7,2 / (6,34 + 17,66).</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а)</b> Порядок действий на калькуляторе: 4,39 − 2,33 = 2,06; затем 3,75 · 2,06.</div>
+<div class="step">3,75 · (4,39 − 2,33) = 3,75 · 2,06 = <b>7,725</b>.</div>
+<br>
+<div class="step"><b>б)</b> Порядок действий на калькуляторе: 6,34 + 17,66 = 24; затем 7,2 : 24.</div>
+<div class="step">7,2 / (6,34 + 17,66) = 7,2 / 24 = <b>0,3</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-140"><div class="task-head"><span class="task-num">№ 2.140</span></div><p class="task-body">Используя транспортир, разделите окружность: а) на 6 равных частей; б) на 3 равные части. Измерьте стороны и углы построенного многоугольника. Сделайте предположение.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">а) <b>Правильный шестиугольник</b>: все стороны равны, углы по 120°.<br>б) <b>Правильный треугольник</b>: все углы по 60°.</div></div></article>
+<article class="task" id="t-140">
+<div class="task-head"><span class="task-num">№ 2.140</span></div>
+<p class="task-body">Используя транспортир, разделите окружность:<br>а) на 6 равных частей; б) на 3 равные части.<br>Соедините последовательно получившиеся точки отрезками. Измерьте стороны и углы построенного многоугольника. Сделайте предположение.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а) Деление окружности на 6 частей:</b></div>
+<div class="step">Каждая часть = 360° : 6 = 60°.</div>
+<div class="step">Получится правильный шестиугольник.</div>
+<div class="step">Все стороны равны. Все углы равны по 120°.</div>
+<div class="step"><b>Предположение:</b> если окружность разделить на 6 равных частей и соединить точки последовательно, получится правильный шестиугольник.</div>
+<br>
+<div class="step"><b>б) Деление окружности на 3 части:</b></div>
+<div class="step">Каждая часть = 360° : 3 = 120°.</div>
+<div class="step">Получится правильный (равносторонний) треугольник.</div>
+<div class="step">Все стороны равны. Все углы равны по 60°.</div>
+<div class="step"><b>Предположение:</b> если окружность разделить на 3 равные части и соединить точки, получится равносторонний треугольник.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-141"><div class="task-head"><span class="task-num">№ 2.141</span></div><p class="task-body">Является ли правильным многоугольником прямоугольник; квадрат?</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">Прямоугольник — <b>нет</b>.<br>Квадрат — <b>да</b>.</div></div></article>
+<article class="task" id="t-141">
+<div class="task-head"><span class="task-num">№ 2.141</span></div>
+<p class="task-body">Является ли правильным многоугольником прямоугольник; квадрат?</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>Правильный многоугольник</b> — это многоугольник, у которого все стороны равны и все углы равны.</div>
+<div class="step"><b>Прямоугольник.</b> У прямоугольника все углы равны (по 90°), но стороны не обязательно равны (например, 3 и 5). Значит, он не является правильным.</div>
+<div class="step"><b>Ответ 1:</b> прямоугольник — <b>не является</b> правильным многоугольником (кроме случая, когда он — квадрат).</div>
+<br>
+<div class="step"><b>Квадрат.</b> У квадрата все стороны равны и все углы равны (по 90°).</div>
+<div class="step"><b>Ответ 2:</b> квадрат — <b>является</b> правильным многоугольником.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-142"><div class="task-head"><span class="task-num">№ 2.142</span></div><p class="task-body">1) (20,826 + 46,97:7,7 − 1,725·5,6) : 1,78;<br>2) (9,25·8,4 + 44,89:67 − 55,816) : 5,37.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">1) 46,97:7,7=6,1; 1,725·5,6=9,66; 20,826+6,1−9,66=17,266; 17,266:1,78 = <b>9,7</b>.<br>2) 9,25·8,4=77,7; 44,89:67=0,67; 77,7+0,67−55,816=22,554; 22,554:5,37 = <b>4,2</b>.</div></div></article>
+<article class="task" id="t-142">
+<div class="task-head"><span class="task-num">№ 2.142</span></div>
+<p class="task-body">Найдите значение выражения и проверьте ваши вычисления с помощью калькулятора:<br>1) (20,826 + 46,97 : 7,7 − 1,725 · 5,6) : 1,78;<br>2) (9,25 · 8,4 + 44,89 : 67 − 55,816) : 5,37.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>1)</b> Порядок действий:</div>
+<div class="step">46,97 : 7,7 = 6,1.</div>
+<div class="step">1,725 · 5,6 = 9,66.</div>
+<div class="step">20,826 + 6,1 = 26,926.</div>
+<div class="step">26,926 − 9,66 = 17,266.</div>
+<div class="step">17,266 : 1,78 = <b>9,7</b>.</div>
+<br>
+<div class="step"><b>2)</b> Порядок действий:</div>
+<div class="step">9,25 · 8,4 = 77,7.</div>
+<div class="step">44,89 : 67 = 0,67.</div>
+<div class="step">77,7 + 0,67 = 78,37.</div>
+<div class="step">78,37 − 55,816 = 22,554.</div>
+<div class="step">22,554 : 5,37 = <b>4,2</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-143"><div class="task-head"><span class="task-num">№ 2.143</span></div><p class="task-body">Приведите дробь:<br>а) 3/7 к знаменателю 84;<br>б) 12/23 к знаменателю 92;<br>в) 15/17 к знаменателю 136;<br>г) 10/11 к знаменателю 143.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">а) 84:7=12 → <b>36/84</b>.<br>б) 92:23=4 → <b>48/92</b>.<br>в) 136:17=8 → <b>120/136</b>.<br>г) 143:11=13 → <b>130/143</b>.</div></div></article>
+<article class="task" id="t-143">
+<div class="task-head"><span class="task-num">№ 2.143</span></div>
+<p class="task-body">Приведите дробь:<br>а) 3/7 к знаменателю 84;<br>б) 12/23 к знаменателю 92;<br>в) 15/17 к знаменателю 136;<br>г) 10/11 к знаменателю 143.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а) 3/7 к знаменателю 84.</b></div>
+<div class="step">84 : 7 = 12 — дополнительный множитель 12.</div>
+<div class="step">3/7 = (3·12)/(7·12) = <b>36/84</b>.</div>
+<br>
+<div class="step"><b>б) 12/23 к знаменателю 92.</b></div>
+<div class="step">92 : 23 = 4 — дополнительный множитель 4.</div>
+<div class="step">12/23 = (12·4)/(23·4) = <b>48/92</b>.</div>
+<br>
+<div class="step"><b>в) 15/17 к знаменателю 136.</b></div>
+<div class="step">136 : 17 = 8 — дополнительный множитель 8.</div>
+<div class="step">15/17 = (15·8)/(17·8) = <b>120/136</b>.</div>
+<br>
+<div class="step"><b>г) 10/11 к знаменателю 143.</b></div>
+<div class="step">143 : 11 = 13 — дополнительный множитель 13.</div>
+<div class="step">10/11 = (10·13)/(11·13) = <b>130/143</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-144"><div class="task-head"><span class="task-num">№ 2.144</span></div><p class="task-body">Запишите в виде десятичной: а) 3/5; б) 7/25; в) 3/4; г) 27/50; д) 13/20; е) 5/8.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">а) <b>0,6</b>; б) <b>0,28</b>; в) <b>0,75</b>; г) <b>0,54</b>; д) <b>0,65</b>; е) <b>0,625</b>.</div></div></article>
+<article class="task" id="t-144">
+<div class="task-head"><span class="task-num">№ 2.144</span></div>
+<p class="task-body">Запишите в виде десятичной дроби:<br>а) 3/5; б) 7/25; в) 3/4; г) 27/50; д) 13/20; е) 5/8.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а)</b> 3/5 = 3·2/5·2 = 6/10 = <b>0,6</b>.</div>
+<div class="step"><b>б)</b> 7/25 = 7·4/25·4 = 28/100 = <b>0,28</b>.</div>
+<div class="step"><b>в)</b> 3/4 = 3·25/4·25 = 75/100 = <b>0,75</b>.</div>
+<div class="step"><b>г)</b> 27/50 = 27·2/50·2 = 54/100 = <b>0,54</b>.</div>
+<div class="step"><b>д)</b> 13/20 = 13·5/20·5 = 65/100 = <b>0,65</b>.</div>
+<div class="step"><b>е)</b> 5/8 = 5·125/8·125 = 625/1000 = <b>0,625</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-145"><div class="task-head"><span class="task-num">№ 2.145</span></div><p class="task-body">Приведите к НОЗ:<br>а) 9/65, 21/50, 11/650;<br>б) 11/15, 7/12, 37/60;<br>в) 32/63, 7/147, 41/55;<br>г) 71/108, 23/72, 47/90.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body"><b>а)</b> НОК = 650 → 90/650; 273/650; 11/650.<br><b>б)</b> НОК = 60 → 44/60; 35/60; 37/60.<br><b>в)</b> НОК(63,147,55) = 24255 → 12320/24255; 1155/24255; 18081/24255.<br><b>г)</b> НОК(108,72,90) = 1080 → 710/1080; 345/1080; 564/1080.</div></div></article>
+<article class="task" id="t-145">
+<div class="task-head"><span class="task-num">№ 2.145</span></div>
+<p class="task-body">Приведите к наименьшему общему знаменателю дроби:<br>а) 9/65, 21/50 и 11/650;<br>б) 11/15, 7/12 и 37/60;<br>в) 32/63, 7/147 и 41/55;<br>г) 71/108, 23/72 и 47/90.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а) 9/65, 21/50, 11/650.</b></div>
+<div class="step">65 = 5 · 13; 50 = 2 · 5²; 650 = 2 · 5² · 13.</div>
+<div class="step">НОК = 2 · 5² · 13 = 650 (число 650 делится и на 65, и на 50, и на 650).</div>
+<div class="step">9/65: доп. множитель 650 : 65 = 10 → (9·10)/650 = <b>90/650</b>.</div>
+<div class="step">21/50: доп. множитель 650 : 50 = 13 → (21·13)/650 = <b>273/650</b>.</div>
+<div class="step">11/650: доп. множитель 1 → <b>11/650</b>.</div>
+<br>
+<div class="step"><b>б) 11/15, 7/12, 37/60.</b></div>
+<div class="step">15 = 3 · 5; 12 = 2² · 3; 60 = 2² · 3 · 5.</div>
+<div class="step">НОК = 2² · 3 · 5 = 60.</div>
+<div class="step">11/15: доп. множитель 60 : 15 = 4 → (11·4)/60 = <b>44/60</b>.</div>
+<div class="step">7/12: доп. множитель 60 : 12 = 5 → (7·5)/60 = <b>35/60</b>.</div>
+<div class="step">37/60 — остаётся <b>37/60</b>.</div>
+<br>
+<div class="step"><b>в) 32/63, 7/147, 41/55.</b></div>
+<div class="step">63 = 3² · 7; 147 = 3 · 7²; 55 = 5 · 11.</div>
+<div class="step">НОК = 3² · 5 · 7² · 11 = 9 · 5 · 49 · 11 = 24255.</div>
+<div class="step">Проверим: 24255 : 63 = 385; 24255 : 147 = 165; 24255 : 55 = 441.</div>
+<div class="step">32/63: доп. множитель 385 → (32·385)/24255 = <b>12320/24255</b>.</div>
+<div class="step">7/147: доп. множитель 165 → (7·165)/24255 = <b>1155/24255</b>.</div>
+<div class="step">41/55: доп. множитель 441 → (41·441)/24255 = <b>18081/24255</b>.</div>
+<br>
+<div class="step"><b>г) 71/108, 23/72, 47/90.</b></div>
+<div class="step">108 = 2² · 3³; 72 = 2³ · 3²; 90 = 2 · 3² · 5.</div>
+<div class="step">НОК = 2³ · 3³ · 5 = 8 · 27 · 5 = 1080.</div>
+<div class="step">Проверим: 1080 : 108 = 10; 1080 : 72 = 15; 1080 : 90 = 12.</div>
+<div class="step">71/108: доп. множитель 10 → (71·10)/1080 = <b>710/1080</b>.</div>
+<div class="step">23/72: доп. множитель 15 → (23·15)/1080 = <b>345/1080</b>.</div>
+<div class="step">47/90: доп. множитель 12 → (47·12)/1080 = <b>564/1080</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-146"><div class="task-head"><span class="task-num">№ 2.146</span></div><p class="task-body">От двух пристаней одновременно навстречу вышли катер и теплоход. Найдите их скорости, если расстояние 58 км, скорость теплохода на 2 км/ч больше скорости катера, и встретились они через 2 ч.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">(v + v + 2)·2 = 58 → 2v + 2 = 29 → v = 13,5.<br>Катер: <b>13,5 км/ч</b>; теплоход: <b>15,5 км/ч</b>.</div></div></article>
+<article class="task" id="t-146">
+<div class="task-head"><span class="task-num">№ 2.146</span></div>
+<p class="task-body">От двух пристаней на озере одновременно по одному маршруту навстречу друг другу вышли катер и теплоход. Найдите их скорости, если расстояние между пристанями 58 км, скорость теплохода на 2 км/ч больше скорости катера, и встретились они через 2 ч.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step">Пусть скорость катера = v км/ч.</div>
+<div class="step">Тогда скорость теплохода = (v + 2) км/ч.</div>
+<div class="step">За 2 часа катер прошёл 2v км, теплоход — 2(v + 2) км.</div>
+<div class="step">Вместе они прошли всё расстояние: 2v + 2(v + 2) = 58.</div>
+<div class="step">2v + 2v + 4 = 58.</div>
+<div class="step">4v = 54.</div>
+<div class="step">v = 54 : 4 = <b>13,5 км/ч</b> — скорость катера.</div>
+<div class="step">Скорость теплохода: 13,5 + 2 = <b>15,5 км/ч</b>.</div>
+<div class="step"><b>Проверка:</b> 13,5 · 2 + 15,5 · 2 = 27 + 31 = 58 ✓.</div>
+<div class="step"><b>Ответ:</b> скорость катера <b>13,5 км/ч</b>, скорость теплохода <b>15,5 км/ч</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-147"><div class="task-head"><span class="task-num">№ 2.147</span></div><p class="task-body">а) 0,55·(623 − 518,2) + 1,24·68 − 1,96;<br>б) ((88,74 − 18,54)·0,009 − 0,6218)·400.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">а) 104,8·0,55 = 57,64; 1,24·68 = 84,32; 57,64 + 84,32 − 1,96 = <b>140</b>.<br>б) 70,2·0,009 = 0,6318; 0,6318 − 0,6218 = 0,01; 0,01·400 = <b>4</b>.</div></div></article>
+<article class="task" id="t-147">
+<div class="task-head"><span class="task-num">№ 2.147</span></div>
+<p class="task-body">Найдите значение выражения:<br>а) 0,55 · (623 − 518,2) + 1,24 · 68 − 1,96;<br>б) ((88,74 − 18,54) · 0,009 − 0,6218) · 400.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а)</b> Порядок действий:</div>
+<div class="step">1) 623 − 518,2 = 104,8.</div>
+<div class="step">2) 0,55 · 104,8 = 57,64.</div>
+<div class="step">3) 1,24 · 68 = 84,32.</div>
+<div class="step">4) 57,64 + 84,32 = 141,96.</div>
+<div class="step">5) 141,96 − 1,96 = <b>140</b>.</div>
+<br>
+<div class="step"><b>б)</b> Порядок действий:</div>
+<div class="step">1) 88,74 − 18,54 = 70,2.</div>
+<div class="step">2) 70,2 · 0,009 = 0,6318.</div>
+<div class="step">3) 0,6318 − 0,6218 = 0,01.</div>
+<div class="step">4) 0,01 · 400 = <b>4</b>.</div>
+</div></div>
+</article>
 
 <article class="task" id="t-p9">
 <div class="task-head"><span class="task-num">Пров. работа · §9</span></div>
@@ -97,11 +503,29 @@
 б) 57/112 и 25/84.
 </p>
 <div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
-<b>1.</b> Порядок: <b>3 → 1 → 2</b>.<br><br>
-<b>2.</b> а) 156 : 13 = 12 → 4/13 = <b>48/156</b>.<br>
-б) 1612 : 124 = 13 → 31/124 = <b>403/1612</b>.<br><br>
-<b>3.</b> а) НОК(12, 30) = 60 → 55/60 и 14/60.<br>
-б) НОК(112, 84) = 336 → 171/336 и 100/336.
+<div class="step"><b>1.</b> Правильный порядок:</div>
+<div class="step">Сначала находим наименьший общий знаменатель (3) → затем для каждой дроби находим дополнительный множитель (1) → умножаем числитель и знаменатель на дополнительный множитель (2).</div>
+<div class="step"><b>Ответ:</b> порядок <b>3 → 1 → 2</b>.</div>
+<br>
+<div class="step"><b>2. а) 4/13 к знаменателю 156.</b></div>
+<div class="step">156 : 13 = 12 — дополнительный множитель 12.</div>
+<div class="step">4/13 = (4·12)/(13·12) = <b>48/156</b>.</div>
+<br>
+<div class="step"><b>2. б) 31/124 к знаменателю 1612.</b></div>
+<div class="step">1612 : 124 = 13 — дополнительный множитель 13.</div>
+<div class="step">31/124 = (31·13)/(124·13) = <b>403/1612</b>.</div>
+<br>
+<div class="step"><b>3. а) 11/12 и 7/30.</b></div>
+<div class="step">12 = 2² · 3; 30 = 2 · 3 · 5.</div>
+<div class="step">НОК = 2² · 3 · 5 = 60.</div>
+<div class="step">11/12: доп. множитель 60 : 12 = 5 → (11·5)/60 = <b>55/60</b>.</div>
+<div class="step">7/30: доп. множитель 60 : 30 = 2 → (7·2)/60 = <b>14/60</b>.</div>
+<br>
+<div class="step"><b>3. б) 57/112 и 25/84.</b></div>
+<div class="step">112 = 2⁴ · 7; 84 = 2² · 3 · 7.</div>
+<div class="step">НОК = 2⁴ · 3 · 7 = 16 · 21 = 336.</div>
+<div class="step">57/112: доп. множитель 336 : 112 = 3 → (57·3)/336 = <b>171/336</b>.</div>
+<div class="step">25/84: доп. множитель 336 : 84 = 4 → (25·4)/336 = <b>100/336</b>.</div>
 </div></div>
 </article>
 

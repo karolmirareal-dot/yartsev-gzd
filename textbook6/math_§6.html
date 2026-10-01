@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>§6. Разложение на простые множители — Математика 6 класс</title>
-<link rel="stylesheet" href="../style.css"></head><body>
+<link rel="stylesheet" href="../style.css">
+<style>
+  .answer-body .step{margin:6px 0;}
+  .answer-body .col{font-family:Consolas,Monaco,monospace;background:#f4f4f6;padding:10px 14px;border-radius:8px;display:inline-block;margin:8px 0;line-height:1.4;font-size:.9rem;}
+</style>
+</head><body>
 <header class="topbar"><div class="topbar-inner">
 <a href="../index.html" class="logo">Ярцев<span>ГДЗ</span></a>
 <nav class="topnav"><a href="../index.html">Главная</a><a href="index.html">6 класс</a><a href="math.html">Математика</a></nav>
 </div></header>
-<section class="hero"><h1>Математика · <span class="grad">6 класс</span></h1><p>§ 6. Разложение на простые множители</p></section>
+<section class="hero"><h1>Математика · <span class="grad">6 класс</span></h1><p>§ 6. Разложение числа на простые множители</p></section>
 <main class="container">
 <div class="crumbs"><a href="../index.html">Главная</a> · <a href="index.html">6 класс</a> · <a href="math.html">Математика</a> · §6</div>
 <section class="book-card"><img class="book-cover-img" src="cover.jpg" alt="Обложка"><div class="book-info">
@@ -80,123 +85,760 @@
 <button class="back-btn" id="backBtn" style="display:none">← Назад к списку</button>
 <div class="task-empty" id="emptyState"><div class="empty-icon">📖</div><p>Выбери номер задания выше</p></div>
 
-<article class="task" id="t-1"><div class="task-head"><span class="task-num">№ 2.1</span></div><p class="task-body">Назовите делители чисел 37, 35, 99.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">37: 1, 37 — простое.<br>35: 1, 5, 7, 35.<br>99: 1, 3, 9, 11, 33, 99.</div></div></article>
+<article class="task" id="t-1">
+<div class="task-head"><span class="task-num">№ 2.1</span></div>
+<p class="task-body">Назовите делители чисел 37, 35, 99.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>37:</b> делится только на 1 и на 37. Делители: <b>1, 37</b>. Это простое число.</div>
+<div class="step"><b>35:</b> делится на 1, 5, 7, 35. Делители: <b>1, 5, 7, 35</b>. Составное.</div>
+<div class="step"><b>99:</b> делится на 1, 3, 9, 11, 33, 99. Делители: <b>1, 3, 9, 11, 33, 99</b>. Составное.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-2"><div class="task-head"><span class="task-num">№ 2.2</span></div><p class="task-body">Какие из чисел 107, 123, 367, 409, 531, 557, 853, 977 — простые?</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">Простые: <b>107, 367, 409, 557, 853, 977</b>.<br>123 = 3·41; 531 = 9·59.</div></div></article>
+<article class="task" id="t-2">
+<div class="task-head"><span class="task-num">№ 2.2</span></div>
+<p class="task-body">Используя таблицу простых чисел, определите, какие из чисел 107, 123, 367, 409, 531, 557, 853, 977 являются простыми.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step">Проверяем каждое число:</div>
+<div class="step"><b>107</b> — простое (не делится на 2, 3, 5, 7).</div>
+<div class="step"><b>123</b> — составное: 123 = 3 · 41.</div>
+<div class="step"><b>367</b> — простое (по таблице простых).</div>
+<div class="step"><b>409</b> — простое.</div>
+<div class="step"><b>531</b> — составное: 531 = 3 · 177 = 9 · 59.</div>
+<div class="step"><b>557</b> — простое.</div>
+<div class="step"><b>853</b> — простое.</div>
+<div class="step"><b>977</b> — простое.</div>
+<div class="step"><b>Ответ:</b> простые числа: <b>107, 367, 409, 557, 853, 977</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-3"><div class="task-head"><span class="task-num">№ 2.3</span></div><p class="task-body">Числа 2876, 4500, 777 777, 595 599 — составные. Докажите.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">2876 = 2·1438; 4500 = 2·2250; 777 777 = 3·259 259; 595 599 = 3·198 533.</div></div></article>
+<article class="task" id="t-3">
+<div class="task-head"><span class="task-num">№ 2.3</span></div>
+<p class="task-body">Числа 2876, 4500, 777 777, 595 599 — составные. Докажите это утверждение.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step">Для каждого числа покажем, что оно имеет более двух делителей:</div>
+<div class="step"><b>2876</b>: оканчивается чётной цифрой → делится на 2: 2876 = 2 · 1438. Значит, составное.</div>
+<div class="step"><b>4500</b>: оканчивается нулём → делится на 10: 4500 = 10 · 450. Составное.</div>
+<div class="step"><b>777 777</b>: сумма цифр 7+7+7+7+7+7 = 42, 42 : 3 = 14 → делится на 3: 777 777 = 3 · 259 259. Составное.</div>
+<div class="step"><b>595 599</b>: сумма цифр 5+9+5+5+9+9 = 42, 42 делится на 3 → делится на 3: 595 599 = 3 · 198 533. Составное.</div>
+<div class="step"><b>Что и требовалось доказать.</b></div>
+</div></div>
+</article>
 
-<article class="task" id="t-4"><div class="task-head"><span class="task-num">№ 2.4</span></div><p class="task-body">Может ли произведение двух простых чисел быть простым?</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body"><b>Нет.</b> Минимум 4 делителя.</div></div></article>
+<article class="task" id="t-4">
+<div class="task-head"><span class="task-num">№ 2.4</span></div>
+<p class="task-body">Может ли произведение двух простых чисел быть простым числом?</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>Решение:</b></div>
+<div class="step">Пусть p и q — простые числа.</div>
+<div class="step">Тогда произведение pq делится на 1, p, q, pq.</div>
+<div class="step">Если p ≠ q, то делителей уже 4 — составное.</div>
+<div class="step">Если p = q, то произведение p² делится на 1, p, p² — 3 делителя — тоже составное.</div>
+<div class="step"><b>Ответ:</b> <b>Нет</b>, не может.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-5"><div class="task-head"><span class="task-num">№ 2.5</span></div><p class="task-body">Каким числом может быть выражена площадь квадрата, если сторона — нат. число?</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">S = a² — квадрат натурального: 1, 4, 9, 16, 25, ...</div></div></article>
+<article class="task" id="t-5">
+<div class="task-head"><span class="task-num">№ 2.5</span></div>
+<p class="task-body">Каким числом может быть выражена площадь квадрата, если его сторона выражена натуральным числом?</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>Решение:</b></div>
+<div class="step">Площадь квадрата S = a², где a — натуральное число.</div>
+<div class="step">Значит, S — квадрат натурального числа: 1, 4, 9, 16, 25, 36, 49, 64, 81, 100, ...</div>
+<div class="step"><b>Ответ:</b> S — <b>точный квадрат</b> натурального числа.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-6"><div class="task-head"><span class="task-num">№ 2.6</span></div><p class="task-body">Каким числом может быть выражен объём куба, если ребро — нат. число?</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">V = a³ — куб натурального: 1, 8, 27, 64, 125, ...</div></div></article>
+<article class="task" id="t-6">
+<div class="task-head"><span class="task-num">№ 2.6</span></div>
+<p class="task-body">Каким числом может быть выражен объём куба, если его ребро выражено натуральным числом?</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>Решение:</b></div>
+<div class="step">Объём куба V = a³, где a — натуральное число.</div>
+<div class="step">Значит, V — куб натурального числа: 1, 8, 27, 64, 125, 216, 343, 512, 729, 1000, ...</div>
+<div class="step"><b>Ответ:</b> V — <b>точный куб</b> натурального числа.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-7"><div class="task-head"><span class="task-num">№ 2.7</span></div><p class="task-body">Число a делится: а) на 7; б) на 12. Какое это число?</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">Оба — <b>составное</b>.</div></div></article>
+<article class="task" id="t-7">
+<div class="task-head"><span class="task-num">№ 2.7</span></div>
+<p class="task-body">Число a делится: а) на 7; б) на 12. Какое это число: простое или составное?</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а)</b> Если a делится на 7 и a &gt; 7, то у числа a есть делители 1, 7, a и, возможно, другие. Значит, a — <b>составное</b> (кроме случая a = 7 — тогда простое).</div>
+<div class="step"><b>б)</b> Если a делится на 12 и a &gt; 12, то a — <b>составное</b> (у него есть делители 1, 2, 3, 4, 6, 12, a).</div>
+<div class="step"><b>Ответ:</b> в обоих случаях a — <b>составное</b> (при a &gt; 7 или a &gt; 12 соответственно).</div>
+</div></div>
+</article>
 
-<article class="task" id="t-8"><div class="task-head"><span class="task-num">№ 2.8</span></div><p class="task-body">Разложите на два множителя: 44 и 333; 98 и 453; 156 и 225.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">44 = 4·11; 333 = 3·111; 98 = 2·49; 453 = 3·151; 156 = 12·13; 225 = 15·15.</div></div></article>
+<article class="task" id="t-8">
+<div class="task-head"><span class="task-num">№ 2.8</span></div>
+<p class="task-body">Разложите на два множителя числа:<br>а) 44 и 333; б) 98 и 453; в) 156 и 225.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а)</b> 44 = 4 · 11 = 2 · 22; 333 = 3 · 111 = 9 · 37.</div>
+<div class="step"><b>б)</b> 98 = 2 · 49 = 7 · 14; 453 = 3 · 151.</div>
+<div class="step"><b>в)</b> 156 = 2 · 78 = 3 · 52 = 4 · 39 = 6 · 26 = 12 · 13; 225 = 3 · 75 = 5 · 45 = 9 · 25 = 15 · 15.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-9"><div class="task-head"><span class="task-num">№ 2.9</span></div><p class="task-body">а) Сколькими способами разложить на два множителя: 20; 46; 77?<br>б) Размеры теплицы 24 м² нат. числами.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">а) 20: 3 способа; 46: 2; 77: 2.<br>б) 1×24, 2×12, 3×8, 4×6.</div></div></article>
+<article class="task" id="t-9">
+<div class="task-head"><span class="task-num">№ 2.9</span></div>
+<p class="task-body">а) Сколькими способами можно разложить на два множителя число: 20; 46; 77?<br>б) Какими могут быть размеры теплицы площадью 24 м², если они выражены натуральными числами?</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а)</b></div>
+<div class="step">20: 1·20, 2·10, 4·5 → <b>3 способа</b>.</div>
+<div class="step">46: 1·46, 2·23 → <b>2 способа</b>.</div>
+<div class="step">77: 1·77, 7·11 → <b>2 способа</b>.</div>
+<div class="step"><b>б)</b> Пары сторон теплицы площадью 24 м²:</div>
+<div class="step">1×24, 2×12, 3×8, 4×6 (и обратные).</div>
+<div class="step"><b>Ответ:</b> <b>4 пары размеров</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-10"><div class="task-head"><span class="task-num">№ 2.10</span></div><p class="task-body">Все ли чётные числа составные?</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body"><b>Нет</b>, число 2 простое.</div></div></article>
+<article class="task" id="t-10">
+<div class="task-head"><span class="task-num">№ 2.10</span></div>
+<p class="task-body">Все ли чётные числа являются составными?</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>Решение:</b></div>
+<div class="step">Составное число имеет больше двух делителей.</div>
+<div class="step">Число 2 — чётное, но у него только 2 делителя: 1 и 2. Значит, оно простое.</div>
+<div class="step">Все остальные чётные числа делятся ещё и на 2, поэтому они составные.</div>
+<div class="step"><b>Ответ:</b> <b>Нет</b>, не все. Число 2 — исключение.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-11"><div class="task-head"><span class="task-num">№ 2.11</span></div><p class="task-body">Контрпример: а) оканчивается на 7 — простое? б) сумма двух простых — простое?</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">а) 27 = 3·9. б) 3 + 5 = 8.</div></div></article>
+<article class="task" id="t-11">
+<div class="task-head"><span class="task-num">№ 2.11</span></div>
+<p class="task-body">С помощью контрпримера опровергните утверждение:<br>а) любое число, оканчивающееся цифрой 7, является простым;<br>б) сумма любых двух простых чисел есть простое число.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а)</b> Контрпример: 27 оканчивается на 7, но 27 = 3 · 9 — составное.</div>
+<div class="step"><b>б)</b> Контрпример: 3 + 5 = 8 — составное число, хотя 3 и 5 простые.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-12"><div class="task-head"><span class="task-num">№ 2.12</span></div><p class="task-body">Найдите произведение простых: 37·3; 7·11·13; 11·101.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">111; 1001; 1111.</div></div></article>
+<article class="task" id="t-12">
+<div class="task-head"><span class="task-num">№ 2.12</span></div>
+<p class="task-body">Найдите произведение простых чисел:<br>а) 37 и 3; б) 7, 11 и 13; в) 11 и 101.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а)</b> 37 · 3 = <b>111</b>.</div>
+<div class="step"><b>б)</b> 7 · 11 · 13 = 77 · 13 = <b>1001</b>.</div>
+<div class="step"><b>в)</b> 11 · 101 = <b>1111</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-13"><div class="task-head"><span class="task-num">№ 2.13</span></div><p class="task-body">Вычислите: 101·3·37; 7·13·11·101; 3·7·11·13·37; 3·37·11·101.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">11 211; 101 101; 111 111; 123 321.</div></div></article>
+<article class="task" id="t-13">
+<div class="task-head"><span class="task-num">№ 2.13</span></div>
+<p class="task-body">Используя результаты, полученные в предыдущем задании, вычислите:<br>а) 101 · 3 · 37; б) 7 · 13 · 11 · 101; в) 3 · 7 · 11 · 13 · 37; г) 3 · 37 · 11 · 101.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а)</b> 101 · (3 · 37) = 101 · 111 = <b>11 211</b>.</div>
+<div class="step"><b>б)</b> (7 · 11 · 13) · 101 = 1001 · 101 = <b>101 101</b>.</div>
+<div class="step"><b>в)</b> (3 · 37) · (7 · 11 · 13) = 111 · 1001 = <b>111 111</b>.</div>
+<div class="step"><b>г)</b> (3 · 37) · (11 · 101) = 111 · 1111 = <b>123 321</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-14"><div class="task-head"><span class="task-num">№ 2.14</span></div><p class="task-body">Разложение на простые: 108, 225, 270, 512, 945, 1024; 90, 180, 270, 350, 450, 1350, 4500; 13, 2002, 1225, 14 014, 90 720.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">108 = 2²·3³; 225 = 3²·5²; 270 = 2·3³·5; 512 = 2⁹; 945 = 3³·5·7; 1024 = 2¹⁰.<br>90 = 2·3²·5; 180 = 2²·3²·5; 270 = 2·3³·5; 350 = 2·5²·7; 450 = 2·3²·5²; 1350 = 2·3³·5²; 4500 = 2²·3²·5³.<br>13; 2002 = 2·7·11·13; 1225 = 5²·7²; 14 014 = 2·7²·11·13; 90 720 = 2⁵·3⁴·5·7.</div></div></article>
+<article class="task" id="t-14">
+<div class="task-head"><span class="task-num">№ 2.14</span></div>
+<p class="task-body">Разложите на простые множители числа:<br>а) 108, 225, 270, 512, 945, 1024;<br>б) 90, 180, 270, 350, 450, 1350, 4500;<br>в) 13, 2002, 1225, 14 014, 90 720.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а)</b></div>
+<div class="step">108 | 2<br> 54 | 2<br> 27 | 3<br>  9 | 3<br>  3 | 3<br>  1 → 108 = 2² · 3³.</div>
+<div class="step">225 | 3<br> 75 | 3<br> 25 | 5<br>  5 | 5<br>  1 → 225 = 3² · 5².</div>
+<div class="step">270 | 2<br>135 | 3<br> 45 | 3<br> 15 | 3<br>  5 | 5<br>  1 → 270 = 2 · 3³ · 5.</div>
+<div class="step">512 | 2<br>256 | 2<br>128 | 2<br> 64 | 2<br> 32 | 2<br> 16 | 2<br>  8 | 2<br>  4 | 2<br>  2 | 2<br>  1 → 512 = 2⁹.</div>
+<div class="step">945 | 3<br>315 | 3<br>105 | 3<br> 35 | 5<br>  7 | 7<br>  1 → 945 = 3³ · 5 · 7.</div>
+<div class="step">1024 = 2¹⁰.</div>
+<div class="step"><b>б)</b></div>
+<div class="step">90 = 2 · 3² · 5.</div>
+<div class="step">180 = 2² · 3² · 5.</div>
+<div class="step">270 = 2 · 3³ · 5.</div>
+<div class="step">350 = 2 · 5² · 7.</div>
+<div class="step">450 = 2 · 3² · 5².</div>
+<div class="step">1350 = 2 · 3³ · 5².</div>
+<div class="step">4500 = 2² · 3² · 5³.</div>
+<div class="step"><b>в)</b></div>
+<div class="step">13 = 13 (простое).</div>
+<div class="step">2002 = 2 · 7 · 11 · 13.</div>
+<div class="step">1225 = 5² · 7².</div>
+<div class="step">14 014 = 2 · 7² · 11 · 13.</div>
+<div class="step">90 720 = 2⁵ · 3⁴ · 5 · 7.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-15"><div class="task-head"><span class="task-num">№ 2.15</span></div><p class="task-body">Двузначные, где 2 или 3 одинаковых множителя. Как называют?</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">{16, 25, 27, 32, 36, 49, 64, 81} — квадраты и кубы.</div></div></article>
+<article class="task" id="t-15">
+<div class="task-head"><span class="task-num">№ 2.15</span></div>
+<p class="task-body">Напишите все двузначные числа, разложение которых на простые множители состоит из двух или трёх одинаковых множителей. Как называют эти числа?</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>Решение:</b></div>
+<div class="step">Двузначные числа вида p² (p — простое): 4·4=16, 5·5=25, 7·7=49. Также 2²·2²=16 — уже есть.</div>
+<div class="step">Также кубы p³: 2³ = 8 (не двузначное), 3³ = 27, 4³ = 64 (4 не простое — но множители 2·2·2·2·2·2 = 64 = 2⁶), 5³ = 125 (не двузначное).</div>
+<div class="step">Двузначные вида p⁴: 2⁴ = 16, 3⁴ = 81.</div>
+<div class="step">Двузначные вида 2⁵ = 32, 2⁶ = 64.</div>
+<div class="step">Соберём все: <b>{16, 25, 27, 32, 36, 49, 64, 81}</b> (36 = 6², но 6 = 2·3, тогда 36 = 2²·3² — не одинаковые). Уточним: 36 = 2²·3² — не подходит.</div>
+<div class="step">Итоговый список: <b>{16, 25, 27, 32, 49, 64, 81}</b>.</div>
+<div class="step">Также можно добавить 2⁷ = 128 (не двузначное).</div>
+<div class="step">Такие числа называют <b>точными степенями</b> (квадраты, кубы и другие степени простых чисел).</div>
+</div></div>
+</article>
 
-<article class="task" id="t-16"><div class="task-head"><span class="task-num">№ 2.16</span></div><p class="task-body">Двузначные, где 2 разных простых и один из них = 7; 19; 29; 43.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">7: {14,21,35,49,77,91}<br>19: {38,57,95}<br>29: {58,87}<br>43: {86}</div></div></article>
+<article class="task" id="t-16">
+<div class="task-head"><span class="task-num">№ 2.16</span></div>
+<p class="task-body">Напишите все двузначные числа, в разложении которых два различных простых множителя и один из них равен:<br>а) 7; б) 19; в) 29; г) 43.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а)</b> Множитель 7 и другое простое p ≠ 7, произведение двузначное:</div>
+<div class="step">7·2=14, 7·3=21, 7·5=35, 7·7=49 (но 49 — только один простой множитель, не подходит), 7·11=77, 7·13=91.</div>
+<div class="step"><b>Ответ:</b> <b>{14, 21, 35, 77, 91}</b>.</div>
+<div class="step"><b>б)</b> Множитель 19: 19·2=38, 19·3=57, 19·5=95. 19·7=133 (не двузначное).</div>
+<div class="step"><b>Ответ:</b> <b>{38, 57, 95}</b>.</div>
+<div class="step"><b>в)</b> Множитель 29: 29·2=58, 29·3=87. 29·5=145 (не двузначное).</div>
+<div class="step"><b>Ответ:</b> <b>{58, 87}</b>.</div>
+<div class="step"><b>г)</b> Множитель 43: 43·2=86. 43·3=129 (не двузначное).</div>
+<div class="step"><b>Ответ:</b> <b>{86}</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-17"><div class="task-head"><span class="task-num">№ 2.17</span></div><p class="task-body">Делится ли n на m нацело? (см. учебник)</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">а) Да. б) Нет. в) Да. г) Да. д) Да. е) Нет.</div></div></article>
+<article class="task" id="t-17">
+<div class="task-head"><span class="task-num">№ 2.17</span></div>
+<p class="task-body">Делится ли число n на число m нацело, если:<br>а) n = 2·2·3·3·5·7·7 и m = 2·2·7;<br>б) n = 2·5·5·17·17 и m = 2·3·5;<br>в) n = 3·3·5·7·19 и m = 3·3·7·19;<br>г) n = 2·3·5·7·7·7 и m = 35;<br>д) n = 2·2·3·3·5·7·11 и m = 308;<br>е) n = 2·2·2·3·5·5·11 и m = 1000?</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а)</b> Все множители m (2, 2, 7) есть в n. <b>Да.</b></div>
+<div class="step"><b>б)</b> Множителя 3 нет в n. <b>Нет.</b></div>
+<div class="step"><b>в)</b> Все множители m (3, 3, 7, 19) есть в n. <b>Да.</b></div>
+<div class="step"><b>г)</b> 35 = 5 · 7. Оба множителя есть в n. <b>Да.</b></div>
+<div class="step"><b>д)</b> 308 = 4 · 77 = 2 · 2 · 7 · 11. В n есть 2, 2, 7, 11. <b>Да.</b></div>
+<div class="step"><b>е)</b> 1000 = 2³ · 5³. В n только 5², значит не хватает множителя 5. <b>Нет.</b></div>
+</div></div>
+</article>
 
-<article class="task" id="t-18"><div class="task-head"><span class="task-num">№ 2.18</span></div><p class="task-body">Вычислите столбики а–г.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">а) 10; 5,73; 11,3; 10.<br>б) 0,67; 0,64; 0,91; 1,18.<br>в) 0,057; 0,4; 0,068; 570.<br>г) 0,29; 1,5; 125; 48.</div></div></article>
+<article class="task" id="t-18">
+<div class="task-head"><span class="task-num">№ 2.18</span></div>
+<p class="task-body">Вычислите:<br>а) 4,78 + 5,22; 5,7 + 0,03; 9,21 + 2,09; 8,37 + 1,63.<br>б) 0,7 − 0,03; 1 − 0,36; 3 − 2,09; 1,78 − 0,6.<br>в) 5,7 : 100; 4 : 10; 68 : 1000; 5,7 : 0,01.<br>г) 0,29 · 0,2 · 5; 4,2 · 1,5 − 3,2 · 1,5; 4 · 12,5 · 2,5; 4,8 · 6,2 + 3,8 · 4,8.<br>д) выразите десятичной дробью: 3 %; 7 %; 10 %; 20 %; 50 %; 74 %; 100 %; 140 %.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а)</b> 4,78 + 5,22 = 10; 5,7 + 0,03 = 5,73; 9,21 + 2,09 = 11,30; 8,37 + 1,63 = 10.</div>
+<div class="step"><b>б)</b> 0,7 − 0,03 = 0,67; 1 − 0,36 = 0,64; 3 − 2,09 = 0,91; 1,78 − 0,6 = 1,18.</div>
+<div class="step"><b>в)</b> 5,7 : 100 = 0,057; 4 : 10 = 0,4; 68 : 1000 = 0,068; 5,7 : 0,01 = 570.</div>
+<div class="step"><b>г)</b> 0,29 · 0,2 · 5 = 0,29 · 1 = 0,29.</div>
+<div class="step">4,2 · 1,5 − 3,2 · 1,5 = 1,5 · (4,2 − 3,2) = 1,5 · 1 = 1,5.</div>
+<div class="step">4 · 12,5 · 2,5 = 50 · 2,5 = 125.</div>
+<div class="step">4,8 · 6,2 + 3,8 · 4,8 = 4,8 · (6,2 + 3,8) = 4,8 · 10 = 48.</div>
+<div class="step"><b>д)</b> 3 % = 0,03; 7 % = 0,07; 10 % = 0,1; 20 % = 0,2; 50 % = 0,5; 74 % = 0,74; 100 % = 1; 140 % = 1,4.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-19"><div class="task-head"><span class="task-num">№ 2.19</span></div><p class="task-body">а) (a+b)+c при a=498, b=317, c=383; б) a−(b+c) при a=51,9, b=31,7, c=1,9.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">а) 498+700 = <b>1198</b>.<br>б) 50 − 31,7 = <b>18,3</b>.</div></div></article>
+<article class="task" id="t-19">
+<div class="task-head"><span class="task-num">№ 2.19</span></div>
+<p class="task-body">Найдите удобным способом значение выражения:<br>а) (a + b) + c при a = 498, b = 317, c = 383;<br>б) a − (b + c) при a = 51,9, b = 31,7, c = 1,9.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а)</b> (498 + 317) + 383 = 498 + (317 + 383) = 498 + 700 = <b>1198</b>.</div>
+<div class="step"><b>б)</b> 51,9 − (31,7 + 1,9) = 51,9 − 33,6 = <b>18,3</b>. Или: 51,9 − 31,7 − 1,9 = (51,9 − 1,9) − 31,7 = 50 − 31,7 = <b>18,3</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-20"><div class="task-head"><span class="task-num">№ 2.20</span></div><p class="task-body">20 см и два нат. числа. Кратен ли объём: 2; 3; 4; 5; 6?</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">V = 20bc. Кратен 2, 4, 5, 10, 20. Кратен 3 — не всегда. Кратен 6 — не всегда.</div></div></article>
+<article class="task" id="t-20">
+<div class="task-head"><span class="task-num">№ 2.20</span></div>
+<p class="task-body">Одно измерение параллелепипеда равно 20 см, а два других выражаются произвольными натуральными числами сантиметров. Будет ли объём этого параллелепипеда всегда выражаться числом, кратным:<br>а) 2; б) 3; в) 4; г) 5; д) 6?</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step">V = 20 · b · c.</div>
+<div class="step"><b>а)</b> 20 делится на 2, значит V всегда кратен 2. <b>Да.</b></div>
+<div class="step"><b>б)</b> Множителя 3 может не быть (например, b = 1, c = 1 → V = 20, не делится на 3). <b>Нет.</b></div>
+<div class="step"><b>в)</b> 20 = 4 · 5, значит V всегда кратен 4. <b>Да.</b></div>
+<div class="step"><b>г)</b> 20 делится на 5, значит V всегда кратен 5. <b>Да.</b></div>
+<div class="step"><b>д)</b> Множителя 3 может не быть. V = 20 не делится на 6. <b>Нет.</b></div>
+</div></div>
+</article>
 
-<article class="task" id="t-21"><div class="task-head"><span class="task-num">№ 2.21</span></div><p class="task-body">Чётные четырёхзначные из 0,5,7,8,9 с повторами.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">4·5·5·2 = <b>200</b>.</div></div></article>
+<article class="task" id="t-21">
+<div class="task-head"><span class="task-num">№ 2.21</span></div>
+<p class="task-body">Сколько чётных четырёхзначных чисел можно составить из цифр 0, 5, 7, 8, 9, если цифры повторяются?</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>Решение:</b></div>
+<div class="step">1-я цифра (тысячи): не может быть 0 → 4 варианта (5, 7, 8, 9).</div>
+<div class="step">2-я цифра (сотни): любая из 5 цифр → 5 вариантов.</div>
+<div class="step">3-я цифра (десятки): любая из 5 цифр → 5 вариантов.</div>
+<div class="step">4-я цифра (единицы): должна быть чётной → 0 или 8 → 2 варианта.</div>
+<div class="step">Перемножаем: 4 · 5 · 5 · 2 = <b>200 чисел</b>.</div>
+<div class="step"><b>Ответ:</b> <b>200 чисел</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-22"><div class="task-head"><span class="task-num">№ 2.22</span></div><p class="task-body">К 1000 приписать цифры справа и слева так, чтобы делилось на 2, 3, 6, 9.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">Пример: <b>41004</b> или <b>11000</b>.</div></div></article>
+<article class="task" id="t-22">
+<div class="task-head"><span class="task-num">№ 2.22</span></div>
+<p class="task-body">Припишите к числу 1000 по одной цифре справа и слева так, чтобы число делилось на 2, 3, 6 и 9.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>Решение:</b></div>
+<div class="step">Нужно получить шестизначное число вида a1000b.</div>
+<div class="step">Оно должно делиться на 6 и 9, значит делиться на 2 и 9 (и на 3 автоматически).</div>
+<div class="step">Сумма цифр должна делиться на 9: a + 1 + 0 + 0 + 0 + b = a + b + 1 делится на 9.</div>
+<div class="step">Также b — чётная цифра (для делимости на 2).</div>
+<div class="step">Возьмём a = 1, b = 8: сумма = 1 + 1 + 8 = 10 — не делится на 9. Не подходит.</div>
+<div class="step">Возьмём a = 2, b = 6: сумма = 2 + 1 + 6 = 9 — делится на 9, b = 6 чётное. Подходит: <b>210006</b>.</div>
+<div class="step">Проверка: 210006 : 2 = 105003; 210006 : 3 = 70002; : 6 = 35001; : 9 = 23334. ✓</div>
+<div class="step">Другие варианты: a = 3, b = 4 → 310004 (сумма 8 — нет); a = 4, b = 4 → сумма 9 ✓ (410004).</div>
+<div class="step"><b>Ответ:</b> например, <b>210006</b>, <b>410004</b>, <b>810000</b> и др.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-23"><div class="task-head"><span class="task-num">№ 2.23</span></div><p class="task-body">Из A = {726 245, 2 977 385, 4 224 423, 65 358, 111 888, 876 555, 909 237} выпишите: а) кратны 5; б) кратны 3; в) дел. на 3 и 2; г) кратны 9 и 5.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">а) {2 977 385, 876 555}<br>б) {4 224 423, 65 358, 111 888, 876 555, 909 237}<br>в) {65 358, 111 888}<br>г) {876 555}</div></div></article>
+<article class="task" id="t-23">
+<div class="task-head"><span class="task-num">№ 2.23</span></div>
+<p class="task-body">Из множества A = {726 245, 2 977 385, 4 224 423, 65 358, 111 888, 876 555, 909 237} выпишите те числа, которые:<br>а) кратны 5;<br>б) кратны 3;<br>в) делятся без остатка на 3 и на 2;<br>г) кратны 9 и 5.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а) Кратны 5:</b> оканчиваются на 0 или 5 → {726 245, 2 977 385, 876 555}.</div>
+<div class="step"><b>б) Кратны 3:</b> сумма цифр делится на 3 → проверяем:<br>
+726 245: 7+2+6+2+4+5 = 26 — нет.<br>
+2 977 385: 2+9+7+7+3+8+5 = 41 — нет.<br>
+4 224 423: 4+2+2+4+4+2+3 = 21 — да.<br>
+65 358: 6+5+3+5+8 = 27 — да.<br>
+111 888: 1+1+1+8+8+8 = 27 — да.<br>
+876 555: 8+7+6+5+5+5 = 36 — да.<br>
+909 237: 9+0+9+2+3+7 = 30 — да.<br>
+→ {4 224 423, 65 358, 111 888, 876 555, 909 237}.</div>
+<div class="step"><b>в) Делятся на 3 и на 2:</b> из кратны 3, ещё и чётные → {65 358, 111 888}.</div>
+<div class="step"><b>г) Кратны 9 и 5:</b> сумма цифр делится на 9 и оканчивается на 0/5:<br>
+726 245: сумма 26 — нет.<br>
+876 555: сумма 36 — делится на 9, оканчивается на 5 → да.<br>
+→ <b>{876 555}</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-24"><div class="task-head"><span class="task-num">№ 2.24</span></div><p class="task-body">Контрпример: а) на 5 → на 7? б) на 7 → оканчивается на 7?</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">а) 15:5=3, но 15 не крат. 7.<br>б) 14 кратно 7, но не оканчивается на 7.</div></div></article>
+<article class="task" id="t-24">
+<div class="task-head"><span class="task-num">№ 2.24</span></div>
+<p class="task-body">Приведите контрпример, опровергающий утверждение:<br>а) любое число, которое оканчивается цифрой 5, делится на 7;<br>б) любое число, которое делится на 7, оканчивается цифрой 7.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а)</b> Контрпример: 15 оканчивается на 5, но 15 : 7 не даёт целое (15 = 7·2 + 1).</div>
+<div class="step"><b>б)</b> Контрпример: 14 делится на 7, но оканчивается на 4.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-25"><div class="task-head"><span class="task-num">№ 2.25</span></div><p class="task-body">Вместо ? цифру, чтобы делилось на 3 и на 5: а) 25?5; б) 3174?; в) 133?.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">а) 2525 или 2555.<br>б) 31740 или 31745.<br>в) 1335.</div></div></article>
+<article class="task" id="t-25">
+<div class="task-head"><span class="task-num">№ 2.25</span></div>
+<p class="task-body">Поставьте вместо знака вопроса цифру так, чтобы число делилось без остатка на 3 и на 5:<br>а) 25?5; б) 3174?; в) 133?.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а) 25?5.</b> Оканчивается на 5 → делится на 5 всегда. Сумма цифр: 2+5+?+5 = 12+?. Нужно делиться на 3: 12 + ? = 12, 15, 18. Значит ? = 0, 3, 6, 9. Но тогда числа: 2505 (сумма 12 ✓), 2535 (15 ✓), 2565 (18 ✓), 2595 (21 ✓).</div>
+<div class="step"><b>Ответ а):</b> <b>2505, 2535, 2565, 2595</b>.</div>
+<div class="step"><b>б) 3174?.</b> Оканчивается на ?, чтобы делиться на 5, ? = 0 или 5. Сумма цифр: 3+1+7+4+? = 15+?. Делится на 3: 15, 18, 21 → ? = 0, 3, 6, 9. Пересечение: ? = 0.</div>
+<div class="step"><b>Ответ б):</b> <b>31740</b>.</div>
+<div class="step"><b>в) 133?.</b> Оканчивается на ? → для деления на 5: ? = 0 или 5. Сумма: 1+3+3+? = 7+?. Делится на 3: 9, 12 → ? = 2, 5. Пересечение с {0,5}: ? = 5.</div>
+<div class="step"><b>Ответ в):</b> <b>1335</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-26"><div class="task-head"><span class="task-num">№ 2.26</span></div><p class="task-body">1) 5/9 пачки (180 г); 2) 5/8 упаковки (600 г).</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">1) <b>100 г</b>. 2) <b>375 г</b>.</div></div></article>
+<article class="task" id="t-26">
+<div class="task-head"><span class="task-num">№ 2.26</span></div>
+<p class="task-body">1) Для приготовления песочного теста потребовалось 5/9 пачки сливочного масла. Сколько граммов масла потребовалось, если всего в пачке 180 г масла?<br>2) Для приготовления крема израсходовали 5/8 упаковки сливок. Сколько граммов сливок израсходовали, если в упаковке было 600 г сливок?</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>1)</b> 180 · 5/9 = (180 : 9) · 5 = 20 · 5 = <b>100 г</b>.</div>
+<div class="step"><b>2)</b> 600 · 5/8 = (600 : 8) · 5 = 75 · 5 = <b>375 г</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-27"><div class="task-head"><span class="task-num">№ 2.27</span></div><p class="task-body">См. 2.25.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">См. 2.25.</div></div></article>
+<article class="task" id="t-27">
+<div class="task-head"><span class="task-num">№ 2.27</span></div>
+<p class="task-body">Поставьте вместо знака вопроса цифру так, чтобы число делилось без остатка на 3 и на 5 (см. задание 2.25).</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step">См. решение 2.25.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-28"><div class="task-head"><span class="task-num">№ 2.28</span></div><p class="task-body">Даша обещала: «прочитаю сказку и вытру пыль». Когда обещание выполнено?</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">Только в случае в). Сходство с 5&lt;x&lt;9: нужно «и то, и то».</div></div></article>
+<article class="task" id="t-28">
+<div class="task-head"><span class="task-num">№ 2.28</span></div>
+<p class="task-body">Даша пообещала: «Я прочитаю сказку Диме и вытру пыль». Можно ли обещание считать выполненным, если Даша:<br>а) вытерла пыль, но не прочитала сказку;<br>б) прочитала сказку, но не вытерла пыль;<br>в) и вытерла пыль, и прочитала сказку;<br>г) не вытерла пыль и не прочитала сказку?<br>В чём сходство этой задачи с нахождением решений двойного неравенства 5 &lt; x &lt; 9 среди чисел 4, 6, 8 и 10?</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а)</b> Не выполнено (не прочитала).</div>
+<div class="step"><b>б)</b> Не выполнено (не вытерла).</div>
+<div class="step"><b>в)</b> <b>Выполнено</b> — оба условия соблюдены.</div>
+<div class="step"><b>г)</b> Не выполнено.</div>
+<div class="step"><b>Сходство:</b> обещание выполнено только если выполнены ОБА условия (союз «и»).</div>
+<div class="step">В двойном неравенстве 5 &lt; x &lt; 9 тоже нужно, чтобы x был больше 5 И меньше 9 одновременно. Из чисел 4, 6, 8, 10 подходят только 6 и 8.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-29"><div class="task-head"><span class="task-num">№ 2.29</span></div><p class="task-body">Простые делители: 64; 72; 221; 247; 7777; 7007.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">64 → {2}; 72 → {2,3}; 221 = 13·17; 247 = 13·19; 7777 = 7·11·101; 7007 = 7²·11·13.</div></div></article>
+<article class="task" id="t-29">
+<div class="task-head"><span class="task-num">№ 2.29</span></div>
+<p class="task-body">Найдите множество всех простых делителей числа: 64; 72; 221; 247; 7777; 7007.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>64</b> = 2⁶ → {2}.</div>
+<div class="step"><b>72</b> = 2³ · 3² → {2, 3}.</div>
+<div class="step"><b>221</b> = 13 · 17 → {13, 17}.</div>
+<div class="step"><b>247</b> = 13 · 19 → {13, 19}.</div>
+<div class="step"><b>7777</b> = 7 · 11 · 101 → {7, 11, 101}.</div>
+<div class="step"><b>7007</b> = 7 · 7 · 11 · 13 = 7² · 11 · 13 → {7, 11, 13}.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-30"><div class="task-head"><span class="task-num">№ 2.30</span></div><p class="task-body">Простые: 28 &lt; p &lt; 53.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">29, 31, 37, 41, 43, 47.</div></div></article>
+<article class="task" id="t-30">
+<div class="task-head"><span class="task-num">№ 2.30</span></div>
+<p class="task-body">Найдите простые числа, которые являются решениями двойного неравенства 28 &lt; p &lt; 53.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step">Выписываем все простые числа в промежутке от 28 до 53:</div>
+<div class="step"><b>29, 31, 37, 41, 43, 47</b>.</div>
+<div class="step">(53 не включаем, так как строгое неравенство p &lt; 53.)</div>
+</div></div>
+</article>
 
-<article class="task" id="t-31"><div class="task-head"><span class="task-num">№ 2.31</span></div><p class="task-body">Точки A, B, C, D на прямой (рис. 2.1); p — простое.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">Простые: p−1, p, p+2 (если p≥3).</div></div></article>
+<article class="task" id="t-31">
+<div class="task-head"><span class="task-num">№ 2.31</span></div>
+<p class="task-body">Существуют ли среди точек A, B, C и D точки, координаты которых простые числа (рис. 2.1), если p — простое число?</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step">По рисунку точки: A = p − 1, B = p + 1, C = p + 2, D = 2p (примерно).</div>
+<div class="step">Простые числа среди них:</div>
+<div class="step">A = p − 1 — для p = 3: A = 2 (простое).</div>
+<div class="step">B = p + 1 — не может быть простым для p &gt; 1 (чётное и &gt; 2).</div>
+<div class="step">C = p + 2 — простое, например, при p = 3: C = 5; при p = 5: C = 7.</div>
+<div class="step">D = 2p — всегда составное (кроме p = 1).</div>
+<div class="step"><b>Ответ:</b> да, точки A (при p = 3) и C могут иметь координаты-простые числа.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-32"><div class="task-head"><span class="task-num">№ 2.32</span></div><p class="task-body">5 и 14 со знаменателем 7.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">35/7; 98/7.</div></div></article>
+<article class="task" id="t-32">
+<div class="task-head"><span class="task-num">№ 2.32</span></div>
+<p class="task-body">Представьте в виде дроби со знаменателем 7 числа 5 и 14.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step">5 = 5 · 7 / 7 = <b>35/7</b>.</div>
+<div class="step">14 = 14 · 7 / 7 = <b>98/7</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-33"><div class="task-head"><span class="task-num">№ 2.33</span></div><p class="task-body">См. учебник (дроби).</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">См. образец в учебнике.</div></div></article>
+<article class="task" id="t-33">
+<div class="task-head"><span class="task-num">№ 2.33</span></div>
+<p class="task-body">Вычислите значение выражения (см. учебник — дроби).</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step">Правило: складываем/вычитаем дроби с одинаковыми знаменателями (числители складываются, знаменатель остаётся).</div>
+<div class="step">Для дробей с разными знаменателями — сначала приводим к общему знаменателю.</div>
+<div class="step">См. полное решение в учебнике.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-34"><div class="task-head"><span class="task-num">№ 2.34</span></div><p class="task-body">Контрпример: на 5 → на 7? кратно 7 → оканчивается на 7?</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">а) 15. б) 14.</div></div></article>
+<article class="task" id="t-34">
+<div class="task-head"><span class="task-num">№ 2.34</span></div>
+<p class="task-body">Приведите контрпример, опровергающий утверждение:<br>а) любое число, которое оканчивается цифрой 5, делится на 7;<br>б) любое число, которое делится на 7, оканчивается цифрой 7.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а)</b> 15 оканчивается на 5, но 15 : 7 = 2 (ост. 1).</div>
+<div class="step"><b>б)</b> 14 делится на 7 (14 = 7 · 2), но оканчивается на 4.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-35"><div class="task-head"><span class="task-num">№ 2.35</span></div><p class="task-body">См. 2.25.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">См. 2.25.</div></div></article>
+<article class="task" id="t-35">
+<div class="task-head"><span class="task-num">№ 2.35</span></div>
+<p class="task-body">Поставьте вместо знака вопроса цифру так, чтобы число делилось без остатка на 3 и на 5 (см. 2.25).</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step">См. решение 2.25.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-36"><div class="task-head"><span class="task-num">№ 2.36</span></div><p class="task-body">См. учебник.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">См. образец.</div></div></article>
+<article class="task" id="t-36">
+<div class="task-head"><span class="task-num">№ 2.36</span></div>
+<p class="task-body">Задание по учебнику (см. образец).</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step">См. условие и образец в учебнике.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-37"><div class="task-head"><span class="task-num">№ 2.37</span></div><p class="task-body">Простые (см. 2.2).</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">См. 2.2.</div></div></article>
+<article class="task" id="t-37">
+<div class="task-head"><span class="task-num">№ 2.37</span></div>
+<p class="task-body">См. задание 2.2.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step">См. решение 2.2.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-38"><div class="task-head"><span class="task-num">№ 2.38</span></div><p class="task-body">Произведение простых (см. 2.12).</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">111; 1001; 1111.</div></div></article>
+<article class="task" id="t-38">
+<div class="task-head"><span class="task-num">№ 2.38</span></div>
+<p class="task-body">Найдите произведение простых чисел (см. 2.12).</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step">37 · 3 = <b>111</b>; 7 · 11 · 13 = <b>1001</b>; 11 · 101 = <b>1111</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-39"><div class="task-head"><span class="task-num">№ 2.39</span></div><p class="task-body">Вычислите (см. 2.13).</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">11 211; 101 101; 111 111; 123 321.</div></div></article>
+<article class="task" id="t-39">
+<div class="task-head"><span class="task-num">№ 2.39</span></div>
+<p class="task-body">Вычислите (см. 2.13).</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step">101·3·37 = <b>11 211</b>; 7·13·11·101 = <b>101 101</b>; 3·7·11·13·37 = <b>111 111</b>; 3·37·11·101 = <b>123 321</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-40"><div class="task-head"><span class="task-num">№ 2.40</span></div><p class="task-body">Разложение (см. 2.14).</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">См. 2.14.</div></div></article>
+<article class="task" id="t-40">
+<div class="task-head"><span class="task-num">№ 2.40</span></div>
+<p class="task-body">Разложение на простые множители (см. 2.14).</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step">См. решение 2.14.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-41"><div class="task-head"><span class="task-num">№ 2.41</span></div><p class="task-body">Делятся ли 7284, 2708, 3912, 9096 на 12?</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">7284 ÷ 12 = 607 — да; 2708 — нет; 3912 ÷ 12 = 326 — да; 9096 ÷ 12 = 758 — да.</div></div></article>
+<article class="task" id="t-41">
+<div class="task-head"><span class="task-num">№ 2.41</span></div>
+<p class="task-body">Какие из чисел 7284, 2708, 3912, 9096 делятся на 12?</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step">Число делится на 12, если делится на 4 и на 3.</div>
+<div class="step"><b>7284:</b> сумма цифр 21 — делится на 3; последние 2 цифры 84 : 4 = 21 — делится на 4. → <b>Да</b>, 7284 : 12 = 607.</div>
+<div class="step"><b>2708:</b> сумма цифр 17 — не делится на 3. <b>Нет.</b></div>
+<div class="step"><b>3912:</b> сумма 15 — делится на 3; 12 : 4 = 3 → делится на 4. → <b>Да</b>, 3912 : 12 = 326.</div>
+<div class="step"><b>9096:</b> сумма 24 — делится на 3; 96 : 4 = 24 → делится на 4. → <b>Да</b>, 9096 : 12 = 758.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-42"><div class="task-head"><span class="task-num">№ 2.42</span></div><p class="task-body">Цифры для делимости на 12: а) 765?; б) 3?68; в) 45?8; г) ?260?.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">а) 7656; б) 3168 или 3968; в, г — несколько вариантов.</div></div></article>
+<article class="task" id="t-42">
+<div class="task-head"><span class="task-num">№ 2.42</span></div>
+<p class="task-body">Какие цифры можно поставить вместо знака вопроса, чтобы число делилось на 12:<br>а) 765?; б) 3?68; в) 45?8; г) ?260?</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а) 765?</b> — на 4: последние 2 цифры 5?; должно делиться на 4 → ? = 2 или 6 (52, 56 делятся на 4). На 3: сумма 7+6+5+? = 18+?; ? = 0, 3, 6, 9. Пересечение: ? = 6. → <b>7656</b>.</div>
+<div class="step"><b>б) 3?68</b> — последние 2 цифры 68 : 4 = 17 → делится на 4 всегда. На 3: 3+?+6+8 = 17+?; ? = 1, 4, 7. → <b>3168, 3468, 3768</b>.</div>
+<div class="step"><b>в) 45?8</b> — 28 : 4 = 7, 48 : 4 = 12, 68 : 4 = 17, 88 : 4 = 22 → ? = 2, 4, 6, 8 (и 0: 08 — 8 : 4 = 2, тоже подходит). На 3: 4+5+?+8 = 17+?; ? = 1, 4, 7. Пересечение: ? = 4. → <b>4548</b>.</div>
+<div class="step"><b>г) ?260?</b> — задача с двумя неизвестными. Последние 2 цифры 0? : делятся на 4 при ? = 0, 4, 8. Сумма цифр: ?+2+6+0+? = 8 + 2?; делится на 3 → 2? = 1, 4, 7, ... — 2? чётное, значит 2? = 4 → ? = 2. Или 2? = 10 → ? = 5. Проверим оба: ?2600 (сумма 8+0 = 8 — нет); ?2604 (сумма 8+4 = 12 ✓); ?2608 (сумма 8+8 = 16 — нет). Значит первая цифра-? и последняя-? разные. Соберём: ?2604, где первая цифра ? = 1, 4, 7. → <b>12604, 42604, 72604</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-43"><div class="task-head"><span class="task-num">№ 2.43</span></div><p class="task-body">1) 156,5 км; 1-й на 17,8 короче. 2) 142,4 км; до остановки на 23,7 больше.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">1) <b>69,35 и 87,15 км</b>.<br>2) <b>59,35 и 83,05 км</b>.</div></div></article>
+<article class="task" id="t-43">
+<div class="task-head"><span class="task-num">№ 2.43</span></div>
+<p class="task-body">1) За два перегона поезд проехал 156,5 км. При этом первый перегон был короче второго на 17,8 км. Найдите протяжённость каждого перегона.<br>2) Междугородный автобус сделал в пути одну остановку. При этом расстояние от начала маршрута до остановки оказалось на 23,7 км больше, чем остальной путь. Найдите расстояние до остановки и после неё, если протяжённость всего пути составила 142,4 км.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>1)</b> Пусть x — первый перегон, тогда второй x + 17,8.</div>
+<div class="step">x + (x + 17,8) = 156,5.</div>
+<div class="step">2x + 17,8 = 156,5.</div>
+<div class="step">2x = 138,7.</div>
+<div class="step">x = 69,35 км — 1-й перегон.</div>
+<div class="step">2-й перегон: 69,35 + 17,8 = 87,15 км.</div>
+<div class="step"><b>Ответ 1):</b> <b>69,35 км и 87,15 км</b>.</div>
+<div class="step"><b>2)</b> Пусть x — путь после остановки, тогда до остановки x + 23,7.</div>
+<div class="step">x + (x + 23,7) = 142,4.</div>
+<div class="step">2x = 142,4 − 23,7 = 118,7.</div>
+<div class="step">x = 59,35 км — путь после остановки.</div>
+<div class="step">До остановки: 59,35 + 23,7 = 83,05 км.</div>
+<div class="step"><b>Ответ 2):</b> <b>83,05 км и 59,35 км</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-44"><div class="task-head"><span class="task-num">№ 2.44</span></div><p class="task-body">1) 0,3·(13−11,5:4,6); 2) (13,3:3,8−3,05)·0,4; 3) (2,4·1,3+3):0,6; 4) (2,8·3,1−4):0,4.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">1) <b>3,15</b>. 2) <b>0,18</b>. 3) <b>10,2</b>. 4) <b>11,7</b>.</div></div></article>
+<article class="task" id="t-44">
+<div class="task-head"><span class="task-num">№ 2.44</span></div>
+<p class="task-body">Выполните действия:<br>1) 0,3 · (13 − 11,5 : 4,6);<br>2) (13,3 : 3,8 − 3,05) · 0,4;<br>3) (2,4 · 1,3 + 3) : 0,6;<br>4) (2,8 · 3,1 − 4) : 0,4.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>1)</b> 11,5 : 4,6 = 2,5. 13 − 2,5 = 10,5. 0,3 · 10,5 = <b>3,15</b>.</div>
+<div class="step"><b>2)</b> 13,3 : 3,8 = 3,5. 3,5 − 3,05 = 0,45. 0,45 · 0,4 = <b>0,18</b>.</div>
+<div class="step"><b>3)</b> 2,4 · 1,3 = 3,12. 3,12 + 3 = 6,12. 6,12 : 0,6 = <b>10,2</b>.</div>
+<div class="step"><b>4)</b> 2,8 · 3,1 = 8,68. 8,68 − 4 = 4,68. 4,68 : 0,4 = <b>11,7</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-45"><div class="task-head"><span class="task-num">№ 2.45</span></div><p class="task-body">Кратчайший путь на поверхности куба из K в L.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">Развёртка: путь через M по двум граням — минимальный.</div></div></article>
+<article class="task" id="t-45">
+<div class="task-head"><span class="task-num">№ 2.45</span></div>
+<p class="task-body">Найдите кратчайший путь на поверхности куба (рис. 2.2) из точки K в точку L:<br>а) который проходит через точку M;<br>б) который пересекает все горизонтальные рёбра куба, кроме ребра KL.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>Решение:</b></div>
+<div class="step">Кратчайший путь на поверхности куба ищется на <b>развёртке</b>: две соседние грани распрямляем в прямоугольник и соединяем точки по прямой.</div>
+<div class="step"><b>а)</b> Развёртка двух граней, содержащих K, M, L так, чтобы M оказалась на пути. Путь K → M → L — прямая на развёртке.</div>
+<div class="step"><b>б)</b> Развёртка трёх граней: путь K → (пересечение горизонт. рёбер) → L по прямой линии на развёртке.</div>
+<div class="step">Точное построение зависит от конкретного рисунка 2.2.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-46"><div class="task-head"><span class="task-num">№ 2.46</span></div><p class="task-body">1085, 20 403, 702 366, 999 123 — составные.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">1085=5·217; 20403=3·6801; 702366=2·351183; 999123=3·333041.</div></div></article>
+<article class="task" id="t-46">
+<div class="task-head"><span class="task-num">№ 2.46</span></div>
+<p class="task-body">Числа 1085, 20 403, 702 366, 999 123 — составные. Докажите это утверждение.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>1085:</b> оканчивается на 5 → делится на 5: 1085 = 5 · 217. Составное.</div>
+<div class="step"><b>20 403:</b> сумма цифр 2+0+4+0+3 = 9 → делится на 3: 20 403 = 3 · 6801. Составное.</div>
+<div class="step"><b>702 366:</b> оканчивается на 6, чётное → делится на 2: 702 366 = 2 · 351 183. Составное.</div>
+<div class="step"><b>999 123:</b> сумма цифр 9+9+9+1+2+3 = 33 → делится на 3: 999 123 = 3 · 333 041. Составное.</div>
+<div class="step"><b>Что и требовалось доказать.</b></div>
+</div></div>
+</article>
 
-<article class="task" id="t-47"><div class="task-head"><span class="task-num">№ 2.47</span></div><p class="task-body">Простые среди: 152, 169, 187, 191, 489, 499, 570, 627, 775, 937, 999.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">Простые: <b>191, 499, 937</b>.</div></div></article>
+<article class="task" id="t-47">
+<div class="task-head"><span class="task-num">№ 2.47</span></div>
+<p class="task-body">Используя таблицу простых чисел, запишите, какие из чисел 152, 169, 187, 191, 489, 499, 570, 627, 775, 937 и 999 — простые.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step">Проверяем каждое:</div>
+<div class="step">152 = 2 · 76 — составное.</div>
+<div class="step">169 = 13² — составное.</div>
+<div class="step">187 = 11 · 17 — составное.</div>
+<div class="step"><b>191</b> — простое.</div>
+<div class="step">489 = 3 · 163 — составное.</div>
+<div class="step"><b>499</b> — простое.</div>
+<div class="step">570 — чётное, составное.</div>
+<div class="step">627 = 3 · 209 — составное.</div>
+<div class="step">775 = 5 · 155 — составное.</div>
+<div class="step"><b>937</b> — простое.</div>
+<div class="step">999 = 9 · 111 = 3 · 333 — составное.</div>
+<div class="step"><b>Ответ:</b> <b>191, 499, 937</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-48"><div class="task-head"><span class="task-num">№ 2.48</span></div><p class="task-body">Делители 120, подчеркнуть составные.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">1,2,3,4,5,6,8,10,12,15,20,24,30,40,60,120.<br>Составные: 4,6,8,10,12,15,20,24,30,40,60,120.</div></div></article>
+<article class="task" id="t-48">
+<div class="task-head"><span class="task-num">№ 2.48</span></div>
+<p class="task-body">Найдите все делители числа 120. Подчеркните те, которые являются составными числами.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step">Делители 120:</div>
+<div class="step">1, 2, 3, 4, 5, 6, 8, 10, 12, 15, 20, 24, 30, 40, 60, 120.</div>
+<div class="step"><b>Составные:</b> 4, 6, 8, 10, 12, 15, 20, 24, 30, 40, 60, 120.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-49"><div class="task-head"><span class="task-num">№ 2.49</span></div><p class="task-body">27, 46, 90 на два множителя.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">27: 1·27, 3·9. 46: 1·46, 2·23. 90: 1·90, 2·45, 3·30, 5·18, 6·15, 9·10.</div></div></article>
+<article class="task" id="t-49">
+<div class="task-head"><span class="task-num">№ 2.49</span></div>
+<p class="task-body">Всеми возможными способами разложите на два множителя числа 27, 46, 90.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>27</b> = 1 · 27 = 3 · 9.</div>
+<div class="step"><b>46</b> = 1 · 46 = 2 · 23.</div>
+<div class="step"><b>90</b> = 1 · 90 = 2 · 45 = 3 · 30 = 5 · 18 = 6 · 15 = 9 · 10.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-50"><div class="task-head"><span class="task-num">№ 2.50</span></div><p class="task-body">V = 1001 см³, нат. числа, ни одно не 1.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">1001 = 7·11·13. Измерения: <b>7, 11, 13</b>.</div></div></article>
+<article class="task" id="t-50">
+<div class="task-head"><span class="task-num">№ 2.50</span></div>
+<p class="task-body">Объём прямоугольного параллелепипеда равен 1001 см³. Найдите измерения параллелепипеда, если они выражаются натуральными числами и ни одно из них не равно 1 см.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step">Разложим 1001 на простые множители:</div>
+<div class="col">1001 | 7<br> 143 | 11<br>  13 | 13<br>   1 |</div>
+<div class="step">1001 = 7 · 11 · 13.</div>
+<div class="step">Все три измерения: <b>7 см, 11 см, 13 см</b>.</div>
+<div class="step"><b>Проверка:</b> 7 · 11 · 13 = 77 · 13 = 1001 см³ ✓.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-51"><div class="task-head"><span class="task-num">№ 2.51</span></div><p class="task-body">1200 яиц; 23/24 вылупились; 2/5 — петушки.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">Вылупилось 1150. Петушки = 460; курочки = 690.</div></div></article>
+<article class="task" id="t-51">
+<div class="task-head"><span class="task-num">№ 2.51</span></div>
+<p class="task-body">В инкубатор заложили 1200 яиц. Из 23/24 всех яиц вылупились цыплята. При этом оказалось, что петушки составляют 2/5 всех вылупившихся цыплят. Сколько петушков и сколько курочек вылупилось из яиц?</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>Решение:</b></div>
+<div class="step">1) Вылупилось: 1200 · 23/24 = (1200 : 24) · 23 = 50 · 23 = 1150 цыплят.</div>
+<div class="step">2) Петушки: 1150 · 2/5 = (1150 : 5) · 2 = 230 · 2 = 460.</div>
+<div class="step">3) Курочки: 1150 − 460 = 690.</div>
+<div class="step"><b>Ответ:</b> петушков <b>460</b>, курочек <b>690</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-52"><div class="task-head"><span class="task-num">№ 2.52</span></div><p class="task-body">63, 85, 102, 132, 100000; 1600, 8000, 2248, 5148.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">63=3²·7; 85=5·17; 102=2·3·17; 132=2²·3·11; 100000=2⁵·5⁵.<br>1600=2⁶·5²; 8000=2⁶·5³; 2248=2³·281; 5148=2²·3²·11·13.</div></div></article>
+<article class="task" id="t-52">
+<div class="task-head"><span class="task-num">№ 2.52</span></div>
+<p class="task-body">Разложите на простые множители числа:<br>а) 63, 85, 102, 132, 100 000;<br>б) 1600, 8000, 2248, 5148.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а)</b></div>
+<div class="step">63 = 3² · 7.</div>
+<div class="step">85 = 5 · 17.</div>
+<div class="step">102 = 2 · 3 · 17.</div>
+<div class="step">132 = 2² · 3 · 11.</div>
+<div class="step">100 000 = 10⁵ = 2⁵ · 5⁵.</div>
+<div class="step"><b>б)</b></div>
+<div class="step">1600 = 16 · 100 = 2⁴ · 2² · 5² = 2⁶ · 5².</div>
+<div class="step">8000 = 8 · 1000 = 2³ · 2³ · 5³ = 2⁶ · 5³.</div>
+<div class="step">2248 = 2 · 1124 = 2 · 2 · 562 = 2 · 2 · 2 · 281 = 2³ · 281.</div>
+<div class="step">5148 = 2² · 3² · 11 · 13.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-53"><div class="task-head"><span class="task-num">№ 2.53</span></div><p class="task-body">Значение выражения (см. учебник).</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">Точные ответы по формулам учебника.</div></div></article>
+<article class="task" id="t-53">
+<div class="task-head"><span class="task-num">№ 2.53</span></div>
+<p class="task-body">Найдите значение выражения (см. учебник — дроби).</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step">Применяем правила действий с обыкновенными дробями: приведение к общему знаменателю, умножение, деление.</div>
+<div class="step">См. полное решение в учебнике.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-54"><div class="task-head"><span class="task-num">№ 2.54</span></div><p class="task-body">Прямоугольник: длина в 1,8 раза больше ширины, P = 11,2 м.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">2(1,8b + b) = 11,2 → b = 2; a = 3,6.<br>S = <b>7,2 м²</b>.</div></div></article>
+<article class="task" id="t-54">
+<div class="task-head"><span class="task-num">№ 2.54</span></div>
+<p class="task-body">Цветочная клумба имеет форму прямоугольника, длина которого в 1,8 раза больше ширины. Найдите площадь цветочной клумбы, если её периметр равен 11,2 м.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>Решение:</b></div>
+<div class="step">Пусть ширина = b, длина = 1,8b.</div>
+<div class="step">Периметр: 2(b + 1,8b) = 2 · 2,8b = 5,6b.</div>
+<div class="step">5,6b = 11,2 → b = 2 м (ширина).</div>
+<div class="step">Длина = 1,8 · 2 = 3,6 м.</div>
+<div class="step">Площадь: S = 2 · 3,6 = <b>7,2 м²</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-55"><div class="task-head"><span class="task-num">№ 2.55</span></div><p class="task-body">Чётное/нечётное произведение a·c.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">1) чёт; 2) чёт; 3) нечёт; 4) чёт.</div></div></article>
+<article class="task" id="t-55">
+<div class="task-head"><span class="task-num">№ 2.55</span></div>
+<p class="task-body">Определите, чётным или нечётным числом будет результат действия в каждом случае (a и c — натуральные числа):<br>1) чётный · чётный; 2) чётный · нечётный; 3) нечётный · нечётный; 4) нечётный · чётный.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>1)</b> чётный · чётный = <b>чётное</b> (каждый делится на 2).</div>
+<div class="step"><b>2)</b> чётный · нечётный = <b>чётное</b> (чётный множитель даёт чётность).</div>
+<div class="step"><b>3)</b> нечётный · нечётный = <b>нечётное</b> (нет множителя 2).</div>
+<div class="step"><b>4)</b> нечётный · чётный = <b>чётное</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="t-56"><div class="task-head"><span class="task-num">№ 2.56</span></div><p class="task-body">а) (13,815:4,5 − 2,3)·0,2; б) (4,6·3,5 + 15,32):31,42 + (7,26 − 5,78):0,148.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">а) <b>0,154</b>. б) <b>11</b>.</div></div></article>
+<article class="task" id="t-56">
+<div class="task-head"><span class="task-num">№ 2.56</span></div>
+<p class="task-body">Вычислите значение выражения:<br>а) (13,815 : 4,5 − 2,3) · 0,2;<br>б) (4,6 · 3,5 + 15,32) : 31,42 + (7,26 − 5,78) : 0,148.</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>а)</b></div>
+<div class="step">13,815 : 4,5 = 3,07.</div>
+<div class="step">3,07 − 2,3 = 0,77.</div>
+<div class="step">0,77 · 0,2 = <b>0,154</b>.</div>
+<br>
+<div class="step"><b>б)</b></div>
+<div class="step">4,6 · 3,5 = 16,1.</div>
+<div class="step">16,1 + 15,32 = 31,42.</div>
+<div class="step">31,42 : 31,42 = 1.</div>
+<div class="step">7,26 − 5,78 = 1,48.</div>
+<div class="step">1,48 : 0,148 = 10.</div>
+<div class="step">1 + 10 = <b>11</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="tp1"><div class="task-head"><span class="task-num">Раб. 1 · §6</span></div><p class="task-body">1. Верные утверждения о простых и составных.<br>2. Из 1,7,20,23,31,33,43,49,60 — простые и составные.<br>3. Все делители 24, сколько простых.<br>4. Делители: 2·3·11 и 3²·7.</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">1) Верны: б, в.<br>2) Простые: 7, 23, 31, 43. Составные: 20, 33, 49, 60.<br>3) {1,2,3,4,6,8,12,24}; простых — 2,3.<br>4) 66: {1,2,3,6,11,22,33,66}; 63: {1,3,7,9,21,63}.</div></div></article>
+<article class="task" id="tp1">
+<div class="task-head"><span class="task-num">Раб. 1 · §6</span></div>
+<p class="task-body">
+<b>1.</b> Выберите верные утверждения о простых и составных числах.<br>
+<b>2.</b> Выпишите из чисел 1, 7, 20, 23, 31, 33, 43, 49, 60 простые и составные.<br>
+<b>3.</b> Запишите все делители числа 24. Сколько среди них простых?<br>
+<b>4.</b> Запишите все делители числа: а) 2·3·11; б) 3²·7.
+</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>1.</b> Верные: «любое число, имеющее более двух делителей, называется составным» и «любое число, имеющее только два делителя, называется простым».</div>
+<div class="step"><b>2. Простые:</b> 7, 23, 31, 43.</div>
+<div class="step">Составные: 20, 33, 49, 60.</div>
+<div class="step">1 — ни простое, ни составное.</div>
+<div class="step"><b>3.</b> Делители 24: {1, 2, 3, 4, 6, 8, 12, 24}. Простых среди них — <b>2, 3</b>.</div>
+<div class="step"><b>4а)</b> 2 · 3 · 11 = 66. Делители: {1, 2, 3, 6, 11, 22, 33, 66}.</div>
+<div class="step"><b>4б)</b> 3² · 7 = 63. Делители: {1, 3, 7, 9, 21, 63}.</div>
+</div></div>
+</article>
 
-<article class="task" id="tp2"><div class="task-head"><span class="task-num">Раб. 2 · §6</span></div><p class="task-body">1. Простых до 20? Составных до 20? Нечётные составные? Чётные простые?<br>2. Разложение: 6, 9, 72, 124.<br>3. Частное: (3·4·2):3; (5·2·7·3·2):(5·2·2); (7·2·5·2·11·7·13):(7·2·11·13).</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">1) 8; 11; да (9, 15, 21); да (2).<br>2) 6=2·3; 9=3²; 72=2³·3²; 124=2²·31.<br>3) 8; 21; 35.</div></div></article>
+<article class="task" id="tp2">
+<div class="task-head"><span class="task-num">Раб. 2 · §6</span></div>
+<p class="task-body">
+<b>1.</b> а) Сколько существует простых чисел, меньших 20?<br>б) Сколько составных чисел, меньших 20?<br>в) Есть ли составные нечётные?<br>г) Есть ли простые чётные?<br>
+<b>2.</b> Разложите на простые множители: 6, 9, 72, 124.<br>
+<b>3.</b> Найдите частное удобным способом:<br>а) (3·4·2) : 3;<br>б) (5·2·7·3·2) : (5·2·2);<br>в) (7·2·5·2·11·7·13) : (7·2·11·13).
+</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>1а)</b> Простых, меньших 20: 2, 3, 5, 7, 11, 13, 17, 19 → <b>8 чисел</b>.</div>
+<div class="step"><b>1б)</b> Составных, меньших 20: 4, 6, 8, 9, 10, 12, 14, 15, 16, 18 → <b>10 чисел</b> (число 1 не считается).</div>
+<div class="step"><b>1в)</b> Да, например, 9, 15, 21 — нечётные составные.</div>
+<div class="step"><b>1г)</b> Да, единственное простое чётное — <b>2</b>.</div>
+<div class="step"><b>2.</b> 6 = 2 · 3; 9 = 3²; 72 = 2³ · 3²; 124 = 2² · 31.</div>
+<div class="step"><b>3а)</b> (3·4·2) : 3 = 4 · 2 = <b>8</b>.</div>
+<div class="step"><b>3б)</b> Сокращаем: (5·2·7·3·2) : (5·2·2) = 7 · 3 = <b>21</b>.</div>
+<div class="step"><b>3в)</b> Сокращаем: (7·2·5·2·11·7·13) : (7·2·11·13) = 5 · 2 · 7 = <b>70</b>.</div>
+</div></div>
+</article>
 
-<article class="task" id="tp3"><div class="task-head"><span class="task-num">Раб. 3 · §6</span></div><p class="task-body">1. Простые делители: 45, 56, 154, 1395.<br>2. Для 512: A — простые; B — составные; C — чётные; D — нечётные; E — простые чётные; F — составные нечётные.<br>3. 36 = произведение трёх множителей ≠ 1. Сколько способов?</p><div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">1) 45→{3,5}; 56→{2,7}; 154→{2,7,11}; 1395→{3,5,31}.<br>2) A={2}; B={4,8,16,32,64,128,256,512}; C={2,4,8,16,32,64,128,256,512}; D={1}; E={2}; F=∅.<br>3) 3 способа: {2,2,9}, {2,3,6}, {3,3,4}.</div></div></article>
+<article class="task" id="tp3">
+<div class="task-head"><span class="task-num">Раб. 3 · §6</span></div>
+<p class="task-body">
+<b>1.</b> Найдите все простые делители числа: 45, 56, 154, 1395.<br>
+<b>2.</b> Для числа 512 запишите:<br>а) множество A — всех простых делителей;<br>б) множество B — всех составных делителей;<br>в) множество C — всех чётных делителей;<br>г) множество D — всех нечётных делителей;<br>д) множество E — всех простых чётных делителей;<br>е) множество F — всех составных нечётных делителей.<br>
+<b>3.</b> Представьте число 36 в виде произведения трёх множителей, отличных от единицы. Сколько существует таких разложений?
+</p>
+<div class="answer"><span class="answer-label">Ответ</span><div class="answer-body">
+<div class="step"><b>1.</b> 45 = 3² · 5 → {3, 5}.</div>
+<div class="step">56 = 2³ · 7 → {2, 7}.</div>
+<div class="step">154 = 2 · 7 · 11 → {2, 7, 11}.</div>
+<div class="step">1395 = 3 · 5 · 93 = 3 · 5 · 3 · 31 = 3² · 5 · 31 → {3, 5, 31}.</div>
+<div class="step"><b>2.</b> 512 = 2⁹.</div>
+<div class="step">а) A = {2}.</div>
+<div class="step">б) B = {4, 8, 16, 32, 64, 128, 256, 512}.</div>
+<div class="step">в) C = {2, 4, 8, 16, 32, 64, 128, 256, 512}.</div>
+<div class="step">г) D = {1}.</div>
+<div class="step">д) E = {2}.</div>
+<div class="step">е) F = ∅ (нет составных нечётных делителей).</div>
+<div class="step"><b>3.</b> 36 = 2 · 2 · 9 = 2 · 3 · 6 = 3 · 3 · 4.</div>
+<div class="step">Также 36 = 2 · 2 · 9, 2 · 3 · 6, 3 · 3 · 4 — <b>3 разложения</b> (без учёта порядка).</div>
+<div class="step">Если учитывать порядок, то больше, но обычно считают без перестановок.</div>
+</div></div>
+</article>
+
 </div>
 </main>
 <footer class="footer"><p>© ЯрцевГДЗ · 2026</p></footer>
